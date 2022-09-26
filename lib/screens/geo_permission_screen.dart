@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/providers/providers.dart';
 import 'package:provider/provider.dart';
 
@@ -34,8 +35,10 @@ class _AccessButton extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text('Es necesario el acceso al GPS'),
+        const Text('Es necesario el acceso al GPS', style: TextStyle(fontSize: 22),),
+        SizedBox(height: 20,),
         MaterialButton(
+          padding: EdgeInsets.all(10),
           color: Colors.black,
           shape: const StadiumBorder(),
           onPressed: (){
@@ -44,7 +47,7 @@ class _AccessButton extends StatelessWidget {
             ? Navigator.popAndPushNamed(context, 'geo')
             : null;
           },
-          child: const Text('Solicitar Acceso', style: TextStyle(fontSize: 22,color: Colors.white),)
+          child: const Text('Solicitar Acceso', style: TextStyle(fontSize: 26,color: Colors.white),)
         )
       ]
     );
@@ -59,6 +62,13 @@ class _EnableGpsAccess extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('Debe de Habilitar el Gps', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),);
+    return Center(
+      child: Column(mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          Icon(Icons.location_off, color: Colors.red,size: 125,),
+          Text('Debe de Habilitar el Gps', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w300),),
+        ],
+      ),
+    );
   }
 }

@@ -36,6 +36,7 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context){
 
     final gpsProvider = Provider.of<GpsProvider>(context);
+    final locationProvider = Provider.of<LocationProvider>(context);
 
     final items = <ItemBoton>[
       ItemBoton( FontAwesomeIcons.userLarge, 'Gestion de Usuarios', Color(0xff6989F5), Color(0xff906EF5) ),
@@ -78,9 +79,11 @@ class MainScreen extends StatelessWidget {
               case 'Geolocalizacion':
 
                 await gpsProvider.init();
+                //await locationProvider.getCurrPosition();
 
                 gpsProvider.isAllGranted
                 ? Navigator.pushNamed(context, 'geo')
+                  
                 : Navigator.pushNamed(context, 'permission');
               
               break;

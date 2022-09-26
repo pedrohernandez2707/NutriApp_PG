@@ -306,15 +306,6 @@ class _NinioForm extends StatelessWidget {
                   },
                 ),
 
-                SwitchListTile(
-                  title: Text('Disponible'),
-                  activeColor: Colors.indigo,
-                  value: false,
-                  onChanged: (value){
-                    //productFormProvider.updateAvailable(value);
-                  }
-                ),
-
                 SizedBox(height: 30,)
               ],
             )
@@ -324,7 +315,6 @@ class _NinioForm extends StatelessWidget {
     );
   }
 }
-
 
 
 class _TutorForm extends StatelessWidget {

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nutri_app/providers/gps_provider.dart';
 import 'package:nutri_app/providers/login_form_provider.dart';
+import 'package:nutri_app/providers/providers.dart';
 import 'package:nutri_app/routes/routes.dart';
 import 'package:nutri_app/services/services.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +19,8 @@ class AppState extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => AuthService()),
         ChangeNotifierProvider(create: (_) => LoginFormProvider()),
         ChangeNotifierProvider(create: (_) => NiniosService()),
-        ChangeNotifierProvider(create: (_) => GpsProvider())
+        ChangeNotifierProvider(create: (_) => GpsProvider()),
+        ChangeNotifierProvider(create: (_) => LocationProvider()),
       ],
       child: MyApp(),
       
