@@ -21,7 +21,7 @@ class NinioSearchDelegate extends SearchDelegate{
         onPressed: (){
           query ='';
         }, 
-        icon: Icon(FontAwesomeIcons.xmark)
+        icon: const Icon(FontAwesomeIcons.xmark)
       )
     ];
     
@@ -33,7 +33,7 @@ class NinioSearchDelegate extends SearchDelegate{
         onPressed: (){
           close(context, null);
         }, 
-        icon: Icon(Icons.arrow_back)
+        icon: const Icon(Icons.arrow_back)
       );
   }
 
@@ -94,7 +94,7 @@ class _SearchCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: ninio.genero == 'Femenino' ? const Icon(FontAwesomeIcons.childDress,color: Colors.pink,size: 30,) : const Icon(FontAwesomeIcons.children, color: Colors.blue,size: 30,),
+      leading: ninio.genero == 'Femenino' ? const Icon(FontAwesomeIcons.childDress,color: Colors.pink,size: 30,) : const Icon(FontAwesomeIcons.child, color: Colors.blue,size: 30,),
       title: Text('${ninio.nombres} ${ninio.apellidos}'),
       subtitle: Text(ninio.fechaNacimiento),
       onTap: (){

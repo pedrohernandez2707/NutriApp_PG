@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/providers/providers.dart';
 import 'package:nutri_app/services/services.dart';
-import 'package:nutri_app/widgets/custom_labels.dart';
 import 'package:provider/provider.dart';
 
 import '../ui/input_decoration.dart';

@@ -9,6 +9,8 @@ class AuthService extends ChangeNotifier{
   final String _baseUrl ='identitytoolkit.googleapis.com';
   final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
 
+  late String? email;
+
   final storage = FlutterSecureStorage();
 
 
@@ -59,7 +61,7 @@ class AuthService extends ChangeNotifier{
     if(decodedResp.containsKey('idToken')){
 
       await storage.write(key: 'token', value: decodedResp['idToken']);
-     
+      email = email;
       return null;
     } else {
       return decodedResp['error']['message'];

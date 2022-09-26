@@ -20,7 +20,7 @@ class RegistroDatosScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Niños Registrados'),
+        title: const Text('Niños Registrados'),
       ),
       body: RefreshIndicator(
         onRefresh: ()async{

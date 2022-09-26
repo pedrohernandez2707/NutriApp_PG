@@ -33,7 +33,7 @@ class NiniosService extends ChangeNotifier{
   Stream<List<Ninio>> get suggestionStream => _suggestionStreamController.stream;
 
   void fecha(DateTime date){
-    this.selectedninio.fechaNacimiento = date.toString();
+    selectedninio.fechaNacimiento = date.toString();
     notifyListeners();
   }
   
@@ -158,11 +158,11 @@ class NiniosService extends ChangeNotifier{
       _suggestionStreamController.add(results);
     };
 
-    final timer = Timer.periodic(Duration(milliseconds: 500), (_) { 
+    final timer = Timer.periodic(const Duration(milliseconds: 500), (_) { 
       debouncer.value = query;
     });
 
-    Future.delayed(Duration(milliseconds: 501)).then((_) => timer.cancel());
+    Future.delayed(const Duration(milliseconds: 501)).then((_) => timer.cancel());
 
   }
 

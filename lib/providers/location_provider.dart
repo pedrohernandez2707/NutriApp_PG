@@ -26,7 +26,7 @@ class LocationProvider extends ChangeNotifier{
   Future<Position> getCurrPosition() async{
 
    final position = await Geolocator.getCurrentPosition();
-   lastKnowLocation = LatLng(position.latitude, position.longitude);
+   this.lastKnowLocation = LatLng(position.latitude, position.longitude);
 
    print('Posicion Actual: $position');
    

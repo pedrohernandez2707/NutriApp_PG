@@ -125,7 +125,7 @@ class TallaEdad {
 
     int edadMeses;
     String fecha;
-    int tallaCm;
+    double tallaCm;
 
     factory TallaEdad.fromJson(String str) => TallaEdad.fromMap(json.decode(str));
 

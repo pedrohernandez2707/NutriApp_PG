@@ -3,6 +3,9 @@ import 'package:nutri_app/widgets/widgets.dart';
 
 
 class RegistroScreen extends StatelessWidget {
+  
+  const RegistroScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +15,7 @@ class RegistroScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
-          child: Container(
+          child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.9,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

@@ -31,7 +31,7 @@ class LoginScreen extends StatelessWidget {
                   child: const _Form(),
                 ),
                 //SizedBox(height: -10,),
-                SizedBox(
+                const SizedBox(
                   height: 70,
                   child: Image(image: AssetImage('assets/logoUMG.png'))
                 ),
