@@ -193,46 +193,6 @@ class MainScreen extends StatelessWidget {
 }
 
 
-class _MenuLateral extends StatelessWidget{
-
-  @override
-  Widget build(BuildContext context) {
-    return Drawer(
-      child: ListView(
-        children: <Widget>[
-          UserAccountsDrawerHeader(
-              accountName: Text("CODEA APP"),
-              accountEmail: Text("informes@gmail.com"),
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: NetworkImage("https://dominio.com/imagen/recurso.jpg"),
-                fit: BoxFit.cover
-              )
-            ),
-          ),
-          Ink(
-            color: Colors.indigo,
-            child: ListTile(
-              title: Text("MENU 1", style: TextStyle(color: Colors.white),),
-            ),
-          ),
-          ListTile(
-            title: Text("MENU 2"),
-            onTap: (){},
-          ),
-          ListTile(
-            title: Text("MENU 3"),
-          ),
-          ListTile(
-            title: Text("MENU 4"),
-          )
-
-        ],
-      ) ,
-    );
-  }
-}
-
 class _Encabezado extends StatelessWidget {
   
   @override
@@ -286,19 +246,3 @@ class BotonGordoTemp extends StatelessWidget {
   }
 }
 
-// class PageHeader extends StatelessWidget {
-//   const PageHeader({
-//     Key? key,
-//   }) : super(key: key);
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return IconHeader(
-//       icon: FontAwesomeIcons.plus,
-//       subtitulo: 'Haz Solicitado',
-//       titulo: 'Asistencia Médica',
-//       color1: Color(0xff526BF6),
-//       color2: Color(0xff67ACF2),
-//     );
-//   }
-// }

@@ -14,5 +14,6 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'terminos':        ( _ ) => TerminosScreen(),
   'registro_datos':  ( _ ) => RegistroDatosScreen(),
   'ninio':           ( _ ) => NinioScreen(),
-
+  'tabla':           ( _ ) => TablaMedicionesScreen(),
+  'medicion':        ( _ ) => MedicionScreen()
 };

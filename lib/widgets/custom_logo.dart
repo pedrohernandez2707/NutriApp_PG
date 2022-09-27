@@ -12,7 +12,7 @@ class Logo extends StatelessWidget {
 
       child: Container(
 
-        padding: const EdgeInsets.only(top: 80),
+        padding: const EdgeInsets.only(top: 40),
         width: 300,
 
         child: Column(

@@ -89,7 +89,6 @@ class NiniosService extends ChangeNotifier{
     
     final resp = await http.put(url, body: ninio.toJson());
 
-
     //Actualizar listado de ninños
     final index = ninios.indexWhere((element) => element.id == ninio.id);
     ninios[index] = ninio;
@@ -113,7 +112,6 @@ class NiniosService extends ChangeNotifier{
     ninios.add(ninio);
 
     return ninio.id!;
-    
   }
 
 
@@ -165,9 +163,6 @@ class NiniosService extends ChangeNotifier{
     Future.delayed(const Duration(milliseconds: 501)).then((_) => timer.cancel());
 
   }
-
-
-
 
 
   

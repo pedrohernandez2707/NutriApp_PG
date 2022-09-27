@@ -26,9 +26,9 @@ class GestionUsuariosScreen extends StatelessWidget {
           itemCount: usuarioService.usuarios.length,
           itemBuilder: (BuildContext context, int index) => GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, 'registro');
               usuarioService.selectedUsuario = usuarioService.usuarios[index].copy();
               usuarioService.exists =true;
+              Navigator.pushNamed(context, 'registro');
             },
             child: UsuarioCard(usuario: usuarioService.usuarios[index] ),
           )

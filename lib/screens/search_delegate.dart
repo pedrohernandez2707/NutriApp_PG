@@ -93,12 +93,16 @@ class _SearchCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final ninioService = Provider.of<NiniosService>(context,listen: false);
+
     return ListTile(
       leading: ninio.genero == 'Femenino' ? const Icon(FontAwesomeIcons.childDress,color: Colors.pink,size: 30,) : const Icon(FontAwesomeIcons.child, color: Colors.blue,size: 30,),
       title: Text('${ninio.nombres} ${ninio.apellidos}'),
       subtitle: Text(ninio.fechaNacimiento),
       onTap: (){
-
+        ninioService.selectedninio = ninio;
+        Navigator.pushNamed(context, 'tabla');
       },
     );
   }

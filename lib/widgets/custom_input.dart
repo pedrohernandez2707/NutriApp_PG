@@ -10,6 +10,7 @@ class CustomInput extends StatelessWidget {
   final bool isPassword;
   final String? Function(String?) validator;
   final void Function(String) onChanged;
+  final String? initialValue;
 
   const CustomInput({ 
     Key? key, 
@@ -19,7 +20,8 @@ class CustomInput extends StatelessWidget {
     required this.keyboardType, 
     required this.isPassword, 
     required this.validator, 
-    required this.onChanged }) : super(key: key);
+    required this.onChanged, 
+    this.initialValue }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
