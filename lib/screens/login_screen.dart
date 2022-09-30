@@ -8,6 +8,8 @@ import '../providers/providers.dart';
 
 class LoginScreen extends StatelessWidget {
 
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
 
@@ -18,13 +20,13 @@ class LoginScreen extends StatelessWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           physics: const BouncingScrollPhysics(),
-          child: Container(
+          child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.9,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 const Logo(title: 'Inicio de Sesión',),
-                Icon(FontAwesomeIcons.children, color: Colors.blue, size: 60,),
+                const Icon(FontAwesomeIcons.children, color: Colors.blue, size: 60,),
                 Form(
                   key: loginForm.formKey,
                   autovalidateMode: AutovalidateMode.onUserInteraction,
@@ -139,6 +141,7 @@ class __FormState extends State<_Form> {
               String? respLogin = await authProvider.loginUser(loginForm.email, loginForm.password);
               
               if (respLogin == null) {
+                // ignore: use_build_context_synchronously
                 Navigator.pushReplacementNamed(context, 'main');
                 loginForm.isLoading = false;
                 

@@ -45,6 +45,7 @@ class RegistroDatosScreen extends StatelessWidget {
         onPressed: (){
 
           ninioService.selectedninio = Ninio(
+            cui: '',
             id: '',
             nombres: '',
             fechaNacimiento: '',

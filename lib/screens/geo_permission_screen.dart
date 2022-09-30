@@ -5,6 +5,8 @@ import 'package:provider/provider.dart';
 
 class GeoPermissionScreen extends StatelessWidget {
 
+  const GeoPermissionScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
 
@@ -35,15 +37,16 @@ class _AccessButton extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         const Text('Es necesario el acceso al GPS', style: TextStyle(fontSize: 22),),
-        SizedBox(height: 20,),
+        const SizedBox(height: 20,),
         MaterialButton(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           color: Colors.black,
           shape: const StadiumBorder(),
           onPressed: ()async{
             await gpsProvider.askGpsAccess();
             if(gpsProvider.isAllGranted)
             {
+              // ignore: use_build_context_synchronously
               Navigator.popAndPushNamed(context, 'geo');
             }else{
               null;

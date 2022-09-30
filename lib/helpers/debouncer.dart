@@ -21,6 +21,7 @@ class Debouncer<T> {
   set value(T val) {
     _value = val;
     _timer?.cancel();
+    // ignore: null_check_on_nullable_type_parameter
     _timer = Timer(duration, () => onValue!(_value!));
   }  
 }

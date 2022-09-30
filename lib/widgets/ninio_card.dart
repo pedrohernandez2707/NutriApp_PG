@@ -16,7 +16,6 @@ class NinioCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: Container(
@@ -78,7 +77,8 @@ class NinioCard extends StatelessWidget {
 }
 
 class NotAvailable extends StatelessWidget {
-  
+
+  const NotAvailable({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -109,7 +109,7 @@ class GenderTag extends StatelessWidget {
   final IconData icon;
   final Color color;
 
-  const GenderTag({required this.icon, required this.color});
+  const GenderTag({super.key, required this.icon, required this.color});
   
   @override
   Widget build(BuildContext context) {

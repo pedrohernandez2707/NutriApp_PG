@@ -22,13 +22,13 @@ class NinioScreen extends StatelessWidget {
 
     return ChangeNotifierProvider(
       create: (_) => NinioFormProvider(ninioService.selectedninio),
-      child: _ProductScreenBody(ninioService: ninioService),
+      child: _NiniosScreenBody(ninioService: ninioService),
     );
   }
 }
 
-class _ProductScreenBody extends StatelessWidget {
-  const _ProductScreenBody({
+class _NiniosScreenBody extends StatelessWidget {
+  const _NiniosScreenBody({
     Key? key,
     required this.ninioService,
   }) : super(key: key);
@@ -64,11 +64,21 @@ class _ProductScreenBody extends StatelessWidget {
                 ),
             ],
           ),
-          Center(child: Text('Datos del Niño',style: TextStyle(color: Colors.black,fontSize: 22, fontWeight: FontWeight.bold),),),
+
+          Center(child: Text('Datos del Niño',
+          style: TextStyle(color: Colors.black,fontSize: 22, fontWeight: FontWeight.bold),),
+          ),
+
           _NinioForm(),
+
           const SizedBox(height: 10),
-          Center(child: Text('Datos del Tutor',style: TextStyle(color: Colors.black,fontSize: 22, fontWeight: FontWeight.bold),),),
+
+          Center(child: Text('Datos del Tutor',
+          style: TextStyle(color: Colors.black,fontSize: 22, fontWeight: FontWeight.bold),),
+          ),
+
           _TutorForm()
+
           ],
         )
       ),
@@ -174,8 +184,6 @@ class _NinioForm extends StatelessWidget {
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El CUI es obligatorio!';
-                    }else if(value.length < 13){
-                      //return 'El CUI debe ser de 13 digitos';
                     }
                   }
                 ),

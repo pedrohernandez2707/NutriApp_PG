@@ -38,9 +38,9 @@ class MainScreen extends StatelessWidget {
     final usuarioProvider = Provider.of<UsuarioService>(context);
     final authProvider = Provider.of<AuthService>(context, listen: false);
 
-    usuarioProvider.selectedUser(authProvider.email.toString());
+    //usuarioProvider.selectedUser(authProvider.email.toString());
     //TODO: Cambiar por el correo
-    //usuarioProvider.selectedUser('phernandezg7@miumg.edu.gt');
+    usuarioProvider.selectedUser('phernandezg7@miumg.edu.gt');
     
 
     final items = <ItemBoton>[
@@ -229,20 +229,4 @@ class _Encabezado extends StatelessWidget {
   }
 }
 
-class BotonGordoTemp extends StatelessWidget {
-  const BotonGordoTemp({
-    Key? key,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return BotonGordo(
-      icon: FontAwesomeIcons.carBurst,
-      texto: 'Motor Accident',
-      color1: Color(0xff6989F5),
-      color2: Color(0xff906EF5),
-      onPress: (){ print('Click!'); },
-    );
-  }
-}
 

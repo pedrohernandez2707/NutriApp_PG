@@ -19,6 +19,9 @@ class NiniosService extends ChangeNotifier{
 
   final List<Ninio> ninios =[];
 
+  final List<Ninio> niniosSearch =[];
+
+
   late Ninio selectedninio;
 
   bool isLoading = true;
@@ -137,13 +140,13 @@ class NiniosService extends ChangeNotifier{
       final tempNinio = Ninio.fromMap(value);
       tempNinio.id = key;
 
-      ninios.clear();
-      ninios.add(tempNinio);
+      niniosSearch.clear();
+      niniosSearch.add(tempNinio);
     });
 
     //isLoading = false;
     //notifyListeners();
-    return ninios;
+    return niniosSearch;
   }
 
   void getSuggestionByQuery(String query){

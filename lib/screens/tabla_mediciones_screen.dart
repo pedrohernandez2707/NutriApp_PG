@@ -1,22 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/models/models.dart';
-import 'package:nutri_app/services/ninios_service.dart';
+import 'package:nutri_app/screens/screens.dart';
+
+import 'package:nutri_app/services/services.dart';
 import 'package:provider/provider.dart';
 import 'package:syncfusion_flutter_datagrid/datagrid.dart';
 
 
 class TablaMedicionesScreen extends StatelessWidget {
 
-  List<Employee> employees = <Employee>[];
+  //List<Medicion> mediciones = <Medicion>[];
 
   
-  TablaMedicionesScreen({super.key});
+  const TablaMedicionesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
 
     final ninioService = Provider.of<NiniosService>(context, listen: false);
+    final medicionService = Provider.of<MedicionesService>(context);
+    //medicionService.loadMediciones(ninioService.selectedninio.cui);
 
     final Color? color; 
     color = ninioService.selectedninio.genero == 'Femenino' 
@@ -25,10 +29,11 @@ class TablaMedicionesScreen extends StatelessWidget {
 
     final TextStyle style = TextStyle(color: Colors.white);
 
-    late EmployeeDataSource employeeDataSource;
+    late MedicionDataSource medicionDataSource;
 
-    employees = getEmployeeData();
-    employeeDataSource = EmployeeDataSource(employeeData: employees);
+    if(medicionService.isLoading) return LoadingScreen();
+
+    medicionDataSource = MedicionDataSource(medicionData: medicionService.medicionesLita);
 
     return Scaffold(
       appBar: AppBar(
@@ -40,11 +45,11 @@ class TablaMedicionesScreen extends StatelessWidget {
             horizontalScrollPhysics: const BouncingScrollPhysics(),
             rowsPerPage: 10,
             selectionMode: SelectionMode.single,
-            source: employeeDataSource,
+            source: medicionDataSource,
             columnWidthMode: ColumnWidthMode.fill,
             columns: <GridColumn>[
               GridColumn(
-                  columnName: 'id',
+                  columnName: 'fechaMedicion',
                   label: Container(
                     color: color,
                       padding: const EdgeInsets.all(16.0),
@@ -54,14 +59,14 @@ class TablaMedicionesScreen extends StatelessWidget {
                         style: style,
                       ))),
               GridColumn(
-                  columnName: 'name',
+                  columnName: 'edadMeses',
                   label: Container(
                     color: color,
                       padding: EdgeInsets.all(8.0),
                       alignment: Alignment.center,
                       child: Text('EdadMeses',style: style,))),
               GridColumn(
-                  columnName: 'designation',
+                  columnName: 'pesoKg',
                   label: Container(
                     color: color,
                       padding: EdgeInsets.all(8.0),
@@ -72,7 +77,7 @@ class TablaMedicionesScreen extends StatelessWidget {
                         style: style,
                       ))),
               GridColumn(
-                  columnName: 'salary',
+                  columnName: 'tallaCm',
                   label: Container(
                     color: color,
                       padding: EdgeInsets.all(8.0),
@@ -80,84 +85,47 @@ class TablaMedicionesScreen extends StatelessWidget {
                       child: Text('TallaCm',style: style,))),
             ],
             onCellTap: (DataGridCellDetails details){
-              //TODO: NAVEGAR A EDICION_MEDICION.
-              print(employees[details.rowColumnIndex.rowIndex - 1].name);
+              medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
+              Navigator.pushNamed(context, 'medicion');
             },
             ),
             floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
-            floatingActionButton: IconButton(
-              icon: const Icon(FontAwesomeIcons.faceAngry),
+            floatingActionButton: FloatingActionButton(
+              child: const Icon(FontAwesomeIcons.penToSquare,),
               onPressed: (){
-                //TODO: INGRESAR NUEVA MEDICION EN BLANCO
-                Navigator.pushReplacementNamed(context, 'medicion');
+                medicionService.selectedMedicion = Medicion(
+                  cuiNinio: ninioService.selectedninio.cui, 
+                  edadMeses: 0, 
+                  fechaMedicion: '', 
+                  notasPeso: '', 
+                  notasTalla: '', 
+                  pesoKg: 0, 
+                  tallaCm: 0);
+
+                Navigator.pushNamed(context, 'medicion');
               },
             ),
    );
   }
-
-
-  List<Employee> getEmployeeData() {
-    return [
-      Employee(10001, 'Pedro', 'Project Lead', 20000),
-      Employee(10002, 'Kathryn', 'Manager', 30000),
-      Employee(10003, 'Lara', 'Developer', 15000),
-      Employee(10004, 'Michael', 'Designer', 15000),
-      Employee(10005, 'Martin', 'Developer', 15000),
-      Employee(10006, 'Newberry', 'Developer', 15000),
-      Employee(10007, 'Balnc', 'Developer', 15000),
-      Employee(10008, 'Perry', 'Developer', 15000),
-      Employee(10009, 'Gable', 'Developer', 15000),
-      Employee(10010, 'Grimes', 'Developer', 15000),
-      Employee(100011, 'Pedro', 'Project Lead', 20000),
-      Employee(100012, 'Kathryn', 'Manager', 30000),
-      Employee(100013, 'Lara', 'Developer', 15000),
-      Employee(100014, 'Michael', 'Designer', 15000),
-      Employee(100015, 'Martin', 'Developer', 15000),
-      Employee(100016, 'Newberry', 'Developer', 15000),
-      Employee(100017, 'Balnc', 'Developer', 15000),
-      Employee(100018, 'Perry', 'Developer', 15000),
-      Employee(100019, 'Gable', 'Developer', 15000),
-      Employee(100020, 'Grimes', 'Developer', 15000),
-    ];
-  }
 }
 
-class Employee {
-  /// Creates the employee class with required details.
-  Employee(this.id, this.name, this.designation, this.salary);
-
-  /// Id of an employee.
-  final int id;
-
-  /// Name of an employee.
-  final String name;
-
-  /// Designation of an employee.
-  final String designation;
-
-  /// Salary of an employee.
-  final int salary;
-}
-
-
-class EmployeeDataSource extends DataGridSource{
+class MedicionDataSource extends DataGridSource{
   /// Creates the employee data source class with required details.
-  EmployeeDataSource({required List<Employee> employeeData}) {
-    _employeeData = employeeData
-        .map<DataGridRow>((e) => DataGridRow(cells: [
-              DataGridCell<int>(columnName: 'id', value: e.id),
-              DataGridCell<String>(columnName: 'name', value: e.name),
-              DataGridCell<String>(
-                  columnName: 'designation', value: e.designation),
-              DataGridCell<int>(columnName: 'salary', value: e.salary),
-            ]))
-        .toList();
+  MedicionDataSource({required List<Medicion> medicionData}) {
+    _medicionData = medicionData
+      .map<DataGridRow>((e) => DataGridRow(cells: [
+        DataGridCell<String>(columnName: 'fechaMedicion', value: e.fechaMedicion),
+        DataGridCell<String>(columnName: 'edadMeses', value: e.edadMeses.toString()),
+        DataGridCell<double>(columnName: 'pesoKg', value: e.pesoKg),
+        DataGridCell<double>(columnName: 'tallaCm', value: e.tallaCm),
+      ]))
+      .toList();
   }
 
-  List<DataGridRow> _employeeData = [];
+  List<DataGridRow> _medicionData = [];
 
   @override
-  List<DataGridRow> get rows => _employeeData;
+  List<DataGridRow> get rows => _medicionData;
 
   @override
   DataGridRowAdapter buildRow(DataGridRow row) {

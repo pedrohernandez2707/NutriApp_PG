@@ -8,6 +8,8 @@ import '../models/models.dart';
 
 
 class GestionUsuariosScreen extends StatelessWidget {
+  const GestionUsuariosScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class GestionUsuariosScreen extends StatelessWidget {
 
     //ninioService.loadninios();
 
-    if(usuarioService.isLoading) return LoadingScreen();
+    if(usuarioService.isLoading) return const LoadingScreen();
 
     return Scaffold(
       appBar: AppBar(

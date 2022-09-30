@@ -1,6 +1,3 @@
-// To parse this JSON data, do
-//
-//     final ninio = ninioFromMap(jsonString);
 
 import 'dart:convert';
 
@@ -12,10 +9,12 @@ class Ninio {
       this.geolocalizacion,
       required this.nombres,
       required this.tutor,
-      this.id
+      this.id,
+      required this.cui
     });
 
     String apellidos;
+    String cui;
     String fechaNacimiento;
     String genero;
     Geolocalizacion? geolocalizacion;
@@ -35,6 +34,7 @@ class Ninio {
         //geolocalizacion: Geolocalizacion.fromMap(json["geolocalizacion"]),
         nombres: json["nombres"],
         tutor: Tutor.fromMap(json["tutor"]),
+        cui: json["cui"]
     );
 
     Map<String, dynamic> toMap() => {
@@ -52,7 +52,8 @@ class Ninio {
       fechaNacimiento: fechaNacimiento,
       genero: genero,
       id: id,
-      tutor: tutor
+      tutor: tutor,
+      cui: cui
     );
 }
 

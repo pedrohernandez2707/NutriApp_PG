@@ -7,6 +7,8 @@ import 'package:provider/provider.dart';
 
 class GeoScreen extends StatelessWidget {
 
+  const GeoScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
 
@@ -46,7 +48,7 @@ class GeoScreen extends StatelessWidget {
             ],
           ),
         )
-        : Text('Espere Porfavor')
+        : const Text('Espere Porfavor')
     ),
     floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     floatingActionButton: Column(

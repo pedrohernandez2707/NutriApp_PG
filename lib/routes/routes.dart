@@ -3,17 +3,17 @@ import 'package:nutri_app/screens/screens.dart';
 
 final Map<String, Widget Function(BuildContext)> appRoutes = {
 
-  'login':           ( _ ) => LoginScreen(),
+  'login':           ( _ ) => const LoginScreen(),
   'main':            ( _ ) => const MainScreen(),
-  'gestion_usuario': ( _ ) => GestionUsuariosScreen(),
-  'geo':             ( _ ) => GeoScreen(),
-  'permission':      ( _ ) => GeoPermissionScreen(),
+  'gestion_usuario': ( _ ) => const GestionUsuariosScreen(),
+  'geo':             ( _ ) => const GeoScreen(),
+  'permission':      ( _ ) => const GeoPermissionScreen(),
   'registro':        ( _ ) => const RegistroScreen(),
   'visualizacion':   ( _ ) => VisualizacionSearchScreen(),
-  'loading':         ( _ ) => LoadingScreen(),
+  'loading':         ( _ ) => const LoadingScreen(),
   'terminos':        ( _ ) => TerminosScreen(),
   'registro_datos':  ( _ ) => RegistroDatosScreen(),
   'ninio':           ( _ ) => NinioScreen(),
-  'tabla':           ( _ ) => TablaMedicionesScreen(),
-  'medicion':        ( _ ) => MedicionScreen()
+  'tabla':           ( _ ) => const TablaMedicionesScreen(),
+  'medicion':        ( _ ) => const MedicionScreen()
 };

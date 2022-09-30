@@ -13,14 +13,13 @@ class MedicionesService extends ChangeNotifier{
 
   late Medicion selectedMedicion;
 
-  bool isLoading = false;
+  bool isLoading = true;
   bool exits = false;
 
-  
 
   Future<List<Medicion>> loadMediciones(String cui) async{
-    isLoading = true;
-    notifyListeners();
+    //isLoading = true;
+    //notifyListeners();
 
     final url = Uri.https(_baseUrl,'Mediciones.json',{
       'auth': _firebaseToken,
@@ -35,13 +34,14 @@ class MedicionesService extends ChangeNotifier{
     medicionesMap.forEach((key, value) {
       final tempMedicion = Medicion.fromMap(value);
       tempMedicion.id = key;
+      
+      medicionesLita.clear();
       medicionesLita.add(tempMedicion);
     });
 
     isLoading = false;
     notifyListeners();
     return medicionesLita;
-
   }
 
 
