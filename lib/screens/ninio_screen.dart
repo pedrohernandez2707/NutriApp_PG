@@ -11,6 +11,8 @@ import '../ui/input_decoration.dart';
 
 class NinioScreen extends StatelessWidget {
 
+  const NinioScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
 
@@ -50,7 +52,7 @@ class _NiniosScreenBody extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Container(
+                SizedBox(
                   height:150,
                   child: Center(child: Icon(FontAwesomeIcons.children,size: 70,color: Colors.blue,),),
                   ),
@@ -270,6 +272,7 @@ class _NinioForm extends StatelessWidget {
 
                   Column(
                     children: [
+                      // ignore: avoid_unnecessary_containers
                       Container(        
                         //color: Colors.black.withOpacity(0.1),
                         child: Text('Fecha de Nacimiento',style: TextStyle(color: Colors.grey,fontSize: 12),textAlign: TextAlign.left,)

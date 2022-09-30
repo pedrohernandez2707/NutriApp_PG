@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 
 class VisualizacionSearchScreen extends StatelessWidget {
+  
+  const VisualizacionSearchScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +12,7 @@ class VisualizacionSearchScreen extends StatelessWidget {
       appBar: AppBar(
 
       ),
-      body: Center(
+      body: const Center(
         child: Text('Registro Datos Screen'),
      )
    );

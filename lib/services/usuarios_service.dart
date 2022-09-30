@@ -91,6 +91,7 @@ class UsuarioService extends ChangeNotifier{
   }
 
   void selectedUser(String email){
+    // ignore: avoid_function_literals_in_foreach_calls
     usuarios.forEach((element) {
       if(element.email == email){
         usuarioLogin =element;
@@ -124,6 +125,7 @@ class UsuarioService extends ChangeNotifier{
       'auth': _firebaseToken
     });
     
+    // ignore: unused_local_variable
     final resp = await http.put(url, body: usuario.toJson());
 
     //Actualizar listado de ninños

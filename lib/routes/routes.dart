@@ -9,11 +9,11 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'geo':             ( _ ) => const GeoScreen(),
   'permission':      ( _ ) => const GeoPermissionScreen(),
   'registro':        ( _ ) => const RegistroScreen(),
-  'visualizacion':   ( _ ) => VisualizacionSearchScreen(),
+  'visualizacion':   ( _ ) => const VisualizacionSearchScreen(),
   'loading':         ( _ ) => const LoadingScreen(),
-  'terminos':        ( _ ) => TerminosScreen(),
-  'registro_datos':  ( _ ) => RegistroDatosScreen(),
-  'ninio':           ( _ ) => NinioScreen(),
+  'terminos':        ( _ ) => const TerminosScreen(),
+  'registro_datos':  ( _ ) => const RegistroDatosScreen(),
+  'ninio':           ( _ ) => const NinioScreen(),
   'tabla':           ( _ ) => const TablaMedicionesScreen(),
   'medicion':        ( _ ) => const MedicionScreen()
 };

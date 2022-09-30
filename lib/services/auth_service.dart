@@ -13,7 +13,7 @@ class AuthService extends ChangeNotifier{
 
   String? get email => _email;
 
-  final storage = FlutterSecureStorage();
+  final storage = const FlutterSecureStorage();
 
 
   //Si se retorna algo es un error, caso contrario registro ok

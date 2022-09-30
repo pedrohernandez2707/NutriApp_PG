@@ -10,7 +10,7 @@ import '../models/ninios.dart';
 class NinioSearchDelegate extends SearchDelegate{
 
   @override
-  // TODO: implement searchFieldLabel
+  
   String? get searchFieldLabel => 'Buscar Niños';
 
   
@@ -45,10 +45,8 @@ class NinioSearchDelegate extends SearchDelegate{
   @override
   Widget buildSuggestions(BuildContext context) {
     if(query.isEmpty){
-      return Container(
-        child: Center(
-          child: Icon(FontAwesomeIcons.magnifyingGlass, color: Colors.blue.withOpacity(0.5),size: 100,),
-        ),
+      return Center(
+        child: Icon(FontAwesomeIcons.magnifyingGlass, color: Colors.blue.withOpacity(0.5),size: 100,),
       );
     }
 
@@ -59,10 +57,8 @@ class NinioSearchDelegate extends SearchDelegate{
       stream: ninioService.suggestionStream,
       builder: (_, AsyncSnapshot<List<Ninio>> snapshot){
         if(!snapshot.hasData) {
-          return Container(
-                  child: Center(
-                  child: Icon(FontAwesomeIcons.magnifyingGlass, color: Colors.blue.withOpacity(0.5),size: 100,),
-                  ),
+          return Center(
+          child: Icon(FontAwesomeIcons.magnifyingGlass, color: Colors.blue.withOpacity(0.5),size: 100,),
           );
       }
 

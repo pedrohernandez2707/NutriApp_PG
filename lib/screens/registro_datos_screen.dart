@@ -8,6 +8,8 @@ import '../models/ninios.dart';
 
 
 class RegistroDatosScreen extends StatelessWidget {
+  const RegistroDatosScreen({super.key});
+
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +18,7 @@ class RegistroDatosScreen extends StatelessWidget {
 
     //ninioService.loadninios();
 
-    if(ninioService.isLoading) return LoadingScreen();
+    if(ninioService.isLoading) return const LoadingScreen();
 
     return Scaffold(
       appBar: AppBar(

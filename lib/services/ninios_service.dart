@@ -89,6 +89,7 @@ class NiniosService extends ChangeNotifier{
       'auth': _firebaseToken
     });
     
+    // ignore: unused_local_variable
     final resp = await http.put(url, body: ninio.toJson());
 
     //Actualizar listado de ninños
@@ -126,6 +127,7 @@ class NiniosService extends ChangeNotifier{
       'auth'   : _firebaseToken,
       'orderBy': '"nombres"',
       'startAt': '"$query"',
+      // ignore: unnecessary_brace_in_string_interps
       'endAt'  : '"${query}\uf8ff"'
     });
 

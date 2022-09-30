@@ -16,6 +16,7 @@ class RegistroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final usuarioService = Provider.of<UsuarioService>(context,listen: false);
+    // ignore: unused_local_variable
     final loginForm = Provider.of<LoginFormProvider>(context);
     final authService = Provider.of<AuthService>(context);
 
@@ -36,10 +37,10 @@ class RegistroScreen extends StatelessWidget {
                   ?  const Logo(title: 'Registro de Usuarios')
                   :  const Logo(title: 'Permisos Por Usuario'),
 
-                  SizedBox(height: 30,),
+                  const SizedBox(height: 30,),
         
                   usuarioService.selectedUsuario.email == ''
-                  ? _Form()
+                  ? const _Form()
                   : const SizedBox(height: 0),
 
                   const SizedBox(height: 10),
@@ -110,6 +111,7 @@ class RegistroScreen extends StatelessWidget {
   }
 }
 
+// ignore: must_be_immutable
 class Switch extends StatefulWidget {
 
   bool switchUsuario;

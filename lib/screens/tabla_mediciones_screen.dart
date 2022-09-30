@@ -27,11 +27,11 @@ class TablaMedicionesScreen extends StatelessWidget {
     ? Colors.pink[300]
     : Colors.blue;
 
-    final TextStyle style = TextStyle(color: Colors.white);
+    const TextStyle style = TextStyle(color: Colors.white);
 
     late MedicionDataSource medicionDataSource;
 
-    if(medicionService.isLoading) return LoadingScreen();
+    if(medicionService.isLoading) return const LoadingScreen();
 
     medicionDataSource = MedicionDataSource(medicionData: medicionService.medicionesLita);
 
@@ -54,7 +54,7 @@ class TablaMedicionesScreen extends StatelessWidget {
                     color: color,
                       padding: const EdgeInsets.all(16.0),
                       alignment: Alignment.center,
-                      child: Text(
+                      child: const Text(
                         'Fecha',
                         style: style,
                       ))),
@@ -62,16 +62,16 @@ class TablaMedicionesScreen extends StatelessWidget {
                   columnName: 'edadMeses',
                   label: Container(
                     color: color,
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       alignment: Alignment.center,
-                      child: Text('EdadMeses',style: style,))),
+                      child: const Text('EdadMeses',style: style,))),
               GridColumn(
                   columnName: 'pesoKg',
                   label: Container(
                     color: color,
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       alignment: Alignment.center,
-                      child: Text(
+                      child: const Text(
                         'PesoKg',
                         overflow: TextOverflow.ellipsis,
                         style: style,
@@ -80,9 +80,9 @@ class TablaMedicionesScreen extends StatelessWidget {
                   columnName: 'tallaCm',
                   label: Container(
                     color: color,
-                      padding: EdgeInsets.all(8.0),
+                      padding: const EdgeInsets.all(8.0),
                       alignment: Alignment.center,
-                      child: Text('TallaCm',style: style,))),
+                      child: const Text('TallaCm',style: style,))),
             ],
             onCellTap: (DataGridCellDetails details){
               medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
@@ -133,7 +133,7 @@ class MedicionDataSource extends DataGridSource{
         cells: row.getCells().map<Widget>((e) {
       return Container(
         alignment: Alignment.center,
-        padding: EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(8.0),
         child: Text(e.value.toString()),
       );
     }).toList());
