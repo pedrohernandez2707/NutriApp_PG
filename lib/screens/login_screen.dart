@@ -146,11 +146,30 @@ class __FormState extends State<_Form> {
                 loginForm.isLoading = false;
                 
               } else{
+                String msg;
+                switch (respLogin) {
+                  case 'EMAIL_NOT_FOUND':
+                    msg = 'La cuenta no existe, verifique su direccion de correo';
+                    break;
+
+                  case 'INVALID_PASSWORD':
+                    msg = 'La contraseña no incorrecta';
+                    break;
+
+                    case 'TOO_MANY_ATTEMPTS_TRY_LATER : Access to this account has been temporarily disabled due to many failed login attempts. You can immediately restore it by resetting your password or you can try again later.':
+                    msg = 'Demasiados Intentos, la cuenta ha sido deshabilitada temporalmente, verifique sus credenciales';
+                    break;
+
+                  default:
+                    msg = respLogin;
+                    break;
+                }
+
                 showDialog(
                     context: context, 
                     builder: (BuildContext context) => AlertDialog(
                       title: const Text('Error al Iniciar Sesion',style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
-                      content: Text(respLogin),
+                      content: Text(msg),
                       actions: [
                         TextButton(onPressed: (){
                           Navigator.pop(context);
