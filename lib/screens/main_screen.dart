@@ -38,9 +38,9 @@ class MainScreen extends StatelessWidget {
     final usuarioProvider = Provider.of<UsuarioService>(context);
     final authProvider = Provider.of<AuthService>(context, listen: false);
 
-    //usuarioProvider.selectedUser(authProvider.email.toString());
+    usuarioProvider.selectedUser(authProvider.email.toString());
     //TODO: Cambiar por el correo
-    usuarioProvider.selectedUser('phernandezg7@miumg.edu.gt');
+    //usuarioProvider.selectedUser('phernandezg7@miumg.edu.gt');
     
 
     final items = <ItemBoton>[
@@ -149,7 +149,7 @@ class MainScreen extends StatelessWidget {
 
               }else{
                 await gpsProvider.init();
-                //await locationProvider.getCurrPosition();
+                await locationProvider.getCurrPosition();
                 gpsProvider.isAllGranted
                 // ignore: use_build_context_synchronously
                 ? Navigator.pushNamed(context, 'geo')

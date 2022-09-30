@@ -40,11 +40,14 @@ class _AccessButton extends StatelessWidget {
           padding: EdgeInsets.all(10),
           color: Colors.black,
           shape: const StadiumBorder(),
-          onPressed: (){
-            gpsProvider.askGpsAccess();
-            gpsProvider.isAllGranted
-            ? Navigator.popAndPushNamed(context, 'geo')
-            : null;
+          onPressed: ()async{
+            await gpsProvider.askGpsAccess();
+            if(gpsProvider.isAllGranted)
+            {
+              Navigator.popAndPushNamed(context, 'geo');
+            }else{
+              null;
+            }
           },
           child: const Text('Solicitar Acceso', style: TextStyle(fontSize: 26,color: Colors.white),)
         )

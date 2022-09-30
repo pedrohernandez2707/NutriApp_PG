@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:nutri_app/models/models.dart';
 import 'package:http/http.dart' as http;
 
+
 //curl 'https://identitytoolkit.googleapis.com/v1/accounts:delete?key=[API_KEY]' \
 //-H 'Content-Type: application/json' --data-binary '{"idToken":"[FIREBASE_ID_TOKEN]"}'
 
@@ -41,7 +42,7 @@ class UsuarioService extends ChangeNotifier{
 
     usuariosMap.forEach((key, value) {
       final tempUsuario = Usuario.fromMap(value);
-      tempUsuario.firebaseToken = key;
+      tempUsuario.id = key;
       usuarios.add(tempUsuario);
     });
 
@@ -57,6 +58,7 @@ class UsuarioService extends ChangeNotifier{
       'auth': _firebaseToken,
       'name': usuario.id
     });
+    
     final resp = await http.post(url, body: usuario.toJson());
 
     final decodedData = json.decode(resp.body);
@@ -98,6 +100,55 @@ class UsuarioService extends ChangeNotifier{
   }
 
 
+  Future saveOrCreateUsuario(Usuario usuario) async{
+
+    isLoading = true;
+    notifyListeners();
+
+    if(exists == false){
+      //Crear
+      await createUser(usuario);
+    } else {
+      //actualizar
+      await updateUser(usuario);
+    }
+
+    isLoading = false;
+    notifyListeners();
+  }
+
+
+  Future<String> updateUser(Usuario usuario) async{
+
+    final url = Uri.https(_baseUrl, 'Usuarios/${usuario.id}.json',{
+      'auth': _firebaseToken
+    });
+    
+    final resp = await http.put(url, body: usuario.toJson());
+
+    //Actualizar listado de ninños
+    final index = usuarios.indexWhere((element) => element.id == usuario.id);
+    usuarios[index] = usuario;
+
+    return usuario.id!;
+  }
+
+
+  Future<String> createUser(Usuario usuario) async{
+
+    final url = Uri.https(_baseUrl, 'Usuarios.json',{
+      'auth': _firebaseToken
+    });
+    final resp = await http.post(url, body: usuario.toJson());
+
+    final decodedData = json.decode(resp.body);
+
+    usuario.id = decodedData['name'];
+
+    usuarios.add(usuario);
+
+    return usuario.id!;
+  }
 
 
 }

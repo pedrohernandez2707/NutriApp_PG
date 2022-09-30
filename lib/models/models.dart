@@ -1,3 +1,6 @@
+export 'package:nutri_app/models/mediciones.dart';
 export 'package:nutri_app/models/ninios.dart';
 export 'package:nutri_app/models/usuarios.dart';
+
+
 

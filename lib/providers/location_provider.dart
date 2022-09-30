@@ -13,10 +13,12 @@ class LocationProvider extends ChangeNotifier{
   LocationProvider({
     this.isMapInitialized = false, 
     this.followUser = false}){
-    getCurrPosition();
+    //getCurrPosition();
   }
 
-  late LatLng? lastKnowLocation;
+  static late LatLng? _lastKnowLocation;
+
+  LatLng? get lastKnowLocation => _lastKnowLocation;
 
   bool isMapInitialized;
   bool followUser;
@@ -26,12 +28,12 @@ class LocationProvider extends ChangeNotifier{
   Future<Position> getCurrPosition() async{
 
    final position = await Geolocator.getCurrentPosition();
-   this.lastKnowLocation = LatLng(position.latitude, position.longitude);
+   _lastKnowLocation = LatLng(position.latitude, position.longitude);
 
-   print('Posicion Actual: $position');
+   print('Posicion Actual: $_lastKnowLocation');
    
-   if(lastKnowLocation?.longitude != position.longitude && lastKnowLocation?.latitude != position.latitude){ 
-    lastKnowLocation = LatLng(position.latitude, position.longitude);
+   if(_lastKnowLocation?.longitude != position.longitude && _lastKnowLocation?.latitude != position.latitude){ 
+    _lastKnowLocation = LatLng(position.latitude, position.longitude);
     notifyListeners();
    }
    return position;

@@ -11,8 +11,6 @@ class Ninio {
       required this.genero,
       this.geolocalizacion,
       required this.nombres,
-      this.pesoEdad,
-      this.tallaEdad,
       required this.tutor,
       this.id
     });
@@ -22,8 +20,6 @@ class Ninio {
     String genero;
     Geolocalizacion? geolocalizacion;
     String nombres;
-    PesoEdad? pesoEdad;
-    TallaEdad? tallaEdad;
     Tutor tutor;
     String? id;
 
@@ -38,8 +34,6 @@ class Ninio {
         genero: json["genero"],
         //geolocalizacion: Geolocalizacion.fromMap(json["geolocalizacion"]),
         nombres: json["nombres"],
-        //pesoEdad: PesoEdad.fromMap(json["pesoEdad"]),
-        //tallaEdad: TallaEdad.fromMap(json["tallaEdad"]),
         tutor: Tutor.fromMap(json["tutor"]),
     );
 
@@ -49,8 +43,6 @@ class Ninio {
         "genero": genero,
         "geolocalizacion": geolocalizacion?.toMap(),
         "nombres": nombres,
-        "pesoEdad": pesoEdad?.toMap(),
-        "tallaEdad": tallaEdad?.toMap(),
         "tutor": tutor.toMap(),
     };
 
@@ -85,62 +77,6 @@ class Geolocalizacion {
     Map<String, dynamic> toMap() => {
         "lat": lat,
         "lng": lng,
-    };
-}
-
-class PesoEdad {
-    PesoEdad({
-        required this.edadMeses,
-        required this.fecha,
-        required this.pesoKg,
-    });
-
-    int edadMeses;
-    String fecha;
-    double pesoKg;
-
-    factory PesoEdad.fromJson(String str) => PesoEdad.fromMap(json.decode(str));
-
-    String toJson() => json.encode(toMap());
-
-    factory PesoEdad.fromMap(Map<String, dynamic> json) => PesoEdad(
-        edadMeses: json["edadMeses"],
-        fecha: json["fecha"],
-        pesoKg: json["pesoKg"].toDouble(),
-    );
-
-    Map<String, dynamic> toMap() => {
-        "edadMeses": edadMeses,
-        "fecha": fecha,
-        "pesoKg": pesoKg,
-    };
-}
-
-class TallaEdad {
-    TallaEdad({
-        required this.edadMeses,
-        required this.fecha,
-        required this.tallaCm,
-    });
-
-    int edadMeses;
-    String fecha;
-    double tallaCm;
-
-    factory TallaEdad.fromJson(String str) => TallaEdad.fromMap(json.decode(str));
-
-    String toJson() => json.encode(toMap());
-
-    factory TallaEdad.fromMap(Map<String, dynamic> json) => TallaEdad(
-        edadMeses: json["edadMeses"],
-        fecha: json["fecha"],
-        tallaCm: json["tallaCm"],
-    );
-
-    Map<String, dynamic> toMap() => {
-        "edadMeses": edadMeses,
-        "fecha": fecha,
-        "tallaCm": tallaCm,
     };
 }
 

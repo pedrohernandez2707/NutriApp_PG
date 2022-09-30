@@ -37,7 +37,6 @@ class NiniosService extends ChangeNotifier{
     notifyListeners();
   }
   
-
   Future<List<Ninio>> loadninios() async{
     
     isLoading = true;
@@ -163,7 +162,5 @@ class NiniosService extends ChangeNotifier{
     Future.delayed(const Duration(milliseconds: 501)).then((_) => timer.cancel());
 
   }
-
-
   
 }

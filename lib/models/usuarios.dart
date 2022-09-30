@@ -34,6 +34,7 @@ class Usuario {
         "Firebase_token": firebaseToken,
         "Nombre": nombre,
         "Password": password,
+        "Permisos": permisos.toMap()
     };
 
     Usuario copy()=> Usuario(
@@ -41,7 +42,8 @@ class Usuario {
       firebaseToken: firebaseToken, 
       nombre: nombre, 
       password: password,
-      permisos: permisos
+      permisos: permisos,
+      id: id
     );
 }
 

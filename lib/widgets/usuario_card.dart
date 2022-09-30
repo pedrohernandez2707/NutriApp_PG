@@ -32,13 +32,13 @@ class UsuarioCard extends StatelessWidget {
               top: 20,
               child: _BackgroundIcon(
                 icon: FontAwesomeIcons.user,
-                color: Colors.indigo
+                color: Colors.blue.shade900
               ),
             ),
 
             _UsuarioDetails(
               nombre: usuario.nombre,
-              color: Colors.indigo,
+              color: Colors.blue.shade900,
               correo: usuario.email,
             ),
 

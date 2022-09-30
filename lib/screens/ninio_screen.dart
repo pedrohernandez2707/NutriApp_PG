@@ -107,7 +107,7 @@ class _ProductScreenBody extends StatelessWidget {
             showDialog(
               context: context, 
               builder: (BuildContext context) => AlertDialog(
-                title: const Text('Error al Grabar el Registro',style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
+                title: Text('Error al Grabar el Registro',style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
                 content: Text(e.toString()),
                 actions: [
                   TextButton(onPressed: (){

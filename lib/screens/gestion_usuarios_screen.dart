@@ -35,6 +35,7 @@ class GestionUsuariosScreen extends StatelessWidget {
         ),
      floatingActionButton: FloatingActionButton(
        onPressed: (){
+        usuarioService.exists = false;
         usuarioService.selectedUsuario = Usuario(
             nombre: '',
             email: '',

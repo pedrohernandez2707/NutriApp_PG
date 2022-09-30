@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/services/services.dart';
 import 'package:nutri_app/widgets/widgets.dart';
 import 'package:provider/provider.dart';
+
+import '../providers/login_form_provider.dart';
 
 
 class RegistroScreen extends StatelessWidget {
@@ -13,6 +16,8 @@ class RegistroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final usuarioService = Provider.of<UsuarioService>(context,listen: false);
+    final loginForm = Provider.of<LoginFormProvider>(context);
+    final authService = Provider.of<AuthService>(context);
 
     return Scaffold(
       appBar: AppBar(
@@ -27,8 +32,11 @@ class RegistroScreen extends StatelessWidget {
               child: Column(
                 //mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-        
-                  const Logo(title: 'Registro de Usuarios'),
+                  usuarioService.selectedUsuario.email == ''
+                  ?  const Logo(title: 'Registro de Usuarios')
+                  :  const Logo(title: 'Permisos Por Usuario'),
+
+                  SizedBox(height: 30,),
         
                   usuarioService.selectedUsuario.email == ''
                   ? _Form()
@@ -43,7 +51,7 @@ class RegistroScreen extends StatelessWidget {
                     switchGeo: usuarioService.selectedUsuario.permisos.geolocalizacion
                   ),
 
-                  const SizedBox(height: 15),
+                  const SizedBox(height: 30),
 
                   CustomButton(
                     buttonHeight: 55 ,
@@ -52,11 +60,47 @@ class RegistroScreen extends StatelessWidget {
                     color: Colors.blue,
                     textColor: Colors.white,
                     fontSize: 18,
-                    onPress: (){
-                      //print(emailCtrl.text);
+                    onPress: ()async{
+                      
+                      FocusScope.of(context).unfocus();
+                      try {
+                        await usuarioService.saveOrCreateUsuario(usuarioService.selectedUsuario);
+                        await authService.createUser(usuarioService.selectedUsuario.email, usuarioService.selectedUsuario.password);
+                        showDialog(
+                          context: context, 
+                          builder: (BuildContext context) => AlertDialog(
+                            title: const Text('Proceso Exitoso',style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),),
+                            content: const Text('Registro Guardado Correctamente!'),
+                            actions: [
+                              TextButton(onPressed: (){
+                                Navigator.pop(context);
+                              }, 
+                                child: const Text('OK')
+                              )
+                            ],
+                          )
+                        );
+                      } catch (e) {
+
+                        showDialog(
+                          context: context, 
+                          builder: (BuildContext context) => AlertDialog(
+                            title: const Text('Error al Guardar',style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),),
+                            content: Text(e.toString()),
+                            actions: [
+                              TextButton(onPressed: (){
+                                Navigator.pop(context);
+                              }, 
+                                child: const Text('OK')
+                              )
+                            ],
+                          )
+                        );
+                        
+                      }
+                  
                     },
                   ),
-        
                   //Labels(),
                 ],
               ),
@@ -101,52 +145,82 @@ class _SwitchState extends State<Switch> {
   Widget build(BuildContext context) {
 
     final usuarioService = Provider.of<UsuarioService>(context,listen: false);
-
+    const TextStyle text = TextStyle(fontSize: 19, fontWeight: FontWeight.w600);
+    const Color color = Colors.black;
 
     return SingleChildScrollView(
       child: Column(children: [
     
         SwitchListTile(
-          title: Text('Usuarios'),
+          title: Row(children: const[
+            Icon(FontAwesomeIcons.userLarge, color: color,),
+            SizedBox(width: 15),
+            Text('Usuarios',style: text,), 
+            ],),
+          //subtitle: Icon(FontAwesomeIcons.userLarge),
           value: _switchUsuario, 
           onChanged: (bool value){
             setState(() {
               _switchUsuario= value;
             });
-            print('Usuarios: $value');
+            usuarioService.selectedUsuario.permisos.usuarios = value;
+            //print('Usuarios: ${usuarioService.selectedUsuario.permisos.usuarios}');
           }
         ),
     
         SwitchListTile(
-          title: Text('Registro'),
+          title: Row(
+            children: const[
+              Icon(FontAwesomeIcons.pencil, color: color,),
+              SizedBox(width: 15),
+              Text('Registro',style: text,),
+            ],
+          ),
+          
           value: _switchRegistro,
           onChanged: (value){
             setState(() {
               _switchRegistro = value;
             });
-            print('Registro: $value');
+            usuarioService.selectedUsuario.permisos.registro = value;
+            //print('Registro: ${usuarioService.selectedUsuario.permisos.registro}');
           }
         ),
     
         SwitchListTile(
-          title: Text('Visualizacion'),
+          title: Row(
+            children: const[
+              Icon(FontAwesomeIcons.eye, color: color,),
+              SizedBox(width: 15,),
+              Text('Visualizacion',style: text,),         
+            ],
+          ),
+          
           value: _switchVisualizacion, 
           onChanged: (value){
             setState(() {
               _switchVisualizacion = value;
             });
-            print('Visualizacion: $value');
+            usuarioService.selectedUsuario.permisos.visualizacion = value;
+            //print('Visualizacion: ${usuarioService.selectedUsuario.permisos.visualizacion}');
           }
         ),
     
         SwitchListTile(
-          title: Text('Geolocalizacion'),
+          title: Row(
+            children: const[
+              Icon(FontAwesomeIcons.locationDot, color: color,),
+              SizedBox(width: 15,),
+              Text('Geolocalizacion', style: text,), 
+            ],
+          ),
           value: _switchGeo,
           onChanged: (value){
             setState(() {
               _switchGeo = value;
             });
-            print('Geolocalizacion: $value');
+            usuarioService.selectedUsuario.permisos.geolocalizacion = value;
+            //print('Geolocalizacion: ${usuarioService.selectedUsuario.permisos.geolocalizacion}');
           }
         ),
       ],),
@@ -192,7 +266,9 @@ class __FormState extends State<_Form> {
                 return null;
               }
             },
-            onChanged: (value){},
+            onChanged: (value){
+              usuarioService.selectedUsuario.nombre = value;
+            },
             icon: Icons.person,
             placeholder: 'Nombres y Apellidos',
             isPassword: false,
@@ -210,7 +286,9 @@ class __FormState extends State<_Form> {
                 ? null
                 : 'Ingrese un correo valido';
             },
-            onChanged: (value){},
+            onChanged: (value){
+              usuarioService.selectedUsuario.email = value;
+            },
             icon: Icons.email_outlined,
             placeholder: 'Correo Electronico',
             isPassword: false,
@@ -228,7 +306,9 @@ class __FormState extends State<_Form> {
                 ? null
                 : 'La contraseña no cumple los requisitos minimos';
             },
-            onChanged: (value){},
+            onChanged: (value){
+              usuarioService.selectedUsuario.password = value;
+            },
             icon: Icons.lock_outline,
             placeholder: 'Contraseña',
             isPassword: true,

@@ -89,6 +89,7 @@ class TablaMedicionesScreen extends StatelessWidget {
               icon: const Icon(FontAwesomeIcons.faceAngry),
               onPressed: (){
                 //TODO: INGRESAR NUEVA MEDICION EN BLANCO
+                Navigator.pushReplacementNamed(context, 'medicion');
               },
             ),
    );
