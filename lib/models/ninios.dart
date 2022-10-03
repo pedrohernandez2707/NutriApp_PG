@@ -44,6 +44,7 @@ class Ninio {
         "geolocalizacion": geolocalizacion?.toMap(),
         "nombres": nombres,
         "tutor": tutor.toMap(),
+        "cui": cui
     };
 
     Ninio copy()=> Ninio(

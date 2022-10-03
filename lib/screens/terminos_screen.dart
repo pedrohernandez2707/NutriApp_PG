@@ -5,7 +5,6 @@ class TerminosScreen extends StatelessWidget {
   
   const TerminosScreen({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(

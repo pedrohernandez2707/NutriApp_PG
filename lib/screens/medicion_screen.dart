@@ -6,6 +6,7 @@ import 'package:nutri_app/services/ninios_service.dart';
 import 'package:provider/provider.dart';
 
 import '../ui/input_decoration.dart';
+import '../ui/ui.dart';
 
 
 
@@ -67,8 +68,22 @@ class MedicionScreenBody extends StatelessWidget {
         ? Colors.pink
         : Colors.blue,
       child: const Icon(Icons.save),
-      onPressed: (){
+      onPressed: ()async{
+        try {
+          
+          
+          await medicionesService.saveOrCreateMedicion(medicionesService.selectedMedicion);
 
+          final snack = CustomSnackBar(msg: 'Proceso Exitoso!');
+
+          ScaffoldMessenger.of(context).showSnackBar(snack);
+
+        } catch (e) {
+
+          final snack = CustomSnackBar(msg: 'Error: ${e.toString()}');
+
+          ScaffoldMessenger.of(context).showSnackBar(snack);
+        }
       },
     ),
    );
@@ -82,6 +97,7 @@ class _MedicionForm extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final ninioService = Provider.of<NiniosService>(context);
+    final medicionService = Provider.of<MedicionesService>(context);
 
     final medicionFormProvider = Provider.of<MedicionFormProvider>(context);
     final medicion = medicionFormProvider.medicion;
@@ -120,7 +136,7 @@ class _MedicionForm extends StatelessWidget {
                     prefixIcon: FontAwesomeIcons.idCard
                   ),
                   keyboardType: TextInputType.number,
-                  //onChanged: (value) => ninio.id = value,
+                  onChanged: (value) => medicion.cuiNinio = value,
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El CUI es obligatorio';
@@ -143,7 +159,7 @@ class _MedicionForm extends StatelessWidget {
                       );
 
                       if(newDate == null) return;
-                      ninioService.fecha(newDate);
+                      medicionService.fecha(newDate);
                       //ninio.fechaNacimiento = newDate.toString();
                     },
                     icon: const Icon(Icons.date_range,size: 30,color: Colors.indigo,),
@@ -156,7 +172,7 @@ class _MedicionForm extends StatelessWidget {
                       Container(
                         padding: const EdgeInsets.only(left: 10,top: 5),
                         //color: Colors.black.withOpacity(0.1),
-                        child: Text(ninioService.selectedninio.fechaNacimiento,style: const TextStyle(color: Colors.black,fontSize: 18),),
+                        child: Text(medicionService.selectedMedicion.fechaMedicion, style: const TextStyle(color: Colors.black,fontSize: 18),),
                       ),
                     ],
                   ),
@@ -174,7 +190,13 @@ class _MedicionForm extends StatelessWidget {
                     prefixIcon: Icons.line_weight
                   ),
                   keyboardType: TextInputType.number,
-                  //onChanged: (value) => ninio.nombres = value,
+                  onChanged: (value) {
+                  if(double.tryParse(value) == null){
+                  medicion.pesoKg = 0;
+                  } else {
+                    medicion.pesoKg = double.parse(value);
+                  }
+                  },
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El campo es obligatorio';
@@ -193,7 +215,13 @@ class _MedicionForm extends StatelessWidget {
                     prefixIcon: Icons.height
                   ),
                   keyboardType: TextInputType.number,
-                  //onChanged: (value) => ninio.apellidos = value,
+                  onChanged: (value) {
+                  if(double.tryParse(value) == null){
+                  medicion.tallaCm = 0;
+                  } else {
+                    medicion.tallaCm = double.parse(value);
+                  }
+                  },
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El campo es obligatorio';
@@ -212,6 +240,7 @@ class _MedicionForm extends StatelessWidget {
                     keyboardType: TextInputType.text,
                     maxLines: 10,
                     minLines: 1,
+                    onChanged: (value) => medicion.notasPeso = value,
                 ),
 
                 const SizedBox(height: 30,),
@@ -223,6 +252,7 @@ class _MedicionForm extends StatelessWidget {
                     labelText: 'Notas Talla', 
                     prefixIcon: FontAwesomeIcons.noteSticky
                   ),
+                  onChanged: (value) => medicion.notasTalla = value,
                   keyboardType: TextInputType.text,
                   maxLines: 10,
                   minLines: 1,

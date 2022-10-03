@@ -89,8 +89,4 @@ class GpsProvider extends ChangeNotifier{
   }
 
 
-
-
-
-
 }

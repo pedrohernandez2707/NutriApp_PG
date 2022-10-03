@@ -9,13 +9,17 @@ class LocationProvider extends ChangeNotifier{
 
   GoogleMapController? mapController;
 
+  final Map<String, Marker> markers;
+
   LocationProvider({
+    Map<String, Marker>? markers,
     this.isMapInitialized = false, 
-    this.followUser = false}){
+    this.followUser = false}) : markers = markers ?? const {}
+    {
     //getCurrPosition();
   }
 
-  static late LatLng? _lastKnowLocation;
+  LatLng? _lastKnowLocation = const LatLng(0, 0);
 
   LatLng? get lastKnowLocation => _lastKnowLocation;
 
@@ -35,6 +39,10 @@ class LocationProvider extends ChangeNotifier{
     _lastKnowLocation = LatLng(position.latitude, position.longitude);
     notifyListeners();
    }
+
+   //if(_lastKnowLocation?.longitude == position.longitude && _lastKnowLocation?.latitude == position.latitude) return position;
+
+   if(_lastKnowLocation!.latitude != 0) notifyListeners();
    return position;
   }
 
@@ -52,9 +60,21 @@ class LocationProvider extends ChangeNotifier{
     final cameraUpdate = CameraUpdate.newLatLng(newLocation);
 
     mapController?.animateCamera(cameraUpdate);
-
   }
 
+  Future drawMarker() async{
+    final startMarker = Marker(
+      markerId: const MarkerId('start'),
+      position: _lastKnowLocation!,
+    );
+
+
+    final currentMarker = Map<String, Marker>.from(markers);
+
+    currentMarker['start'] = startMarker;
+    //notifyListeners();
+
+  }
 
 
 

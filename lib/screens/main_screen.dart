@@ -148,18 +148,20 @@ class MainScreen extends StatelessWidget {
                 );
 
               }else{
+
                 await gpsProvider.init();
-                await locationProvider.getCurrPosition();
-                gpsProvider.isAllGranted
-                // ignore: use_build_context_synchronously
-                ? Navigator.pushNamed(context, 'geo')
-                // ignore: use_build_context_synchronously
-                : Navigator.pushNamed(context, 'permission');
+                
+                if(gpsProvider.isAllGranted){ 
+                  await locationProvider.getCurrPosition();
+                  Navigator.pushNamed(context, 'geo');
+                }else{
+                  Navigator.pushNamed(context, 'permission');
+                }
               }
               break;
               default:
+                break;
             }
-          
           },
         ),
       )

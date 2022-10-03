@@ -86,6 +86,7 @@ class TablaMedicionesScreen extends StatelessWidget {
             ],
             onCellTap: (DataGridCellDetails details){
               medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
+              medicionService.exists = true;
               Navigator.pushNamed(context, 'medicion');
             },
             ),
@@ -101,7 +102,7 @@ class TablaMedicionesScreen extends StatelessWidget {
                   notasTalla: '', 
                   pesoKg: 0, 
                   tallaCm: 0);
-
+                medicionService.exists = false;
                 Navigator.pushNamed(context, 'medicion');
               },
             ),

@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/providers/providers.dart';
 import 'package:nutri_app/services/services.dart';
+import 'package:nutri_app/ui/custom_snackbar.dart';
 import 'package:provider/provider.dart';
 
 import '../ui/input_decoration.dart';
@@ -100,6 +101,10 @@ class _NiniosScreenBody extends StatelessWidget {
           try {
             await ninioService.saveOrCreateNinio(ninioForm.ninio);
 
+            //final snack = CustomSnackBar(msg: 'Proceso Exitoso!');
+
+            //ScaffoldMessenger.of(context).showSnackBar(snack);
+
             showDialog(
               context: context, 
               builder: (BuildContext context) => AlertDialog(
@@ -182,7 +187,7 @@ class _NinioForm extends StatelessWidget {
                     prefixIcon: FontAwesomeIcons.idCard
                   ),
                   keyboardType: TextInputType.number,
-                  onChanged: (value) => ninio.id = value,
+                  onChanged: (value) => ninio.cui = value,
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El CUI es obligatorio!';
