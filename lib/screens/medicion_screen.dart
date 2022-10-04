@@ -71,6 +71,7 @@ class MedicionScreenBody extends StatelessWidget {
       onPressed: ()async{
         try {
           
+          medicionesService.selectedMedicion.edadMeses = calcularEdadMeses(medicionesService.selectedMedicion.fechaMedicion);
           
           await medicionesService.saveOrCreateMedicion(medicionesService.selectedMedicion);
 
@@ -88,6 +89,21 @@ class MedicionScreenBody extends StatelessWidget {
     ),
    );
   }
+
+
+  int calcularEdadMeses(String date) {
+
+    final birthday = DateTime.parse(date);
+    final date2 = DateTime.now();
+    
+    final difference = date2.difference(birthday).inDays;
+    
+    final meses = difference/30;
+
+    return meses.toInt();
+  }
+
+
 }
 
 
