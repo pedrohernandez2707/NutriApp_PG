@@ -4,8 +4,6 @@ import 'package:nutri_app/providers/providers.dart';
 import 'package:nutri_app/services/mediciones_service.dart';
 import 'package:nutri_app/services/ninios_service.dart';
 import 'package:provider/provider.dart';
-
-import '../ui/input_decoration.dart';
 import '../ui/ui.dart';
 
 
@@ -71,11 +69,16 @@ class MedicionScreenBody extends StatelessWidget {
       onPressed: ()async{
         try {
 
-          medicionesService.llenarMapas();
+          medicionesService.llenarTallas();
+          medicionesService.llenarPesos();
 
           medicionesService.selectedMedicion.edadMeses = calcularEdadMeses(niniosService.selectedninio.fechaNacimiento, medicionesService.selectedMedicion.fechaMedicion);
 
-          final msg = medicionesService.buscarTalla(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.tallaCm);
+          final msgTalla = medicionesService.buscarTalla(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.tallaCm);
+          medicionesService.selectedMedicion.notasTalla = msgTalla;
+
+          final msgPeso = medicionesService.buscarPeso(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.pesoKg);
+          medicionesService.selectedMedicion.notasPeso = msgPeso;
           
           await medicionesService.saveOrCreateMedicion(medicionesService.selectedMedicion);
 
@@ -106,7 +109,6 @@ class MedicionScreenBody extends StatelessWidget {
 
     return meses.toInt();
   }
-
 
 }
 
