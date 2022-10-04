@@ -70,8 +70,12 @@ class MedicionScreenBody extends StatelessWidget {
       child: const Icon(Icons.save),
       onPressed: ()async{
         try {
-          
-          medicionesService.selectedMedicion.edadMeses = calcularEdadMeses(medicionesService.selectedMedicion.fechaMedicion);
+
+          medicionesService.llenarMapas();
+
+          medicionesService.selectedMedicion.edadMeses = calcularEdadMeses(niniosService.selectedninio.fechaNacimiento, medicionesService.selectedMedicion.fechaMedicion);
+
+          final msg = medicionesService.buscarTalla(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.tallaCm);
           
           await medicionesService.saveOrCreateMedicion(medicionesService.selectedMedicion);
 
@@ -91,10 +95,10 @@ class MedicionScreenBody extends StatelessWidget {
   }
 
 
-  int calcularEdadMeses(String date) {
+  int calcularEdadMeses(String fechaNacimiento, String fechaMedicion) {
 
-    final birthday = DateTime.parse(date);
-    final date2 = DateTime.now();
+    final birthday = DateTime.parse(fechaNacimiento);
+    final date2 = DateTime.parse(fechaMedicion);
     
     final difference = date2.difference(birthday).inDays;
     
