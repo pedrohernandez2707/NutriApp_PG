@@ -67,6 +67,9 @@ class MedicionScreenBody extends StatelessWidget {
         : Colors.blue,
       child: const Icon(Icons.save),
       onPressed: ()async{
+
+        FocusScope.of(context).unfocus();
+
         try {
 
           medicionesService.llenarTallas();
@@ -75,22 +78,47 @@ class MedicionScreenBody extends StatelessWidget {
           medicionesService.selectedMedicion.edadMeses = calcularEdadMeses(niniosService.selectedninio.fechaNacimiento, medicionesService.selectedMedicion.fechaMedicion);
 
           final msgTalla = medicionesService.buscarTalla(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.tallaCm);
-          medicionesService.selectedMedicion.notasTalla = msgTalla;
+          
+          medicionesService.medicionNotasTalla = msgTalla;
 
           final msgPeso = medicionesService.buscarPeso(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.pesoKg);
-          medicionesService.selectedMedicion.notasPeso = msgPeso;
+          medicionesService.medicionNotasPeso = msgPeso;
           
           await medicionesService.saveOrCreateMedicion(medicionesService.selectedMedicion);
 
-          final snack = CustomSnackBar(msg: 'Proceso Exitoso!');
-
-          ScaffoldMessenger.of(context).showSnackBar(snack);
+          showDialog(
+              context: context, 
+              builder: (BuildContext context) => AlertDialog(
+                title: const Text('Registro Guardado Correctamente!',style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),),
+                content: Text('Peso: ${medicionesService.selectedMedicion.notasPeso} \n\nTalla: ${medicionesService.selectedMedicion.notasTalla}'),
+                actions: [
+                  TextButton(onPressed: (){
+                    Navigator.pop(context);
+                    Navigator.pop(context);
+                  }, 
+                    child: const Text('OK')
+                  )
+                ],
+              )
+            );
+            
 
         } catch (e) {
 
-          final snack = CustomSnackBar(msg: 'Error: ${e.toString()}');
-
-          ScaffoldMessenger.of(context).showSnackBar(snack);
+          showDialog(
+              context: context, 
+              builder: (BuildContext context) => AlertDialog(
+                title: Text('Error al Grabar el Registro',style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
+                content: Text(e.toString()),
+                actions: [
+                  TextButton(onPressed: (){
+                    Navigator.pop(context);
+                  }, 
+                    child: const Text('OK')
+                  )
+                ],
+              )
+            );
         }
       },
     ),
@@ -205,7 +233,7 @@ class _MedicionForm extends StatelessWidget {
 
                 //Form Nombre
                 TextFormField(
-                  initialValue: medicion.pesoKg.toString(),
+                  initialValue: medicionService.selectedMedicion.pesoKg.toString(),
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Peso',
                     labelText: 'Peso en Kg',
@@ -230,7 +258,7 @@ class _MedicionForm extends StatelessWidget {
 
                 //Form Apellios
                 TextFormField(
-                  initialValue: medicion.tallaCm.toString(),
+                  initialValue: medicionService.selectedMedicion.tallaCm.toString(),
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Talla en Cm',
                     labelText: 'Talla',
@@ -254,7 +282,7 @@ class _MedicionForm extends StatelessWidget {
                 const SizedBox(height: 30,),
 
                 TextFormField(
-                  initialValue: medicion.notasPeso,
+                  initialValue: medicionService.selectedMedicion.notasPeso,
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Notas Peso', 
                     labelText: 'Notas Peso', 
@@ -268,7 +296,7 @@ class _MedicionForm extends StatelessWidget {
                 const SizedBox(height: 30,),
 
                 TextFormField(
-                  initialValue: medicion.notasPeso,
+                  initialValue: medicionService.selectedMedicion.notasTalla,
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Notas Talla', 
                     labelText: 'Notas Talla', 

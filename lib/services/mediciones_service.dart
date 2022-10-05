@@ -18,6 +18,16 @@ class MedicionesService extends ChangeNotifier{
   bool isLoading = true;
   bool exists = false;
 
+  set medicionNotasPeso(String value){
+    selectedMedicion.notasPeso = value;
+    notifyListeners();
+  }
+
+  set medicionNotasTalla(String value){
+    selectedMedicion.notasTalla = value;
+    notifyListeners();
+  }
+
 
   Future<List<Medicion>> loadMediciones(String cui) async{
     //isLoading = true;
@@ -57,7 +67,7 @@ class MedicionesService extends ChangeNotifier{
       //Crear
       await createMedicion(medicion);
     } else {
-      //actualizar
+      //Actualizar
       await updateMedicion(medicion);
     }
 
@@ -121,6 +131,19 @@ class MedicionesService extends ChangeNotifier{
       });
 
       if(resultadoFinal != ''){
+
+        switch (resultadoFinal) {
+          case '-1DE':
+          case 'MEDIA':
+          case '1DE':
+            resultadoFinal += ' Rango Normal';
+            break;
+
+          default:
+            resultadoFinal += ' Rango Anormal, Verificar';
+            break;
+        }
+
         return resultadoFinal;
       } else {
         return 'No es Posible determinar el estado Nutricional de la talla - Fuera del Intervalo';
@@ -144,6 +167,19 @@ class MedicionesService extends ChangeNotifier{
       });
 
       if(resultadoFinal != ''){
+
+         switch (resultadoFinal) {
+          case '-1DE':
+          case 'MEDIA':
+          case '1DE':
+            resultadoFinal += ' Rango Normal, ';
+            break;
+            
+          default:
+            resultadoFinal += ' Rango Anormal, Verificar';
+            break;
+        }
+
         return resultadoFinal;
       } else {
         return 'No es Posible determinar el estado Nutricional del peso - Fuera del Intervalo';

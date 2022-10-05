@@ -11,6 +11,16 @@ class MedicionFormProvider extends ChangeNotifier{
 
   MedicionFormProvider(this.medicion);
 
+  set medicionNotasPeso(String value){
+    medicion.notasPeso = value;
+    notifyListeners();
+  }
+
+  set medicionNotasTalla(String value){
+    medicion.notasTalla = value;
+    notifyListeners();
+  }
+
   bool isValidForm(){
     return formKey.currentState?.validate() ?? false;
   }

@@ -85,9 +85,13 @@ class TablaMedicionesScreen extends StatelessWidget {
                       child: const Text('TallaCm',style: style,))),
             ],
             onCellTap: (DataGridCellDetails details){
-              medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
-              medicionService.exists = true;
-              Navigator.pushNamed(context, 'medicion');
+              try {
+                medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
+                medicionService.exists = true;
+                Navigator.pushNamed(context, 'medicion');
+              } catch (e) {
+                
+              }
             },
             ),
             floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
