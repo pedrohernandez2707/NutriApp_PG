@@ -635,7 +635,7 @@ class MedicionesService extends ChangeNotifier{
     tallas.add(TablaTallaEdad(meses: 17, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 81.2, tallaFin: 83.89 ));
     tallas.add(TablaTallaEdad(meses: 17, genero: 'Masculino', resultado: '1DE',   tallaInicio: 83.9, tallaFin: 86.49));
     tallas.add(TablaTallaEdad(meses: 17, genero: 'Masculino', resultado: '2DE',   tallaInicio: 86.5, tallaFin: 96.5));
-    //
+    
     tallas.add(TablaTallaEdad(meses: 18, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 76.9, tallaFin: 79.59));
     tallas.add(TablaTallaEdad(meses: 18, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 79.6, tallaFin: 82.29 ));
     tallas.add(TablaTallaEdad(meses: 18, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 82.3, tallaFin: 84.99 ));
@@ -720,179 +720,179 @@ class MedicionesService extends ChangeNotifier{
     tallas.add(TablaTallaEdad(meses: 31, genero: 'Masculino', resultado: '1DE',   tallaInicio: 96.1, tallaFin: 99.59));
     tallas.add(TablaTallaEdad(meses: 31, genero: 'Masculino', resultado: '2DE',   tallaInicio: 99.6, tallaFin: 109.6));
 
-    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 86.4, tallaFin: 89.19));
-    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 89.2, tallaFin: 92.69 ));
-    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 92.7, tallaFin: 96.09 ));
-    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '1DE',   tallaInicio: 96.1, tallaFin: 99.59));
-    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '2DE',   tallaInicio: 99.6, tallaFin: 109.6));
-    //ACA 
-    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 64.0, tallaFin: 63.39));
-    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 66.4, tallaFin: 68.69 ));
-    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 68.7, tallaFin: 71.49 ));
-    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '1DE',   tallaInicio: 71.5, tallaFin: 73.49));
-    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '2DE',   tallaInicio: 73.5, tallaFin: 83.5));
-
-    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 65.3, tallaFin: 67.69));
-    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 67.7, tallaFin: 70.09));
-    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 70.1, tallaFin: 72.69 ));
-    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '1DE',   tallaInicio: 72.7, tallaFin: 74.99));
-    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '2DE',   tallaInicio: 75.0, tallaFin: 85));
-
-    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 66.5, tallaFin: 68.99));
-    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 69.0, tallaFin: 71.49 ));
-    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 71.5, tallaFin: 73.89 ));
-    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '1DE',   tallaInicio: 73.9, tallaFin: 76.39));
-    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '2DE',   tallaInicio: 76.4, tallaFin: 86.4));
-
-    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 67.7, tallaFin: 70.29));
-    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 70.3, tallaFin: 72.79 ));
-    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 72.8, tallaFin: 75.29 ));
-    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '1DE',   tallaInicio: 75.3, tallaFin: 77.79));
-    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '2DE',   tallaInicio: 77.8, tallaFin: 87.8));
-
-    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 68.9, tallaFin: 71.39));
-    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 71.4, tallaFin: 73.99 ));
-    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 74.0, tallaFin: 76.59 ));
-    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '1DE',   tallaInicio: 76.6, tallaFin: 79.19));
-    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '2DE',   tallaInicio: 79.2, tallaFin: 89.2));
-
-    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
-
-    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 71.0, tallaFin: 73.69));
-    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 73.7, tallaFin: 76.39 ));
-    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 76.4, tallaFin: 79.09 ));
-    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '1DE',   tallaInicio: 79.1, tallaFin: 81.69));
-    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '2DE',   tallaInicio: 81.7, tallaFin: 91.7));
-
-    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 72.0, tallaFin: 74.79));
-    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 74.8, tallaFin: 77.49 ));
-    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 77.5, tallaFin: 80.19 ));
-    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '1DE',   tallaInicio: 80.2, tallaFin: 82.99));
-    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '2DE',   tallaInicio: 83.0, tallaFin: 93.0));
-
-    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 73.0, tallaFin: 75.79));
-    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 75.8, tallaFin: 78.59 ));
-    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 78.6, tallaFin: 81.39 ));
-    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '1DE',   tallaInicio: 81.4, tallaFin: 84.19));
-    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '2DE',   tallaInicio: 84.2, tallaFin: 94.2));
-
-    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 74.0, tallaFin: 76.79));
-    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 76.8, tallaFin: 79.69 ));
-    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 79.7, tallaFin: 82.49 ));
-    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '1DE',   tallaInicio: 82.5, tallaFin: 84.39));
-    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '2DE',   tallaInicio: 85.4, tallaFin: 95.4));
-    //
-    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 86.4, tallaFin: 89.89));
+    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 89.9, tallaFin: 93.39 ));
+    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 93.4, tallaFin: 96.89 ));
+    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '1DE',   tallaInicio: 96.9, tallaFin: 100.39));
+    tallas.add(TablaTallaEdad(meses: 32, genero: 'Masculino', resultado: '2DE',   tallaInicio: 100.4, tallaFin: 110.4));
     
-    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 86.9, tallaFin: 90.49));
+    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 90.5, tallaFin: 94.09 ));
+    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 94.1, tallaFin: 97.59 ));
+    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '1DE',   tallaInicio: 97.6, tallaFin: 101.19));
+    tallas.add(TablaTallaEdad(meses: 33, genero: 'Masculino', resultado: '2DE',   tallaInicio: 101.2, tallaFin: 111.2));
 
-    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 87.5, tallaFin: 91.09));
+    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 91.1, tallaFin: 94.79));
+    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 94.8, tallaFin: 98.39));
+    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '1DE',   tallaInicio: 98.4, tallaFin: 101.99));
+    tallas.add(TablaTallaEdad(meses: 34, genero: 'Masculino', resultado: '2DE',   tallaInicio: 102.0, tallaFin: 112));
 
-    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 88.1, tallaFin: 91.79));
+    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 91.8, tallaFin: 95.39 ));
+    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 95.4, tallaFin: 99.09 ));
+    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '1DE',   tallaInicio: 99.1, tallaFin: 102.69));
+    tallas.add(TablaTallaEdad(meses: 35, genero: 'Masculino', resultado: '2DE',   tallaInicio: 102.7, tallaFin: 112.7));
 
-    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 88.7, tallaFin: 92.39));
+    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 92.4, tallaFin: 96.09 ));
+    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 96.1, tallaFin: 99.78 ));
+    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '1DE',   tallaInicio: 99.8, tallaFin: 103.49));
+    tallas.add(TablaTallaEdad(meses: 36, genero: 'Masculino', resultado: '2DE',   tallaInicio: 103.5, tallaFin: 113.5));
 
-    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 89.2, tallaFin: 92.99));
+    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 93.0, tallaFin: 96.69 ));
+    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 96.7, tallaFin: 100.49 ));
+    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '1DE',   tallaInicio: 100.5, tallaFin: 104.19));
+    tallas.add(TablaTallaEdad(meses: 37, genero: 'Masculino', resultado: '2DE',   tallaInicio: 104.2, tallaFin: 114.2));
 
-    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 89.8, tallaFin: 93.59));
+    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 93.6, tallaFin: 97.39 ));
+    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 97.4, tallaFin: 101.19 ));
+    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '1DE',   tallaInicio: 101.2, tallaFin: 104.99));
+    tallas.add(TablaTallaEdad(meses: 38, genero: 'Masculino', resultado: '2DE',   tallaInicio: 105.0, tallaFin: 115));
 
-    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 74.0, tallaFin: 76.79));
-    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 76.8, tallaFin: 79.69 ));
-    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 79.7, tallaFin: 82.49 ));
-    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '1DE',   tallaInicio: 82.5, tallaFin: 84.39));
-    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '2DE',   tallaInicio: 85.4, tallaFin: 95.4));
+    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 90.3, tallaFin: 94.19));
+    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 94.2, tallaFin: 97.99 ));
+    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 98.0, tallaFin: 101.79 ));
+    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '1DE',   tallaInicio: 101.8, tallaFin: 105.69));
+    tallas.add(TablaTallaEdad(meses: 39, genero: 'Masculino', resultado: '2DE',   tallaInicio: 105.7, tallaFin: 115.7));
+
+    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 90.9, tallaFin: 94.69));
+    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 94.7, tallaFin: 98.59 ));
+    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 98.6, tallaFin: 102.49 ));
+    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '1DE',   tallaInicio: 102.5, tallaFin: 106.39));
+    tallas.add(TablaTallaEdad(meses: 40, genero: 'Masculino', resultado: '2DE',   tallaInicio: 106.4, tallaFin: 116.4));
+
+    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 91.4, tallaFin: 95.29));
+    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 95.3, tallaFin: 99.19 ));
+    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 99.2, tallaFin: 103.19 ));
+    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '1DE',   tallaInicio: 103.2, tallaFin: 107.09));
+    tallas.add(TablaTallaEdad(meses: 41, genero: 'Masculino', resultado: '2DE',   tallaInicio: 107.1, tallaFin: 117.1));
+
+    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 91.9, tallaFin: 95.89));
+    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 95.9, tallaFin: 99.89));
+    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 99.9, tallaFin: 103.79));
+    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '1DE',   tallaInicio: 103.8, tallaFin: 107.79));
+    tallas.add(TablaTallaEdad(meses: 42, genero: 'Masculino', resultado: '2DE',   tallaInicio: 107.8, tallaFin: 117.8));
     //
-    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 92.4, tallaFin: 96.39));
+    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 96.4, tallaFin: 100.39 ));
+    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 100.4, tallaFin: 104.49 ));
+    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '1DE',   tallaInicio: 104.5, tallaFin: 108.49));
+    tallas.add(TablaTallaEdad(meses: 43, genero: 'Masculino', resultado: '2DE',   tallaInicio: 108.5, tallaFin: 118.5));
     
-    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 93.0, tallaFin: 96.99));
+    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 97.0, tallaFin: 100.99 ));
+    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 101.0, tallaFin: 105.09 ));
+    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '1DE',   tallaInicio: 105.1, tallaFin: 109.09));
+    tallas.add(TablaTallaEdad(meses: 44, genero: 'Masculino', resultado: '2DE',   tallaInicio: 109.1, tallaFin: 119.1));
 
-    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 93.5, tallaFin: 97.49));
+    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 97.5, tallaFin: 101.59 ));
+    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 101.6, tallaFin: 105.69 ));
+    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '1DE',   tallaInicio: 105.7, tallaFin: 109.79));
+    tallas.add(TablaTallaEdad(meses: 45, genero: 'Masculino', resultado: '2DE',   tallaInicio: 109.8, tallaFin: 119.8));
 
-    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 94.0, tallaFin: 98.09));
+    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 98.1, tallaFin: 102.19 ));
+    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 102.2, tallaFin: 106.29 ));
+    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '1DE',   tallaInicio: 106.3, tallaFin: 110.39));
+    tallas.add(TablaTallaEdad(meses: 46, genero: 'Masculino', resultado: '2DE',   tallaInicio: 110.4, tallaFin: 120.4));
 
-    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 94.4, tallaFin: 98.59));
+    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 98.6, tallaFin: 102.79 ));
+    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 102.8, tallaFin: 106.89 ));
+    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '1DE',   tallaInicio: 106.9, tallaFin: 111.09));
+    tallas.add(TablaTallaEdad(meses: 47, genero: 'Masculino', resultado: '2DE',   tallaInicio: 111.1, tallaFin: 121.1));
 
-    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 94.9, tallaFin: 99.09));
+    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 99.1, tallaFin: 103.29 ));
+    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 103.3, tallaFin: 107.49 ));
+    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '1DE',   tallaInicio: 107.5, tallaFin: 111.69));
+    tallas.add(TablaTallaEdad(meses: 48, genero: 'Masculino', resultado: '2DE',   tallaInicio: 111.7, tallaFin: 121.7));
 
-    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 95.4, tallaFin: 99.69));
+    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 99.7, tallaFin: 103.89 ));
+    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 103.9, tallaFin: 108.09 ));
+    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '1DE',   tallaInicio: 108.1, tallaFin: 112.39));
+    tallas.add(TablaTallaEdad(meses: 49, genero: 'Masculino', resultado: '2DE',   tallaInicio: 112.4, tallaFin: 122.4));
 
-    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 95.9, tallaFin: 100.19));
+    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 100.2, tallaFin: 104.39 ));
+    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 104.4, tallaFin: 108.69 ));
+    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '1DE',   tallaInicio: 108.7, tallaFin: 112.99));
+    tallas.add(TablaTallaEdad(meses: 50, genero: 'Masculino', resultado: '2DE',   tallaInicio: 113.0, tallaFin: 123));
+    //
+    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 96.4, tallaFin: 100.69));
+    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 100.7, tallaFin: 104.99 ));
+    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 105.0, tallaFin: 109.29 ));
+    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '1DE',   tallaInicio: 109.3, tallaFin: 113.59));
+    tallas.add(TablaTallaEdad(meses: 51, genero: 'Masculino', resultado: '2DE',   tallaInicio: 113.6, tallaFin: 123.6));
+    
+    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 96.9, tallaFin: 101.19));
+    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 101.2, tallaFin: 105.59 ));
+    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 105.6, tallaFin: 109.89 ));
+    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '1DE',   tallaInicio: 109.9, tallaFin: 114.19));
+    tallas.add(TablaTallaEdad(meses: 52, genero: 'Masculino', resultado: '2DE',   tallaInicio: 114.2, tallaFin: 124.2));
 
-    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 97.4, tallaFin: 101.69));
+    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 101.7, tallaFin: 106.09 ));
+    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 106.1, tallaFin: 110.49 ));
+    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '1DE',   tallaInicio: 110.5, tallaFin: 114.89));
+    tallas.add(TablaTallaEdad(meses: 53, genero: 'Masculino', resultado: '2DE',   tallaInicio: 114.9, tallaFin: 124.9));
 
-    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 70.0, tallaFin: 72.59));
-    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 72.6, tallaFin: 75.19 ));
-    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 75.2, tallaFin: 77.79 ));
-    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '1DE',   tallaInicio: 77.8, tallaFin: 80.49));
-    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '2DE',   tallaInicio: 80.5, tallaFin: 90.5));
+    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 97.8, tallaFin: 102.29));
+    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 102.3, tallaFin: 106.69 ));
+    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 106.7, tallaFin: 111.09 ));
+    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '1DE',   tallaInicio: 111.1, tallaFin: 115.49));
+    tallas.add(TablaTallaEdad(meses: 54, genero: 'Masculino', resultado: '2DE',   tallaInicio: 115.5, tallaFin: 125.5));
+
+    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 98.3, tallaFin: 102.79));
+    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 102.8, tallaFin: 107.19 ));
+    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 107.2, tallaFin: 111.69 ));
+    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '1DE',   tallaInicio: 111.7, tallaFin: 116.09));
+    tallas.add(TablaTallaEdad(meses: 55, genero: 'Masculino', resultado: '2DE',   tallaInicio: 116.1, tallaFin: 126.1));
+
+    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 98.8, tallaFin: 103.29));
+    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 103.3, tallaFin: 107.79 ));
+    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 107.8, tallaFin: 112.29 ));
+    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '1DE',   tallaInicio: 112.3, tallaFin: 116.69));
+    tallas.add(TablaTallaEdad(meses: 56, genero: 'Masculino', resultado: '2DE',   tallaInicio: 116.7, tallaFin: 126.7));
+
+    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 99.3, tallaFin: 103.79));
+    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 103.8, tallaFin: 108.29 ));
+    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 108.3, tallaFin: 112.79 ));
+    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '1DE',   tallaInicio: 112.8, tallaFin: 117.39));
+    tallas.add(TablaTallaEdad(meses: 57, genero: 'Masculino', resultado: '2DE',   tallaInicio: 117.4, tallaFin: 127.39));
+
+    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 99.7, tallaFin: 104.29));
+    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 104.3, tallaFin: 108.89 ));
+    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 108.9, tallaFin: 113.39 ));
+    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '1DE',   tallaInicio: 113.4, tallaFin: 117.99));
+    tallas.add(TablaTallaEdad(meses: 58, genero: 'Masculino', resultado: '2DE',   tallaInicio: 118.0, tallaFin: 128));
+
+    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 100.2, tallaFin: 104.79));
+    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 104.8, tallaFin: 109.39 ));
+    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 109.4, tallaFin: 113.99));
+    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '1DE',   tallaInicio: 114.0, tallaFin: 118.59));
+    tallas.add(TablaTallaEdad(meses: 59, genero: 'Masculino', resultado: '2DE',   tallaInicio: 118.6, tallaFin: 128.6));
+
+    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '-2DE',  tallaInicio: 100.7, tallaFin: 105.29));
+    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '-1DE',  tallaInicio: 105.3, tallaFin: 109.99 ));
+    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: 'MEDIA', tallaInicio: 110.0, tallaFin: 114.59 ));
+    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '1DE',   tallaInicio: 114.6, tallaFin: 119.19));
+    tallas.add(TablaTallaEdad(meses: 60, genero: 'Masculino', resultado: '2DE',   tallaInicio: 119.2, tallaFin: 129.2));
 
   }
 
@@ -903,741 +903,744 @@ class MedicionesService extends ChangeNotifier{
 
   void llenarPesos(){
 
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 45.4, pesoFin: 47.29));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 47.3, pesoFin: 49.09 ));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 49.1, pesoFin: 50.99 ));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '1DE',   pesoInicio: 51.0, pesoFin: 52.89));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '2DE',   pesoInicio: 52.9, pesoFin: 62));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 2.4, pesoFin: 2.79));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 2.8, pesoFin: 3.19 ));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 3.2, pesoFin: 3.69 ));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '1DE',   pesoInicio: 3.7, pesoFin: 4.19));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Femenino', resultado: '2DE',   pesoInicio: 4.2, pesoFin: 10));
 
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 3.2, pesoFin: 3.59));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 3.6, pesoFin: 4.19 ));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 4.2, pesoFin: 4.79 ));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '1DE',   pesoInicio: 4.8, pesoFin: 5.49));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Femenino', resultado: '2DE',   pesoInicio: 5.5, pesoFin: 11));
 
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 53.0, pesoFin: 54.99));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 55.0, pesoFin: 57.09 ));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 57.10, pesoFin: 59.09 ));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '1DE',   pesoInicio: 59.1, pesoFin: 61.09));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '2DE',   pesoInicio: 61.1, pesoFin: 71.1));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 3.9, pesoFin: 4.49));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 4.5, pesoFin: 5.09 ));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 5.1, pesoFin: 5.79 ));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '1DE',   pesoInicio: 5.8, pesoFin: 6.59));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Femenino', resultado: '2DE',   pesoInicio: 6.6, pesoFin: 12));
 
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 55.6, pesoFin: 57.69));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 57.7, pesoFin: 58.79 ));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 59.8, pesoFin: 61.89 ));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '1DE',   pesoInicio: 61.9, pesoFin: 63.99));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '2DE',   pesoInicio: 64.0, pesoFin: 74));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 4.5, pesoFin: 5.19));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 5.2, pesoFin: 5.79 ));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 5.8, pesoFin: 6.59 ));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '1DE',   pesoInicio: 6.6, pesoFin: 7.49));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Femenino', resultado: '2DE',   pesoInicio: 7.5, pesoFin: 13));
 
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 57.8, pesoFin: 59.89));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 59.9, pesoFin: 62.09 ));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 62.1, pesoFin: 64.29 ));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '1DE',   pesoInicio: 64.3, pesoFin: 66.39));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '2DE',   pesoInicio: 66.4, pesoFin: 76));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 5.0, pesoFin: 5.69));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 5.7, pesoFin: 6.39 ));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 6.4, pesoFin: 7.29 ));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '1DE',   pesoInicio: 7.3, pesoFin: 8.19));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Femenino', resultado: '2DE',   pesoInicio: 8.2, pesoFin: 14));
 
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 5.4, pesoFin: 6.09));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 6.1, pesoFin: 6.89 ));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 6.9, pesoFin: 7.79 ));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '1DE',   pesoInicio: 7.8, pesoFin: 8.79));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Femenino', resultado: '2DE',   pesoInicio: 8.8, pesoFin: 15));
 
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 61.2, pesoFin: 63.49));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 63.5, pesoFin: 65.69 ));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 65.7, pesoFin: 67.99 ));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '1DE',   pesoInicio: 68.0, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '2DE',   pesoInicio: 70.3, pesoFin: 80));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 5.7, pesoFin: 6.49));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 6.5, pesoFin: 7.29 ));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 7.3, pesoFin: 8.19 ));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '1DE',   pesoInicio: 8.2, pesoFin: 9.29));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Femenino', resultado: '2DE',   pesoInicio: 9.3, pesoFin: 16));
 
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 62.7, pesoFin: 64.99));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 65.0, pesoFin: 67.29 ));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 67.3, pesoFin: 69.59 ));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '1DE',   pesoInicio: 69.6, pesoFin: 71.89));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '2DE',   pesoInicio: 71.9, pesoFin: 81));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 6.0, pesoFin: 6.79));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 6.8, pesoFin: 7.59 ));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 7.6, pesoFin: 8.59 ));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '1DE',   pesoInicio: 8.6, pesoFin: 9.79));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Femenino', resultado: '2DE',   pesoInicio: 9.8, pesoFin: 17));
 
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 64.0, pesoFin: 63.39));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 66.4, pesoFin: 68.69 ));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 68.7, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '1DE',   pesoInicio: 71.5, pesoFin: 73.49));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '2DE',   pesoInicio: 73.5, pesoFin: 83.5));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 6.3, pesoFin: 6.99));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 7.0, pesoFin: 7.89 ));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 7.9, pesoFin: 8.99 ));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '1DE',   pesoInicio: 9.0, pesoFin: 10.19));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Femenino', resultado: '2DE',   pesoInicio: 10.2, pesoFin: 18));
 
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 65.3, pesoFin: 67.69));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 67.7, pesoFin: 70.09));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 70.1, pesoFin: 72.69 ));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '1DE',   pesoInicio: 72.7, pesoFin: 74.99));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '2DE',   pesoInicio: 75.0, pesoFin: 85));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 6.5, pesoFin: 7.29));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 7.3, pesoFin: 8.19));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 8.2, pesoFin: 9.29 ));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '1DE',   pesoInicio: 9.3, pesoFin: 10.49));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Femenino', resultado: '2DE',   pesoInicio: 10.5, pesoFin: 19));
 
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 66.5, pesoFin: 68.99));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 69.0, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 71.5, pesoFin: 73.89 ));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '1DE',   pesoInicio: 73.9, pesoFin: 76.39));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '2DE',   pesoInicio: 76.4, pesoFin: 86.4));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 6.7, pesoFin: 7.49));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 7.5, pesoFin: 8.49 ));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 8.5, pesoFin: 9.59 ));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '1DE',   pesoInicio: 9.6, pesoFin: 10.89));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Femenino', resultado: '2DE',   pesoInicio: 10.9, pesoFin: 20));
 
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 67.7, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 70.3, pesoFin: 72.79 ));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 72.8, pesoFin: 75.29 ));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '1DE',   pesoInicio: 75.3, pesoFin: 77.79));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '2DE',   pesoInicio: 77.8, pesoFin: 87.8));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 6.9, pesoFin: 7.69));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 7.7, pesoFin: 8.69 ));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 8.7, pesoFin: 9.89 ));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '1DE',   pesoInicio: 9.9, pesoFin: 11.19));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Femenino', resultado: '2DE',   pesoInicio: 11.2, pesoFin: 21));
 
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 68.9, pesoFin: 71.39));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 71.4, pesoFin: 73.99 ));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 74.0, pesoFin: 76.59 ));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '1DE',   pesoInicio: 76.6, pesoFin: 79.19));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '2DE',   pesoInicio: 79.2, pesoFin: 89.2));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 7.0, pesoFin: 7.89));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 7.9, pesoFin: 8.89 ));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 8.9, pesoFin: 10.09 ));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '1DE',   pesoInicio: 10.1, pesoFin: 11.49));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Femenino', resultado: '2DE',   pesoInicio: 11.5, pesoFin:22));
 
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 7.2, pesoFin: 8.09));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 8.1, pesoFin: 9.19 ));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 9.2, pesoFin: 10.39 ));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '1DE',   pesoInicio: 10.4, pesoFin: 11.79));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Femenino', resultado: '2DE',   pesoInicio: 11.8, pesoFin: 23));
 
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 71.0, pesoFin: 73.69));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 73.7, pesoFin: 76.39 ));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 76.4, pesoFin: 79.09 ));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '1DE',   pesoInicio: 79.1, pesoFin: 81.69));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '2DE',   pesoInicio: 81.7, pesoFin: 91.7));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 7.4, pesoFin: 8.29));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 8.3, pesoFin: 9.39 ));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 9.4, pesoFin: 10.59 ));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '1DE',   pesoInicio: 10.6, pesoFin: 12.09));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Femenino', resultado: '2DE',   pesoInicio: 12.1, pesoFin: 24));
 
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 72.0, pesoFin: 74.79));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 74.8, pesoFin: 77.49 ));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 77.5, pesoFin: 80.19 ));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '1DE',   pesoInicio: 80.2, pesoFin: 82.99));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '2DE',   pesoInicio: 83.0, pesoFin: 93.0));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 7.6, pesoFin: 8.49));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 8.5, pesoFin: 9.59 ));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 9.6, pesoFin: 10.89 ));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '1DE',   pesoInicio: 10.9, pesoFin: 12.39));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Femenino', resultado: '2DE',   pesoInicio: 12.4, pesoFin: 25));
 
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 73.0, pesoFin: 75.79));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 75.8, pesoFin: 78.59 ));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 78.6, pesoFin: 81.39 ));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '1DE',   pesoInicio: 81.4, pesoFin: 84.19));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '2DE',   pesoInicio: 84.2, pesoFin: 94.2));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 7.7, pesoFin: 8.69));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 8.7, pesoFin: 9.79 ));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 9.8, pesoFin: 11.09 ));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '1DE',   pesoInicio: 11.1, pesoFin: 12.59));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Femenino', resultado: '2DE',   pesoInicio: 12.6, pesoFin: 26));
 
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 74.0, pesoFin: 76.79));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 76.8, pesoFin: 79.69 ));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 79.7, pesoFin: 82.49 ));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '1DE',   pesoInicio: 82.5, pesoFin: 84.39));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '2DE',   pesoInicio: 85.4, pesoFin: 95.4));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 7.9, pesoFin: 8.89));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 8.9, pesoFin: 9.99 ));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 10.0, pesoFin: 11.39 ));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '1DE',   pesoInicio: 11.4, pesoFin: 12.89));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Femenino', resultado: '2DE',   pesoInicio: 12.9, pesoFin: 27));
     //
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 8.1, pesoFin: 9.09));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 9.1, pesoFin: 10.19));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 10.2, pesoFin: 11.59 ));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '1DE',   pesoInicio: 11.6, pesoFin: 13.19));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Femenino', resultado: '2DE',   pesoInicio: 13.2, pesoFin: 28));
     
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 8.2, pesoFin: 9.19));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 9.2, pesoFin: 10.39));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 10.4, pesoFin: 11.79 ));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '1DE',   pesoInicio: 11.8, pesoFin: 13.49));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Femenino', resultado: '2DE',   pesoInicio: 13.5, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 8.4, pesoFin: 9.39));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 9.4, pesoFin: 10.59 ));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 10.6, pesoFin: 12.09 ));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '1DE',   pesoInicio: 12.1, pesoFin: 13.69));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Femenino', resultado: '2DE',   pesoInicio: 13.7, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 8.6, pesoFin: 9.59));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 9.6, pesoFin: 10.89 ));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 10.9, pesoFin: 12.29 ));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '1DE',   pesoInicio: 12.3, pesoFin: 13.99));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Femenino', resultado: '2DE',   pesoInicio: 14.0, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 8.7, pesoFin: 9.79));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 9.8, pesoFin: 11.19 ));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 11.2, pesoFin: 12.49 ));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '1DE',   pesoInicio: 12.5, pesoFin: 14.29));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Femenino', resultado: '2DE',   pesoInicio: 14.3, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 8.9, pesoFin: 9.99));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 10.0, pesoFin: 11.29 ));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 11.3, pesoFin: 12.79 ));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '1DE',   pesoInicio: 12.8, pesoFin: 14.59));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Femenino', resultado: '2DE',   pesoInicio: 14.6, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 9.0, pesoFin: 10.19));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 10.2, pesoFin: 11.49));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 11.5, pesoFin: 12.99 ));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '1DE',   pesoInicio: 13.0, pesoFin: 14.79));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Femenino', resultado: '2DE',   pesoInicio: 14.8, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 45.4, pesoFin: 47.29));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 47.3, pesoFin: 49.09 ));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 49.1, pesoFin: 50.99 ));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '1DE',   pesoInicio: 51.0, pesoFin: 52.89));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '2DE',   pesoInicio: 52.9, pesoFin: 62));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 9.2, pesoFin: 10.29));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 10.3, pesoFin: 11.69 ));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 11.7, pesoFin: 13.29 ));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '1DE',   pesoInicio: 13.3, pesoFin: 15.09));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Femenino', resultado: '2DE',   pesoInicio: 15.1, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 9.4, pesoFin: 10.49));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 10.5, pesoFin: 11.89 ));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 11.9, pesoFin: 13.49 ));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '1DE',   pesoInicio: 13.5, pesoFin: 15.39));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Femenino', resultado: '2DE',   pesoInicio: 15.4, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 53.0, pesoFin: 54.99));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 55.0, pesoFin: 57.09 ));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 57.10, pesoFin: 59.09 ));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '1DE',   pesoInicio: 59.1, pesoFin: 61.09));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '2DE',   pesoInicio: 61.1, pesoFin: 71.1));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 9.5, pesoFin: 10.69));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 10.7, pesoFin: 12.09 ));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 12.1, pesoFin: 13.69 ));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '1DE',   pesoInicio: 13.7, pesoFin: 15.69));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Femenino', resultado: '2DE',   pesoInicio: 15.7, pesoFin:28));
 
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 55.6, pesoFin: 57.69));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 57.7, pesoFin: 58.79 ));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 59.8, pesoFin: 61.89 ));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '1DE',   pesoInicio: 61.9, pesoFin: 63.99));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '2DE',   pesoInicio: 64.0, pesoFin: 74));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 9.7, pesoFin: 10.89));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 10.9, pesoFin: 12.29 ));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 12.3, pesoFin: 13.99 ));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '1DE',   pesoInicio: 14, pesoFin: 15.99));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Femenino', resultado: '2DE',   pesoInicio: 16, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 57.8, pesoFin: 59.89));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 59.9, pesoFin: 62.09 ));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 62.1, pesoFin: 64.29 ));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '1DE',   pesoInicio: 64.3, pesoFin: 66.39));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '2DE',   pesoInicio: 66.4, pesoFin: 76));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 9.8, pesoFin: 11.09));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 11.1, pesoFin: 12.49 ));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 12.5, pesoFin: 14.19 ));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '1DE',   pesoInicio: 14.2, pesoFin: 16.19));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Femenino', resultado: '2DE',   pesoInicio: 16.2, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10, pesoFin: 11.19));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 11.2, pesoFin: 12.68 ));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 12.7, pesoFin: 14.39 ));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '1DE',   pesoInicio: 14.4, pesoFin: 16.49));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Femenino', resultado: '2DE',   pesoInicio: 16.5, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 61.2, pesoFin: 63.49));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 63.5, pesoFin: 65.69 ));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 65.7, pesoFin: 67.99 ));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '1DE',   pesoInicio: 68.0, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '2DE',   pesoInicio: 70.3, pesoFin: 80));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.1, pesoFin: 11.39));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 11.4, pesoFin: 12.89 ));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 12.9, pesoFin: 14.69 ));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '1DE',   pesoInicio: 14.7, pesoFin: 16.79));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Femenino', resultado: '2DE',   pesoInicio: 16.8, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 62.7, pesoFin: 64.99));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 65.0, pesoFin: 67.29 ));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 67.3, pesoFin: 69.59 ));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '1DE',   pesoInicio: 69.6, pesoFin: 71.89));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '2DE',   pesoInicio: 71.9, pesoFin: 81));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.3, pesoFin: 11.59));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 11.6, pesoFin: 13.09 ));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 13.1, pesoFin: 14.89 ));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '1DE',   pesoInicio: 14.9, pesoFin: 17.09));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Femenino', resultado: '2DE',   pesoInicio: 17.1, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 64.0, pesoFin: 63.39));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 66.4, pesoFin: 68.69 ));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 68.7, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '1DE',   pesoInicio: 71.5, pesoFin: 73.49));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '2DE',   pesoInicio: 73.5, pesoFin: 83.5));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.4, pesoFin: 11.69));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 11.7, pesoFin: 13.29 ));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 13.3, pesoFin: 15.09 ));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '1DE',   pesoInicio: 15.1, pesoFin: 17.29));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Femenino', resultado: '2DE',   pesoInicio: 17.3, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 65.3, pesoFin: 67.69));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 67.7, pesoFin: 70.09));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 70.1, pesoFin: 72.69 ));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '1DE',   pesoInicio: 72.7, pesoFin: 74.99));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '2DE',   pesoInicio: 75.0, pesoFin: 85));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.5, pesoFin: 11.89));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 11.9, pesoFin: 13.49));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 13.5, pesoFin: 15.39 ));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '1DE',   pesoInicio: 15.4, pesoFin: 17.59));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Femenino', resultado: '2DE',   pesoInicio: 17.6, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 66.5, pesoFin: 68.99));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 69.0, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 71.5, pesoFin: 73.89 ));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '1DE',   pesoInicio: 73.9, pesoFin: 76.39));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '2DE',   pesoInicio: 76.4, pesoFin: 86.4));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.7, pesoFin: 11.99));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 12, pesoFin: 13.69));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 13.7, pesoFin: 15.59 ));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '1DE',   pesoInicio: 15.6, pesoFin: 17.89));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Femenino', resultado: '2DE',   pesoInicio: 17.9, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 67.7, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 70.3, pesoFin: 72.79 ));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 72.8, pesoFin: 75.29 ));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '1DE',   pesoInicio: 75.3, pesoFin: 77.79));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '2DE',   pesoInicio: 77.8, pesoFin: 87.8));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.8, pesoFin: 12.19));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 12.2, pesoFin: 13.89 ));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 13.9, pesoFin: 15.79 ));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '1DE',   pesoInicio: 15.8, pesoFin: 18.09));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Femenino', resultado: '2DE',   pesoInicio: 18.1, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 68.9, pesoFin: 71.39));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 71.4, pesoFin: 73.99 ));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 74.0, pesoFin: 76.59 ));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '1DE',   pesoInicio: 76.6, pesoFin: 79.19));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '2DE',   pesoInicio: 79.2, pesoFin: 89.2));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 10.9, pesoFin: 12.39));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 12.4, pesoFin: 13.99 ));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 14.0, pesoFin: 15.99 ));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '1DE',   pesoInicio: 16.0, pesoFin: 18.39));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Femenino', resultado: '2DE',   pesoInicio: 18.4, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.1, pesoFin: 12.49));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 12.5, pesoFin: 14.19 ));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 14.2, pesoFin: 16.29 ));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '1DE',   pesoInicio: 16.3, pesoFin: 18.69));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Femenino', resultado: '2DE',   pesoInicio: 18.7, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 71.0, pesoFin: 73.69));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 73.7, pesoFin: 76.39 ));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 76.4, pesoFin: 79.09 ));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '1DE',   pesoInicio: 79.1, pesoFin: 81.69));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '2DE',   pesoInicio: 81.7, pesoFin: 91.7));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.2, pesoFin: 12.69));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 12.7, pesoFin: 14.39 ));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 14.4, pesoFin: 14.39 ));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '1DE',   pesoInicio: 16.5, pesoFin: 18.99));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Femenino', resultado: '2DE',   pesoInicio: 19, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 72.0, pesoFin: 74.79));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 74.8, pesoFin: 77.49 ));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 77.5, pesoFin: 80.19 ));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '1DE',   pesoInicio: 80.2, pesoFin: 82.99));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '2DE',   pesoInicio: 83.0, pesoFin: 93.0));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.3, pesoFin: 12.79));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 12.8, pesoFin: 14.59 ));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 14.6, pesoFin: 16.69 ));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '1DE',   pesoInicio: 16.7, pesoFin: 19.19));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Femenino', resultado: '2DE',   pesoInicio: 19.2, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 73.0, pesoFin: 75.79));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 75.8, pesoFin: 78.59 ));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 78.6, pesoFin: 81.39 ));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '1DE',   pesoInicio: 81.4, pesoFin: 84.19));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '2DE',   pesoInicio: 84.2, pesoFin: 94.2));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.5, pesoFin: 12.99));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.0, pesoFin: 14.79 ));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 14.8, pesoFin: 16.89 ));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '1DE',   pesoInicio: 16.9, pesoFin: 19.49));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Femenino', resultado: '2DE',   pesoInicio: 19.5, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 74.0, pesoFin: 76.79));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 76.8, pesoFin: 79.69 ));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 79.7, pesoFin: 82.49 ));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '1DE',   pesoInicio: 82.5, pesoFin: 84.39));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '2DE',   pesoInicio: 85.4, pesoFin: 95.4));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.6, pesoFin: 13.09));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.1, pesoFin: 14.99 ));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 15.0, pesoFin: 14.99 ));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '1DE',   pesoInicio: 17.2, pesoFin: 19.79));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Femenino', resultado: '2DE',   pesoInicio: 19.8, pesoFin: 27));
     //
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.7, pesoFin: 13.29));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.3, pesoFin: 15.19 ));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 15.2, pesoFin: 17.39 ));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '1DE',   pesoInicio: 17.4, pesoFin: 20.09));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Femenino', resultado: '2DE',   pesoInicio: 20.1, pesoFin: 29));
     
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 11.8, pesoFin: 13.39));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.4, pesoFin: 15.29 ));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 15.3, pesoFin: 17.59));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '1DE',   pesoInicio: 17.6, pesoFin: 20.39));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Femenino', resultado: '2DE',   pesoInicio: 20.4, pesoFin: 30));
 
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.0, pesoFin: 13.59));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.6, pesoFin: 15.49 ));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 15.5, pesoFin: 17.79 ));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '1DE',   pesoInicio: 17.8, pesoFin: 20.69));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Femenino', resultado: '2DE',   pesoInicio: 20.7, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.1, pesoFin: 13.69));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.7, pesoFin: 15.69 ));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 15.7, pesoFin: 18.09 ));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '1DE',   pesoInicio: 18.1, pesoFin: 20.89));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Femenino', resultado: '2DE',   pesoInicio: 20.9, pesoFin: 30));
 
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.2, pesoFin: 13.89));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 13.9, pesoFin: 15.89 ));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 15.9, pesoFin: 18.29 ));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '1DE',   pesoInicio: 18.3, pesoFin: 21.19));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Femenino', resultado: '2DE',   pesoInicio: 21.2, pesoFin: 30));
 
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.3, pesoFin: 13.99));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.0, pesoFin: 16.09 ));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 16.1, pesoFin: 15.49 ));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '1DE',   pesoInicio: 18.5, pesoFin: 21.49));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Femenino', resultado: '2DE',   pesoInicio: 21.5, pesoFin: 31));
 
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.4, pesoFin: 14.19));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.2, pesoFin: 16.29 ));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 16.3, pesoFin: 18.79 ));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '1DE',   pesoInicio: 18.8, pesoFin: 21.79));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Femenino', resultado: '2DE',   pesoInicio: 21.8, pesoFin: 30));
 
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 74.0, pesoFin: 76.79));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 76.8, pesoFin: 79.69 ));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 79.7, pesoFin: 82.49 ));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '1DE',   pesoInicio: 82.5, pesoFin: 84.39));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '2DE',   pesoInicio: 85.4, pesoFin: 95.4));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.6, pesoFin: 14.29));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.3, pesoFin: 16.39 ));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 16.4, pesoFin: 18.99 ));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '1DE',   pesoInicio: 19, pesoFin: 22.09));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Femenino', resultado: '2DE',   pesoInicio: 22.1, pesoFin: 31));
     //
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.7, pesoFin: 14.49));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.5, pesoFin: 16.59 ));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 16.6, pesoFin: 19.19 ));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '1DE',   pesoInicio: 19.2, pesoFin: 22.39));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Femenino', resultado: '2DE',   pesoInicio: 22.4, pesoFin: 32));
     
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.8, pesoFin: 14.59));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.6, pesoFin: 16.79 ));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 16.8, pesoFin: 19.39 ));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '1DE',   pesoInicio: 19.4, pesoFin: 22.59));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Femenino', resultado: '2DE',   pesoInicio: 22.6, pesoFin: 33));
 
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 12.9, pesoFin: 14.79));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.8, pesoFin: 16.99 ));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 17.0, pesoFin: 19.69 ));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '1DE',   pesoInicio: 19.7, pesoFin: 22.89));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Femenino', resultado: '2DE',   pesoInicio: 22.9, pesoFin: 33));
 
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13, pesoFin: 14.89));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 14.9, pesoFin: 17.19 ));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 17.2, pesoFin: 19.89 ));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '1DE',   pesoInicio: 19.9, pesoFin: 23.19));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Femenino', resultado: '2DE',   pesoInicio: 23.2, pesoFin: 33));
 
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13.2, pesoFin: 15.09));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 15.1, pesoFin: 17.29 ));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 17.3, pesoFin: 20.09 ));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '1DE',   pesoInicio: 20.1, pesoFin: 23.49));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Femenino', resultado: '2DE',   pesoInicio: 23.5, pesoFin: 34));
 
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13.3, pesoFin: 15.19));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 15.2, pesoFin: 17.49 ));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 17.5, pesoFin: 20.29 ));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '1DE',   pesoInicio: 20.3, pesoFin: 23.79));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Femenino', resultado: '2DE',   pesoInicio: 23.8, pesoFin: 35));
 
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13.4, pesoFin: 15.29));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 15.3, pesoFin: 17.69 ));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 17.7, pesoFin: 20.59 ));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '1DE',   pesoInicio: 20.6, pesoFin: 24.09));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Femenino', resultado: '2DE',   pesoInicio: 24.1, pesoFin: 36));
 
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13.5, pesoFin: 15.49));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 15.5, pesoFin: 17.89 ));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 17.9, pesoFin: 20.79 ));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '1DE',   pesoInicio: 20.8, pesoFin: 24.39));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Femenino', resultado: '2DE',   pesoInicio: 24.4, pesoFin: 36));
 
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13.6, pesoFin: 15.59));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 15.6, pesoFin: 17.99 ));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 18.0, pesoFin: 22.99 ));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '1DE',   pesoInicio: 21.0, pesoFin: 24.59));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Femenino', resultado: '2DE',   pesoInicio: 24.6, pesoFin: 36));
 
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '-2DE',  pesoInicio: 13.7, pesoFin: 15.79));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '-1DE',  pesoInicio: 15.8, pesoFin: 18.19 ));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: 'MEDIA', pesoInicio: 18.2, pesoFin: 21.19 ));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '1DE',   pesoInicio: 21.2, pesoFin: 24.89));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Femenino', resultado: '2DE',   pesoInicio: 24.9, pesoFin: 37));
+
+
+
 
     //***********************MASCULINO */********************** */ */
 
 
 
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 45.4, pesoFin: 47.29));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 47.3, pesoFin: 49.09 ));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 49.1, pesoFin: 50.99 ));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '1DE',   pesoInicio: 51.0, pesoFin: 52.89));
-    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '2DE',   pesoInicio: 52.9, pesoFin: 62));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 2.5, pesoFin: 2.89));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 2.9, pesoFin: 3.29 ));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 3.3, pesoFin: 3.89 ));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '1DE',   pesoInicio: 3.9, pesoFin: 4.39));
+    pesos.add(TablaPesoEdad(meses: 0, genero: 'Masculino', resultado: '2DE',   pesoInicio: 4.4, pesoFin: 8));
 
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 3.4, pesoFin: 3.89));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 3.9, pesoFin: 4.49 ));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 4.5, pesoFin: 5.09 ));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '1DE',   pesoInicio: 5.1, pesoFin: 5.79));
+    pesos.add(TablaPesoEdad(meses: 1, genero: 'Masculino', resultado: '2DE',   pesoInicio: 5.8, pesoFin: 8.2));
 
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 53.0, pesoFin: 54.99));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 55.0, pesoFin: 57.09 ));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 57.10, pesoFin: 59.09 ));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '1DE',   pesoInicio: 59.1, pesoFin: 61.09));
-    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '2DE',   pesoInicio: 61.1, pesoFin: 71.1));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 4.3, pesoFin: 4.89));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 4.9, pesoFin: 5.59));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 5.6, pesoFin: 6.29 ));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '1DE',   pesoInicio: 6.3, pesoFin: 7.09));
+    pesos.add(TablaPesoEdad(meses: 2, genero: 'Masculino', resultado: '2DE',   pesoInicio: 7.1, pesoFin: 8.4));
 
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 55.6, pesoFin: 57.69));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 57.7, pesoFin: 58.79 ));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 59.8, pesoFin: 61.89 ));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '1DE',   pesoInicio: 61.9, pesoFin: 63.99));
-    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '2DE',   pesoInicio: 64.0, pesoFin: 74));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 5.0, pesoFin: 5.69));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 5.7, pesoFin: 6.39));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 6.4, pesoFin: 7.19));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '1DE',   pesoInicio: 7.2, pesoFin: 7.99));
+    pesos.add(TablaPesoEdad(meses: 3, genero: 'Masculino', resultado: '2DE',   pesoInicio: 8.0, pesoFin: 10));
 
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 57.8, pesoFin: 59.89));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 59.9, pesoFin: 62.09 ));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 62.1, pesoFin: 64.29 ));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '1DE',   pesoInicio: 64.3, pesoFin: 66.39));
-    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '2DE',   pesoInicio: 66.4, pesoFin: 76));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 5.6, pesoFin: 6.19));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 6.2, pesoFin: 6.99 ));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 7.0, pesoFin: 7.79 ));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '1DE',   pesoInicio: 7.8, pesoFin: 8.69));
+    pesos.add(TablaPesoEdad(meses: 4, genero: 'Masculino', resultado: '2DE',   pesoInicio: 8.7, pesoFin: 12));
 
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 6.0, pesoFin: 6.69));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 6.7, pesoFin: 7.49 ));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 7.5, pesoFin: 8.39 ));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '1DE',   pesoInicio: 8.4, pesoFin: 9.29));
+    pesos.add(TablaPesoEdad(meses: 5, genero: 'Masculino', resultado: '2DE',   pesoInicio: 9.3, pesoFin: 15));
 
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 61.2, pesoFin: 63.49));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 63.5, pesoFin: 65.69 ));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 65.7, pesoFin: 67.99 ));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '1DE',   pesoInicio: 68.0, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '2DE',   pesoInicio: 70.3, pesoFin: 80));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 6.4, pesoFin: 7.09));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 7.1, pesoFin: 7.89 ));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 7.9, pesoFin: 8.79 ));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '1DE',   pesoInicio: 8.8, pesoFin: 9.79));
+    pesos.add(TablaPesoEdad(meses: 6, genero: 'Masculino', resultado: '2DE',   pesoInicio: 9.8, pesoFin: 16));
 
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 62.7, pesoFin: 64.99));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 65.0, pesoFin: 67.29 ));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 67.3, pesoFin: 69.59 ));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '1DE',   pesoInicio: 69.6, pesoFin: 71.89));
-    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '2DE',   pesoInicio: 71.9, pesoFin: 81));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 6.7, pesoFin: 7.39));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 7.4, pesoFin: 8.29 ));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 8.3, pesoFin: 9.19 ));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '1DE',   pesoInicio: 9.2, pesoFin: 10.29));
+    pesos.add(TablaPesoEdad(meses: 7, genero: 'Masculino', resultado: '2DE',   pesoInicio: 10.3, pesoFin: 16.5));
 
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 64.0, pesoFin: 63.39));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 66.4, pesoFin: 68.69 ));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 68.7, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '1DE',   pesoInicio: 71.5, pesoFin: 73.49));
-    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '2DE',   pesoInicio: 73.5, pesoFin: 83.5));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 6.9, pesoFin: 7.69));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 7.7, pesoFin: 5.59));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 8.6, pesoFin: 9.59 ));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '1DE',   pesoInicio: 9.6, pesoFin: 10.69));
+    pesos.add(TablaPesoEdad(meses: 8, genero: 'Masculino', resultado: '2DE',   pesoInicio: 10.7, pesoFin: 17));
 
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 65.3, pesoFin: 67.69));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 67.7, pesoFin: 70.09));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 70.1, pesoFin: 72.69 ));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '1DE',   pesoInicio: 72.7, pesoFin: 74.99));
-    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '2DE',   pesoInicio: 75.0, pesoFin: 85));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 7.1, pesoFin: 7.99));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 8.0, pesoFin: 8.89));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 8.9, pesoFin:  9.89));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '1DE',   pesoInicio: 9.9, pesoFin: 10.99));
+    pesos.add(TablaPesoEdad(meses: 9, genero: 'Masculino', resultado: '2DE',   pesoInicio: 11.0, pesoFin: 17.5));
 
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 66.5, pesoFin: 68.99));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 69.0, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 71.5, pesoFin: 73.89 ));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '1DE',   pesoInicio: 73.9, pesoFin: 76.39));
-    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '2DE',   pesoInicio: 76.4, pesoFin: 86.4));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 7.4, pesoFin: 8.19));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 8.2, pesoFin: 9.19 ));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 9.2, pesoFin: 10.19 ));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '1DE',   pesoInicio: 10.2, pesoFin: 11.39));
+    pesos.add(TablaPesoEdad(meses: 10, genero: 'Masculino', resultado: '2DE',   pesoInicio: 11.4, pesoFin: 18));
 
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 67.7, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 70.3, pesoFin: 72.79 ));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 72.8, pesoFin: 75.29 ));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '1DE',   pesoInicio: 75.3, pesoFin: 77.79));
-    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '2DE',   pesoInicio: 77.8, pesoFin: 87.8));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 7.6, pesoFin: 8.39));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 8.4, pesoFin: 9.39 ));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 9.4, pesoFin: 10.49 ));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '1DE',   pesoInicio: 10.5, pesoFin: 11.69));
+    pesos.add(TablaPesoEdad(meses: 11, genero: 'Masculino', resultado: '2DE',   pesoInicio: 11.7, pesoFin: 18.5));
 
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 68.9, pesoFin: 71.39));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 71.4, pesoFin: 73.99 ));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 74.0, pesoFin: 76.59 ));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '1DE',   pesoInicio: 76.6, pesoFin: 79.19));
-    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '2DE',   pesoInicio: 79.2, pesoFin: 89.2));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 7.7, pesoFin: 8.59));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 8.6, pesoFin: 9.59 ));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 9.6, pesoFin: 10.79 ));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '1DE',   pesoInicio: 10.8, pesoFin: 11.99));
+    pesos.add(TablaPesoEdad(meses: 12, genero: 'Masculino', resultado: '2DE',   pesoInicio: 12.0, pesoFin: 19));
 
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 7.9, pesoFin: 8.79));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 8.8, pesoFin: 9.89 ));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 9.9, pesoFin: 10.99 ));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '1DE',   pesoInicio: 11.0, pesoFin: 12.29));
+    pesos.add(TablaPesoEdad(meses: 13, genero: 'Masculino', resultado: '2DE',   pesoInicio: 12.3, pesoFin: 19.5));
 
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 71.0, pesoFin: 73.69));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 73.7, pesoFin: 76.39 ));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 76.4, pesoFin: 79.09 ));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '1DE',   pesoInicio: 79.1, pesoFin: 81.69));
-    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '2DE',   pesoInicio: 81.7, pesoFin: 91.7));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 8.1, pesoFin: 8.99));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 9.0, pesoFin: 10.09 ));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 10.1, pesoFin: 11.29 ));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '1DE',   pesoInicio: 11.3, pesoFin: 12.59));
+    pesos.add(TablaPesoEdad(meses: 14, genero: 'Masculino', resultado: '2DE',   pesoInicio: 12.6, pesoFin: 20));
 
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 72.0, pesoFin: 74.79));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 74.8, pesoFin: 77.49 ));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 77.5, pesoFin: 80.19 ));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '1DE',   pesoInicio: 80.2, pesoFin: 82.99));
-    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '2DE',   pesoInicio: 83.0, pesoFin: 93.0));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 8.3, pesoFin: 9.19));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 9.2, pesoFin: 10.29 ));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 10.3, pesoFin: 11.49 ));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '1DE',   pesoInicio: 11.5, pesoFin: 12.79));
+    pesos.add(TablaPesoEdad(meses: 15, genero: 'Masculino', resultado: '2DE',   pesoInicio: 12.8, pesoFin: 20.5));
 
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 73.0, pesoFin: 75.79));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 75.8, pesoFin: 78.59 ));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 78.6, pesoFin: 81.39 ));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '1DE',   pesoInicio: 81.4, pesoFin: 84.19));
-    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '2DE',   pesoInicio: 84.2, pesoFin: 94.2));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 8.4, pesoFin: 9.39));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 9.4, pesoFin: 10.49));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 10.5, pesoFin: 11.69 ));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '1DE',   pesoInicio: 11.7, pesoFin: 13.09));
+    pesos.add(TablaPesoEdad(meses: 16, genero: 'Masculino', resultado: '2DE',   pesoInicio: 13.1, pesoFin: 21));
 
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 74.0, pesoFin: 76.79));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 76.8, pesoFin: 79.69 ));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 79.7, pesoFin: 82.49 ));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '1DE',   pesoInicio: 82.5, pesoFin: 84.39));
-    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '2DE',   pesoInicio: 85.4, pesoFin: 95.4));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 8.6, pesoFin: 9.59));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 9.6, pesoFin: 10.69 ));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 10.7, pesoFin: 11.99 ));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '1DE',   pesoInicio: 12.0, pesoFin: 13.39));
+    pesos.add(TablaPesoEdad(meses: 17, genero: 'Masculino', resultado: '2DE',   pesoInicio: 13.4, pesoFin: 21.5));
     //
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 8.8, pesoFin: 9.79));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 9.8, pesoFin: 10.89 ));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 10.9, pesoFin: 12.19 ));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '1DE',   pesoInicio: 12.2, pesoFin: 13.69));
+    pesos.add(TablaPesoEdad(meses: 18, genero: 'Masculino', resultado: '2DE',   pesoInicio: 13.7, pesoFin: 22));
     
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 8.9, pesoFin: 9.99));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 10.0, pesoFin: 11.09 ));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 11.1, pesoFin: 12.49 ));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '1DE',   pesoInicio: 12.5, pesoFin: 13.89));
+    pesos.add(TablaPesoEdad(meses: 19, genero: 'Masculino', resultado: '2DE',   pesoInicio: 13.9, pesoFin: 22.5));
 
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 9.1, pesoFin: 10.09));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 10.1, pesoFin: 11.29 ));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 11.3, pesoFin: 12.69));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '1DE',   pesoInicio: 12.7, pesoFin: 14.19));
+    pesos.add(TablaPesoEdad(meses: 20, genero: 'Masculino', resultado: '2DE',   pesoInicio: 14.2, pesoFin: 23));
 
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 9.2, pesoFin: 10.29));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 10.3, pesoFin: 11.49 ));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 11.5, pesoFin: 12.89 ));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '1DE',   pesoInicio: 12.9, pesoFin: 14.49));
+    pesos.add(TablaPesoEdad(meses: 21, genero: 'Masculino', resultado: '2DE',   pesoInicio: 14.5, pesoFin: 23.5));
 
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 9.4, pesoFin: 10.49));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 10.5, pesoFin: 11.79));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 11.8, pesoFin: 13.19));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '1DE',   pesoInicio: 13.2, pesoFin: 14.69));
+    pesos.add(TablaPesoEdad(meses: 22, genero: 'Masculino', resultado: '2DE',   pesoInicio: 14.7, pesoFin: 24));
 
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 9.5, pesoFin: 10.69));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 10.7, pesoFin: 11.99 ));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 12.0, pesoFin: 13.39 ));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '1DE',   pesoInicio: 13.4, pesoFin: 14.99));
+    pesos.add(TablaPesoEdad(meses: 23, genero: 'Masculino', resultado: '2DE',   pesoInicio: 15.0, pesoFin: 24.5));
 
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 9.7, pesoFin: 10.79));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 10.8, pesoFin:  12.19));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 12.2, pesoFin: 13.59));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '1DE',   pesoInicio: 13.6, pesoFin: 15.29));
+    pesos.add(TablaPesoEdad(meses: 24, genero: 'Masculino', resultado: '2DE',   pesoInicio: 15.3, pesoFin: 25));
 
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 45.4, pesoFin: 47.29));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 47.3, pesoFin: 49.09 ));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 49.1, pesoFin: 50.99 ));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '1DE',   pesoInicio: 51.0, pesoFin: 52.89));
-    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '2DE',   pesoInicio: 52.9, pesoFin: 62));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 9.8, pesoFin: 11.79));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 11.8, pesoFin: 12.39 ));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 12.4, pesoFin: 13.89 ));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '1DE',   pesoInicio: 13.9, pesoFin: 15.49));
+    pesos.add(TablaPesoEdad(meses: 25, genero: 'Masculino', resultado: '2DE',   pesoInicio: 15.5, pesoFin: 25.5));
 
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.0, pesoFin: 11.19));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 11.2, pesoFin: 12.49 ));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 12.5, pesoFin: 14.09 ));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '1DE',   pesoInicio: 14.1, pesoFin: 15.79));
+    pesos.add(TablaPesoEdad(meses: 26, genero: 'Masculino', resultado: '2DE',   pesoInicio: 15.8, pesoFin: 26));
 
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 53.0, pesoFin: 54.99));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 55.0, pesoFin: 57.09 ));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 57.10, pesoFin: 59.09 ));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '1DE',   pesoInicio: 59.1, pesoFin: 61.09));
-    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '2DE',   pesoInicio: 61.1, pesoFin: 71.1));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.1, pesoFin: 11.29));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 11.3, pesoFin: 12.69 ));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 12.7, pesoFin: 14.29 ));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '1DE',   pesoInicio: 14.3, pesoFin: 16.09));
+    pesos.add(TablaPesoEdad(meses: 27, genero: 'Masculino', resultado: '2DE',   pesoInicio: 16.1, pesoFin: 26.5));
 
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 55.6, pesoFin: 57.69));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 57.7, pesoFin: 58.79 ));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 59.8, pesoFin: 61.89 ));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '1DE',   pesoInicio: 61.9, pesoFin: 63.99));
-    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '2DE',   pesoInicio: 64.0, pesoFin: 74));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.2, pesoFin: 11.49));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 11.5, pesoFin: 12.89 ));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 12.9, pesoFin: 14.49 ));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '1DE',   pesoInicio: 14.5, pesoFin: 16.29));
+    pesos.add(TablaPesoEdad(meses: 28, genero: 'Masculino', resultado: '2DE',   pesoInicio: 16.3, pesoFin: 27));
 
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 57.8, pesoFin: 59.89));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 59.9, pesoFin: 62.09 ));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 62.1, pesoFin: 64.29 ));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '1DE',   pesoInicio: 64.3, pesoFin: 66.39));
-    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '2DE',   pesoInicio: 66.4, pesoFin: 76));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.4, pesoFin: 11.69));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 11.7, pesoFin: 13.09 ));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 13.1, pesoFin: 14.79 ));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '1DE',   pesoInicio: 14.8, pesoFin: 16.59));
+    pesos.add(TablaPesoEdad(meses: 29, genero: 'Masculino', resultado: '2DE',   pesoInicio: 16.6, pesoFin: 27.5));
 
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 49.8, pesoFin: 51.69));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 51.7, pesoFin: 52.69 ));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 53.7, pesoFin: 54.59 ));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '1DE',   pesoInicio: 55.6, pesoFin: 56.99));
-    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '2DE',   pesoInicio: 57.0, pesoFin: 67));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.5, pesoFin: 11.79));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 11.8, pesoFin: 13.29 ));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 13.3, pesoFin: 14.99 ));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '1DE',   pesoInicio: 15.0, pesoFin: 16.89));
+    pesos.add(TablaPesoEdad(meses: 30, genero: 'Masculino', resultado: '2DE',   pesoInicio: 16.9, pesoFin: 28));
 
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 61.2, pesoFin: 63.49));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 63.5, pesoFin: 65.69 ));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 65.7, pesoFin: 67.99 ));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '1DE',   pesoInicio: 68.0, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '2DE',   pesoInicio: 70.3, pesoFin: 80));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.7, pesoFin: 11.99));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.0, pesoFin: 13.49 ));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 13.5, pesoFin: 15.19 ));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '1DE',   pesoInicio: 15.2, pesoFin: 17.09));
+    pesos.add(TablaPesoEdad(meses: 31, genero: 'Masculino', resultado: '2DE',   pesoInicio: 17.1, pesoFin: 28.5));
 
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 62.7, pesoFin: 64.99));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 65.0, pesoFin: 67.29 ));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 67.3, pesoFin: 69.59 ));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '1DE',   pesoInicio: 69.6, pesoFin: 71.89));
-    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '2DE',   pesoInicio: 71.9, pesoFin: 81));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.8, pesoFin: 12.09));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.1, pesoFin: 13.69 ));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 13.7, pesoFin: 15.39 ));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '1DE',   pesoInicio: 15.4, pesoFin: 16.39));
+    pesos.add(TablaPesoEdad(meses: 32, genero: 'Masculino', resultado: '2DE',   pesoInicio: 16.4, pesoFin: 29));
 
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 64.0, pesoFin: 63.39));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 66.4, pesoFin: 68.69 ));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 68.7, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '1DE',   pesoInicio: 71.5, pesoFin: 73.49));
-    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '2DE',   pesoInicio: 73.5, pesoFin: 83.5));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 10.9, pesoFin: 12.29));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.3, pesoFin: 13.79 ));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 13.8, pesoFin: 15.59 ));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '1DE',   pesoInicio: 15.6, pesoFin: 17.59));
+    pesos.add(TablaPesoEdad(meses: 33, genero: 'Masculino', resultado: '2DE',   pesoInicio: 17.6, pesoFin: 29.5));
 
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 65.3, pesoFin: 67.69));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 67.7, pesoFin: 70.09));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 70.1, pesoFin: 72.69 ));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '1DE',   pesoInicio: 72.7, pesoFin: 74.99));
-    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '2DE',   pesoInicio: 75.0, pesoFin: 85));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.0, pesoFin: 12.38));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.4, pesoFin: 13.99));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 14.0, pesoFin: 15.79));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '1DE',   pesoInicio: 15.8, pesoFin: 17.79));
+    pesos.add(TablaPesoEdad(meses: 34, genero: 'Masculino', resultado: '2DE',   pesoInicio: 17.8, pesoFin: 30));
 
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 66.5, pesoFin: 68.99));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 69.0, pesoFin: 71.49 ));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 71.5, pesoFin: 73.89 ));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '1DE',   pesoInicio: 73.9, pesoFin: 76.39));
-    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '2DE',   pesoInicio: 76.4, pesoFin: 86.4));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.2, pesoFin: 12.59));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.6, pesoFin: 14.19 ));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 14.2, pesoFin: 15.99 ));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '1DE',   pesoInicio: 16.0, pesoFin: 18.09));
+    pesos.add(TablaPesoEdad(meses: 35, genero: 'Masculino', resultado: '2DE',   pesoInicio: 18.1, pesoFin: 30.5));
 
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 67.7, pesoFin: 70.29));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 70.3, pesoFin: 72.79 ));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 72.8, pesoFin: 75.29 ));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '1DE',   pesoInicio: 75.3, pesoFin: 77.79));
-    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '2DE',   pesoInicio: 77.8, pesoFin: 87.8));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.3, pesoFin: 12.69));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.7, pesoFin: 14.29 ));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 14.3, pesoFin: 16.19 ));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '1DE',   pesoInicio: 16.2, pesoFin: 18.29));
+    pesos.add(TablaPesoEdad(meses: 36, genero: 'Masculino', resultado: '2DE',   pesoInicio: 18.3, pesoFin: 31));
 
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 68.9, pesoFin: 71.39));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 71.4, pesoFin: 73.99 ));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 74.0, pesoFin: 76.59 ));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '1DE',   pesoInicio: 76.6, pesoFin: 79.19));
-    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '2DE',   pesoInicio: 79.2, pesoFin: 89.2));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.4, pesoFin: 12.89));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 12.9, pesoFin: 14.49 ));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 14.5, pesoFin: 16.39 ));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '1DE',   pesoInicio: 16.4, pesoFin: 18.59));
+    pesos.add(TablaPesoEdad(meses: 37, genero: 'Masculino', resultado: '2DE',   pesoInicio: 18.6, pesoFin: 31.5));
 
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.5, pesoFin: 12.99));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.0, pesoFin: 14.68));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 14.7, pesoFin: 16.59));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '1DE',   pesoInicio: 16.6, pesoFin: 18.79));
+    pesos.add(TablaPesoEdad(meses: 38, genero: 'Masculino', resultado: '2DE',   pesoInicio: 18.8, pesoFin: 32));
 
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 71.0, pesoFin: 73.69));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 73.7, pesoFin: 76.39 ));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 76.4, pesoFin: 79.09 ));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '1DE',   pesoInicio: 79.1, pesoFin: 81.69));
-    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '2DE',   pesoInicio: 81.7, pesoFin: 91.7));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.6, pesoFin: 13.09));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.1, pesoFin: 14.69 ));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 14.7, pesoFin: 16.79 ));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '1DE',   pesoInicio: 16.8, pesoFin: 18.99));
+    pesos.add(TablaPesoEdad(meses: 39, genero: 'Masculino', resultado: '2DE',   pesoInicio: 19.0, pesoFin: 32.5));
 
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 72.0, pesoFin: 74.79));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 74.8, pesoFin: 77.49 ));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 77.5, pesoFin: 80.19 ));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '1DE',   pesoInicio: 80.2, pesoFin: 82.99));
-    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '2DE',   pesoInicio: 83.0, pesoFin: 93.0));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.8, pesoFin: 13.29));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.3, pesoFin: 14.99 ));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 15.0, pesoFin: 16.99));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '1DE',   pesoInicio: 17.0, pesoFin: 19.29));
+    pesos.add(TablaPesoEdad(meses: 40, genero: 'Masculino', resultado: '2DE',   pesoInicio: 19.3, pesoFin: 33));
 
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 73.0, pesoFin: 75.79));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 75.8, pesoFin: 78.59 ));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 78.6, pesoFin: 81.39 ));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '1DE',   pesoInicio: 81.4, pesoFin: 84.19));
-    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '2DE',   pesoInicio: 84.2, pesoFin: 94.2));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 11.9, pesoFin: 13.39));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.4, pesoFin: 15.19 ));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 15.2, pesoFin: 17.19 ));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '1DE',   pesoInicio: 17.2, pesoFin: 19.49));
+    pesos.add(TablaPesoEdad(meses: 41, genero: 'Masculino', resultado: '2DE',   pesoInicio: 19.5, pesoFin: 33.5));
 
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 74.0, pesoFin: 76.79));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 76.8, pesoFin: 79.69 ));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 79.7, pesoFin: 82.49 ));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '1DE',   pesoInicio: 82.5, pesoFin: 84.39));
-    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '2DE',   pesoInicio: 85.4, pesoFin: 95.4));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.0, pesoFin: 13.59));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.6, pesoFin: 15.29 ));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 15.3, pesoFin: 17.39 ));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '1DE',   pesoInicio: 17.4, pesoFin: 19.69));
+    pesos.add(TablaPesoEdad(meses: 42, genero: 'Masculino', resultado: '2DE',   pesoInicio: 19.7, pesoFin: 34));
     //
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.1, pesoFin: 13.69));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.7, pesoFin: 15.49 ));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 15.5, pesoFin: 17.59 ));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '1DE',   pesoInicio: 17.6, pesoFin: 19.99));
+    pesos.add(TablaPesoEdad(meses: 43, genero: 'Masculino', resultado: '2DE',   pesoInicio: 20.0, pesoFin: 34.5));
     
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.2, pesoFin: 13.79));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 13.8, pesoFin: 15.69 ));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 15.7, pesoFin: 17.79 ));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '1DE',   pesoInicio: 17.8, pesoFin: 20.19));
+    pesos.add(TablaPesoEdad(meses: 44, genero: 'Masculino', resultado: '2DE',   pesoInicio: 20.2, pesoFin: 35));
 
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.4, pesoFin: 13.99));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.0, pesoFin: 14.99 ));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 15.0, pesoFin: 17.99 ));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '1DE',   pesoInicio: 18.0, pesoFin: 20.49));
+    pesos.add(TablaPesoEdad(meses: 45, genero: 'Masculino', resultado: '2DE',   pesoInicio: 20.5, pesoFin: 35.5));
 
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.5, pesoFin: 14.09));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.1, pesoFin: 15.99 ));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 16.0, pesoFin: 18.19 ));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '1DE',   pesoInicio: 18.2, pesoFin: 20.69));
+    pesos.add(TablaPesoEdad(meses: 46, genero: 'Masculino', resultado: '2DE',   pesoInicio: 20.7, pesoFin: 36));
 
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.6, pesoFin: 14.29));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.3, pesoFin: 16.19 ));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 16.2, pesoFin: 18.39 ));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '1DE',   pesoInicio: 18.4, pesoFin: 20.89));
+    pesos.add(TablaPesoEdad(meses: 47, genero: 'Masculino', resultado: '2DE',   pesoInicio: 20.9, pesoFin: 36.5));
 
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.7, pesoFin: 14.39));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.4, pesoFin: 16.29 ));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 16.3, pesoFin: 18.59 ));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '1DE',   pesoInicio: 18.6, pesoFin: 21.19));
+    pesos.add(TablaPesoEdad(meses: 48, genero: 'Masculino', resultado: '2DE',   pesoInicio: 21.2, pesoFin: 37));
 
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.8, pesoFin: 14.49));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.5, pesoFin: 16.49 ));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 16.5, pesoFin: 18.79 ));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '1DE',   pesoInicio: 18.8, pesoFin: 21.39));
+    pesos.add(TablaPesoEdad(meses: 49, genero: 'Masculino', resultado: '2DE',   pesoInicio: 21.4, pesoFin: 37.5));
 
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 74.0, pesoFin: 76.79));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 76.8, pesoFin: 79.69 ));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 79.7, pesoFin: 82.49 ));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '1DE',   pesoInicio: 82.5, pesoFin: 84.39));
-    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '2DE',   pesoInicio: 85.4, pesoFin: 95.4));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 12.9, pesoFin: 14.69));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.7, pesoFin: 16.69 ));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 16.7, pesoFin: 18.99 ));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '1DE',   pesoInicio: 19.0, pesoFin: 21.69));
+    pesos.add(TablaPesoEdad(meses: 50, genero: 'Masculino', resultado: '2DE',   pesoInicio: 21.7, pesoFin: 38));
     //
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.1, pesoFin: 14.79));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 14.8, pesoFin: 16.79 ));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 16.8, pesoFin: 19.19 ));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '1DE',   pesoInicio: 19.2, pesoFin: 21.89));
+    pesos.add(TablaPesoEdad(meses: 51, genero: 'Masculino', resultado: '2DE',   pesoInicio: 21.9, pesoFin: 38.5));
     
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.2, pesoFin: 14.99));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.0, pesoFin: 16.99 ));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 17.0, pesoFin: 19.39 ));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '1DE',   pesoInicio: 19.4, pesoFin: 22.19));
+    pesos.add(TablaPesoEdad(meses: 52, genero: 'Masculino', resultado: '2DE',   pesoInicio: 22.2, pesoFin: 39));
 
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.3, pesoFin: 15.09));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.1, pesoFin: 17.19 ));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 17.2, pesoFin: 19.59 ));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '1DE',   pesoInicio: 19.6, pesoFin: 22.39));
+    pesos.add(TablaPesoEdad(meses: 53, genero: 'Masculino', resultado: '2DE',   pesoInicio: 22.4, pesoFin: 39.5));
 
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.4, pesoFin: 15.19));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.2, pesoFin: 17.29 ));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 17.3, pesoFin: 19.79 ));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '1DE',   pesoInicio: 19.8, pesoFin: 22.69));
+    pesos.add(TablaPesoEdad(meses: 54, genero: 'Masculino', resultado: '2DE',   pesoInicio: 22.7, pesoFin: 40));
 
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.5, pesoFin: 15.39));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.4, pesoFin: 17.49 ));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 17.5, pesoFin: 19.99 ));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '1DE',   pesoInicio: 20.0, pesoFin: 22.89));
+    pesos.add(TablaPesoEdad(meses: 55, genero: 'Masculino', resultado: '2DE',   pesoInicio: 22.9, pesoFin: 40.5));
 
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.6, pesoFin: 15.49));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.5, pesoFin: 17.69 ));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 17.7, pesoFin: 20.19 ));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '1DE',   pesoInicio: 20.2, pesoFin: 23.19));
+    pesos.add(TablaPesoEdad(meses: 56, genero: 'Masculino', resultado: '2DE',   pesoInicio: 23.2, pesoFin: 40));
 
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.7, pesoFin: 15.59));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.6, pesoFin: 17.79 ));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 17.8, pesoFin: 20.39 ));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '1DE',   pesoInicio: 20.4, pesoFin: 23.39));
+    pesos.add(TablaPesoEdad(meses: 57, genero: 'Masculino', resultado: '2DE',   pesoInicio: 23.4, pesoFin: 41));
 
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 13.8, pesoFin: 15.79));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.8, pesoFin: 17.99 ));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 18.0, pesoFin: 20.59 ));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '1DE',   pesoInicio: 20.6, pesoFin: 23.69));
+    pesos.add(TablaPesoEdad(meses: 58, genero: 'Masculino', resultado: '2DE',   pesoInicio: 23.7, pesoFin: 42));
 
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 14.0, pesoFin: 15.89));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 15.9, pesoFin: 18.19 ));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 18.2, pesoFin: 20.79 ));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '1DE',   pesoInicio: 20.8, pesoFin: 23.89));
+    pesos.add(TablaPesoEdad(meses: 59, genero: 'Masculino', resultado: '2DE',   pesoInicio: 23.9, pesoFin: 42));
 
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 70.0, pesoFin: 72.59));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 72.6, pesoFin: 75.19 ));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 75.2, pesoFin: 77.79 ));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '1DE',   pesoInicio: 77.8, pesoFin: 80.49));
-    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '2DE',   pesoInicio: 80.5, pesoFin: 90.5));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '-2DE',  pesoInicio: 14.1, pesoFin: 15.99));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '-1DE',  pesoInicio: 16.0, pesoFin: 18.29 ));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: 'MEDIA', pesoInicio: 18.3, pesoFin: 20.99 ));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '1DE',   pesoInicio: 21.0, pesoFin: 24.19));
+    pesos.add(TablaPesoEdad(meses: 60, genero: 'Masculino', resultado: '2DE',   pesoInicio: 24.2, pesoFin: 42));
 
 
 
