@@ -153,6 +153,7 @@ class MainScreen extends StatelessWidget {
                 
                 if(gpsProvider.isAllGranted){ 
                   await locationProvider.getCurrPosition();
+                  await locationProvider.getMarkers();
                   Navigator.pushNamed(context, 'geo');
                 }else{
                   Navigator.pushNamed(context, 'permission');
