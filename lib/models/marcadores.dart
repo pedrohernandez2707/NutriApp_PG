@@ -9,11 +9,13 @@ class Marcadores {
         required this.cui,
         required this.lat,
         required this.lng,
+        this.id
     });
 
     String cui;
     double lat;
     double lng;
+    String? id;
 
     factory Marcadores.fromJson(String str) => Marcadores.fromMap(json.decode(str));
 

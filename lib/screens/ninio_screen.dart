@@ -181,7 +181,7 @@ class _NinioForm extends StatelessWidget {
                 SizedBox(height: 10),
                 //Form CUI
                 TextFormField(
-                  initialValue: ninio.id,
+                  initialValue: ninio.cui,
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Codigo',
                     labelText: 'CUI',

@@ -1,11 +1,15 @@
+// ignore_for_file: avoid_function_literals_in_foreach_calls
+
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:nutri_app/helpers/custom_image_marker.dart';
 import 'package:nutri_app/models/models.dart';
+import 'package:nutri_app/services/ninios_service.dart';
 import 'package:nutri_app/themes/theme.dart';
 import 'package:http/http.dart' as http;
+import 'package:provider/provider.dart';
 
 
 class LocationProvider extends ChangeNotifier{
@@ -19,10 +23,13 @@ class LocationProvider extends ChangeNotifier{
    List<Marcadores> marcadores =[];
    List<LatLng> latlng =[];
 
-   final Set<Marker> misMarkers = new Set();
+   final Set<Marker> misMarkers = Set();
+
+   Ninio? ninioMarker;
 
   LocationProvider({
     Map<String, Marker>? markers,
+    this.ninioMarker,
     this.isMapInitialized = false, 
     this.followUser = false}) : markers = markers ?? const {}
     {
@@ -83,10 +90,12 @@ class LocationProvider extends ChangeNotifier{
 
 
 
-  Future<List<LatLng>> getMarkers() async{
+  Future<List<LatLng>> getMarkers(BuildContext context) async{
     
     //isLoading = true;
     //notifyListeners();
+    final ninioService = Provider.of<NiniosService>(context, listen: false);
+    
 
     final url = Uri.https(_baseUrl, 'Marcadores.json',{
       'auth': _firebaseToken
@@ -100,27 +109,104 @@ class LocationProvider extends ChangeNotifier{
 
     markersMap.forEach((key, value) {
       final tempLatLn = Marcadores.fromMap(value);
+      tempLatLn.id = key;
       marcadores.add(tempLatLn);
     });
 
     marcadores.forEach((elementmarker) { 
         latlng.add(LatLng(elementmarker.lat, elementmarker.lng));
+        
+        ninioService.ninios.forEach((element) {
+          if(elementmarker.cui == element.cui){
+            ninioMarker = element;
+            misMarkers.add(Marker(
+              markerId: MarkerId(elementmarker.lat.toString() + elementmarker.lng.toString()),
+              position: LatLng(elementmarker.lat, elementmarker.lng),
+              icon: imageMarker,
+              infoWindow: InfoWindow(
+                title: element.cui,
+                snippet: element.nombres
+              )     
+            ));
+          }
+        });
     });
 
-    latlng.forEach((element) {
-      misMarkers.add(Marker(
-      markerId: MarkerId(element.latitude.toString() + element.longitude.toString()),
-      position: element,
-      icon: imageMarker,
-      // infoWindow: const InfoWindow(
-      //   title: elementmarker.cui,
-      //   snippet: 'Petter'
-      // )
-      ));
-    });
+    // latlng.forEach((element) {
+      
+    //   String cui = ninioMarker?.cui ??'';
+    //   String nombres = '${ninioMarker?.nombres} ${ninioMarker?.apellidos}';
+
+    //   misMarkers.add(Marker(
+    //   markerId: MarkerId(element.latitude.toString() + element.longitude.toString()),
+    //   position: element,
+    //   icon: imageMarker,
+    //   infoWindow: InfoWindow(
+    //     title: cui != '' ? ninioMarker!.cui : '',
+    //     snippet: nombres
+    //   )
+    //   ));
+    // });
 
     return latlng;
   }
+
+
+  Future saveOrCreateMarcador(Marcadores marcador, BuildContext context) async{
+
+    //isSaving = true;
+    //notifyListeners();
+
+    if(marcador.id=='' || marcador.id == null){
+      //Crear
+      await createNinio(marcador);
+    } else {
+      //actualizar
+      await updateNinio(marcador);
+    }
+
+    await getMarkers(context);
+
+    notifyListeners();
+  }
+
+
+
+
+  Future<String> updateNinio(Marcadores marcador) async{
+
+    final url = Uri.https(_baseUrl, 'Marcadores/${marcador.id}.json',{
+      'auth': _firebaseToken
+    });
+    
+    // ignore: unused_local_variable
+    final resp = await http.put(url, body: marcador.toJson());
+
+    //Actualizar listado de ninños
+    final index = marcadores.indexWhere((element) => element.id == marcador.id);
+    marcadores[index] = marcador;
+
+    return marcador.id!;
+  }
+
+
+  Future<String> createNinio(Marcadores marcador) async{
+
+    final url = Uri.https(_baseUrl, 'Marcadores.json',{
+      'auth': _firebaseToken,
+    });
+    final resp = await http.post(url, body: marcador.toJson());
+
+    final decodedData = json.decode(resp.body);
+
+    marcador.id = decodedData['name'];
+
+    marcadores.add(marcador);
+
+    return marcador.id!;
+  }
+
+
 
   //custom markers
 
@@ -148,7 +234,6 @@ class LocationProvider extends ChangeNotifier{
     //notifyListeners();
 
   }
-
 
 
 }

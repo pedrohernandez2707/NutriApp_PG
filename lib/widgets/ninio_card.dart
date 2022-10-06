@@ -37,7 +37,7 @@ class NinioCard extends StatelessWidget {
 
             _NinioDetails(
               nombre: ninio.nombres,
-              id: ninio.id.toString(),
+              id: ninio.cui,
               color: ninio.genero == 'Femenino' ? Colors.pink : Colors.blue,
               fechaNac: ninio.fechaNacimiento,
             ),

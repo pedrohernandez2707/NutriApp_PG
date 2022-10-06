@@ -94,7 +94,7 @@ class UsuarioService extends ChangeNotifier{
     // ignore: avoid_function_literals_in_foreach_calls
     usuarios.forEach((element) {
       if(element.email == email){
-        usuarioLogin =element;
+        usuarioLogin = element;
       }
     });
 

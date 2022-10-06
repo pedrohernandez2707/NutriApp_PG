@@ -8,7 +8,7 @@ class CustomSnackBar extends SnackBar{
     Key? key, 
     required String msg,
     String btnLabel = 'Ok',
-    Duration duration = const Duration(seconds: 2),
+    Duration duration = const Duration(seconds: 5),
     VoidCallback? onPress
   }) : super(key: key, 
     content: Text(msg),

@@ -1,7 +1,11 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:nutri_app/models/marcadores.dart';
 import 'package:nutri_app/providers/location_provider.dart';
+import 'package:nutri_app/services/ninios_service.dart';
 import 'package:provider/provider.dart';
+
+import '../ui/ui.dart';
 
 
 class ManualMarker extends StatelessWidget {
@@ -11,6 +15,7 @@ class ManualMarker extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final locationProvider = Provider.of<LocationProvider>(context);
+    final ninioService = Provider.of<NiniosService>(context,listen: false);
 
     final size = MediaQuery.of(context).size;
 
@@ -30,10 +35,10 @@ class ManualMarker extends StatelessWidget {
 
           Center(
             child: Transform.translate(
-              offset: Offset(0, -25),
+              offset: const Offset(0, -22),
               child: BounceInDown(
                 from: 100,
-                child: Icon(Icons.location_on_rounded, size: 75,)
+                child: const Icon(Icons.location_on_rounded, size: 75,)
                 ),
             ),
           ),
@@ -45,14 +50,31 @@ class ManualMarker extends StatelessWidget {
               child: MaterialButton(
                 minWidth: size.width-120,
                 onPressed: (){
-                  //TODO: Insertar Nuevo Marcador
 
-                  print(locationProvider.centerMap);
+                 if (locationProvider.centerMap == null) return;
+
+                 try {
+                    Marcadores marker = Marcadores(
+                      cui: ninioService.selectedninio.cui, 
+                      lat: locationProvider.centerMap!.latitude, 
+                      lng: locationProvider.centerMap!.longitude);
+
+                  locationProvider.saveOrCreateMarcador(marker, context);
+
+                  final snack = CustomSnackBar(msg: 'Proceso Exitoso!');
+                  ScaffoldMessenger.of(context).showSnackBar(snack);
+                  locationProvider.displayManualMarker = false;
+
+                 } catch (e) {
+                  final snack = CustomSnackBar(msg: 'Hubo un Error: ${e.toString()}');
+                  ScaffoldMessenger.of(context).showSnackBar(snack);
+                 }
+                  //print(locationProvider.centerMap);
                 },
                 color: Colors.black,
                 height: 50,
                 shape: const StadiumBorder(),
-                child: const Text('Confirmar Ubicacion',style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500),),
+                child: const Text('Confirmar Ubicacion', style: TextStyle(color: Colors.white,fontWeight: FontWeight.w500),),
               ),
             )
           )
