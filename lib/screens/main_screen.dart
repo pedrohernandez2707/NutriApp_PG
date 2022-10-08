@@ -173,23 +173,29 @@ class MainScreen extends StatelessWidget {
       //appBar: AppBar(),
       //drawer: _MenuLateral(),
       // backgroundColor: Colors.red,
-      body: Stack(
-        children: <Widget>[
-          
-          Container(
-            margin: EdgeInsets.only( top: 200 ),
-            child: ListView(
-              physics: BouncingScrollPhysics(),
-              children: <Widget>[
-                SizedBox( height: 80, ),
-                ...itemMap
-              ],
+      body: RefreshIndicator(
+        onRefresh: ()async{
+          await Future.delayed(const Duration(milliseconds: 1000));
+          Navigator.pushReplacementNamed(context, 'main');
+        },
+        child: Stack(
+          children: <Widget>[
+            
+            Container(
+              margin: EdgeInsets.only( top: 200 ),
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                children: <Widget>[
+                  SizedBox( height: 80, ),
+                  ...itemMap
+                ],
+              ),
             ),
-          ),
 
-          _Encabezado()
+            _Encabezado()
 
-        ],
+          ],
+        ),
       )
    );
   }
