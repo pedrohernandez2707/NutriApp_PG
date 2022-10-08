@@ -191,6 +191,8 @@ class _NinioForm extends StatelessWidget {
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El CUI es obligatorio!';
+                    }else if(value.length != 13){
+                      return 'El CUI debe ser de 13 digitos';
                     }
                   }
                 ),
@@ -380,7 +382,7 @@ class _TutorForm extends StatelessWidget {
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El CUI es obligatorio!';
-                    } else if(value.length < 13){
+                    } else if(value.length != 13){
                       return 'El CUI debe ser de 13 digitos';
                     }
                   }
@@ -438,6 +440,8 @@ class _TutorForm extends StatelessWidget {
                   validator: (value) {
                     if(value == null || value.isEmpty){
                       return 'El campo es obligatorio';
+                    } else if(value.length != 8){
+                      return 'El telefono es de 8 digitos';
                     }
                   }
                 ),

@@ -39,7 +39,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner:false,
       title: 'Nutri App',
-      initialRoute: 'main',
+      initialRoute: 'login',
       routes: appRoutes
     );
   }

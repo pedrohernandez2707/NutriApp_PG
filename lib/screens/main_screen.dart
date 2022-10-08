@@ -38,9 +38,9 @@ class MainScreen extends StatelessWidget {
     final usuarioProvider = Provider.of<UsuarioService>(context);
     final authProvider = Provider.of<AuthService>(context, listen: false);
 
-    //usuarioProvider.selectedUser(authProvider.email.toString());
+    usuarioProvider.selectedUser(authProvider.email.toString());
     //TODO: Cambiar por el correo
-    usuarioProvider.selectedUser('phernandezg7@miumg.edu.gt');
+    //usuarioProvider.selectedUser('phernandezg7@miumg.edu.gt');
     
 
     final items = <ItemBoton>[
