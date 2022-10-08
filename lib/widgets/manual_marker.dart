@@ -35,7 +35,7 @@ class ManualMarker extends StatelessWidget {
 
           Center(
             child: Transform.translate(
-              offset: const Offset(0, -22),
+              offset: const Offset(0, -30),
               child: BounceInDown(
                 from: 100,
                 child: const Icon(Icons.location_on_rounded, size: 75,)

@@ -206,7 +206,7 @@ class _Encabezado extends StatelessWidget {
     return Stack(
       children: <Widget>[
         IconHeader(
-          icon: FontAwesomeIcons.plus, 
+          icon: FontAwesomeIcons.children, 
           titulo: 'Aplicacion Movil Para Registro y Control de niños con Desnutricion', 
           subtitulo: 'APRODIGUA',
           color1: Color(0xff536CF6),

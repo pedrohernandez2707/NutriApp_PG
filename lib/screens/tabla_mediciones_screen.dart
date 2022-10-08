@@ -41,61 +41,70 @@ class TablaMedicionesScreen extends StatelessWidget {
         title: Text(ninioService.selectedninio.nombres),
       ),
         body: 
-          SfDataGrid(
-            horizontalScrollPhysics: const BouncingScrollPhysics(),
-            rowsPerPage: 10,
-            selectionMode: SelectionMode.single,
-            source: medicionDataSource,
-            columnWidthMode: ColumnWidthMode.fill,
-            columns: <GridColumn>[
-              GridColumn(
-                  columnName: 'fechaMedicion',
-                  label: Container(
-                    color: color,
-                      padding: const EdgeInsets.all(16.0),
-                      alignment: Alignment.center,
-                      child: const Text(
-                        'Fecha',
-                        style: style,
-                      ))),
-              GridColumn(
-                  columnName: 'edadMeses',
-                  label: Container(
-                    color: color,
-                      padding: const EdgeInsets.all(8.0),
-                      alignment: Alignment.center,
-                      child: const Text('EdadMeses',style: style,))),
-              GridColumn(
-                  columnName: 'pesoKg',
-                  label: Container(
-                    color: color,
-                      padding: const EdgeInsets.all(8.0),
-                      alignment: Alignment.center,
-                      child: const Text(
-                        'PesoKg',
-                        overflow: TextOverflow.ellipsis,
-                        style: style,
-                      ))),
-              GridColumn(
-                  columnName: 'tallaCm',
-                  label: Container(
-                    color: color,
-                      padding: const EdgeInsets.all(8.0),
-                      alignment: Alignment.center,
-                      child: const Text('TallaCm',style: style,))),
-            ],
-            onCellTap: (DataGridCellDetails details){
-              try {
-                medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
-                medicionService.exists = true;
-                Navigator.pushNamed(context, 'medicion');
-              } catch (e) {
-                
-              }
+          RefreshIndicator(
+            onRefresh: () async{
+              await Future.delayed(const Duration(milliseconds: 1000));
+              medicionService.loadMediciones(ninioService.selectedninio.cui);
             },
-            ),
+            child: SfDataGrid(
+              horizontalScrollPhysics: const BouncingScrollPhysics(),
+              rowsPerPage: 10,
+              selectionMode: SelectionMode.single,
+              source: medicionDataSource,
+              columnWidthMode: ColumnWidthMode.fill,
+              columns: <GridColumn>[
+                GridColumn(
+                    columnName: 'fechaMedicion',
+                    label: Container(
+                      color: color,
+                        padding: const EdgeInsets.all(16.0),
+                        alignment: Alignment.center,
+                        child: const Text(
+                          'Fecha',
+                          style: style,
+                        ))),
+                GridColumn(
+                    columnName: 'edadMeses',
+                    label: Container(
+                      color: color,
+                        padding: const EdgeInsets.all(8.0),
+                        alignment: Alignment.center,
+                        child: const Text('EdadMeses',style: style,))),
+                GridColumn(
+                    columnName: 'pesoKg',
+                    label: Container(
+                      color: color,
+                        padding: const EdgeInsets.all(8.0),
+                        alignment: Alignment.center,
+                        child: const Text(
+                          'PesoKg',
+                          overflow: TextOverflow.ellipsis,
+                          style: style,
+                        ))),
+                GridColumn(
+                    columnName: 'tallaCm',
+                    label: Container(
+                      color: color,
+                        padding: const EdgeInsets.all(8.0),
+                        alignment: Alignment.center,
+                        child: const Text('TallaCm',style: style,))),
+              ],
+              onCellTap: (DataGridCellDetails details){
+                try {
+                  medicionService.selectedMedicion = medicionService.medicionesLita[details.rowColumnIndex.rowIndex - 1];
+                  medicionService.exists = true;
+                  Navigator.pushNamed(context, 'medicion');
+                } catch (e) {
+                  
+                }
+              },
+              ),
+          ),
             floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
             floatingActionButton: FloatingActionButton(
+              backgroundColor: ninioService.selectedninio.genero == 'Femenino' 
+                ? Colors.pink[300]
+                : Colors.blue,
               child: const Icon(FontAwesomeIcons.penToSquare,),
               onPressed: (){
                 medicionService.selectedMedicion = Medicion(

@@ -41,7 +41,7 @@ class MedicionScreenBody extends StatelessWidget {
       appBar: AppBar(
         title: Text(niniosService.selectedninio.nombres),
         backgroundColor: niniosService.selectedninio.genero == 'Femenino'
-        ? Colors.pink
+        ? Colors.pink[300]
         : Colors.blue,
       ),
       body: SingleChildScrollView(
@@ -63,7 +63,7 @@ class MedicionScreenBody extends StatelessWidget {
      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
      floatingActionButton: FloatingActionButton(
       backgroundColor: niniosService.selectedninio.genero == 'Femenino'
-        ? Colors.pink
+        ? Colors.pink[300]
         : Colors.blue,
       child: const Icon(Icons.save),
       onPressed: ()async{
@@ -306,7 +306,8 @@ class _MedicionForm extends StatelessWidget {
                   keyboardType: TextInputType.text,
                   maxLines: 10,
                   minLines: 1,
-                )
+                ),
+                const SizedBox(height: 30,)
               ],
             )
           ),

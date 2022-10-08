@@ -304,7 +304,7 @@ class IconHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    final Color colorBlanco = Colors.white.withOpacity(0.7);
+    final Color colorBlanco = Colors.white.withOpacity(0.9);
 
     return Stack(
 
@@ -315,9 +315,9 @@ class IconHeader extends StatelessWidget {
         ),
 
         Positioned(
-          top: -50,
-          left: -70,
-          child: FaIcon( icon, size: 250, color: Colors.white.withOpacity(0.2) )
+          top: -20,
+          left: -50,
+          child: FaIcon( icon, size: 250, color: Colors.white.withOpacity(0.15) )
         ),
 
         Column(

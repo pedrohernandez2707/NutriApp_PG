@@ -125,7 +125,12 @@ class LocationProvider extends ChangeNotifier{
               icon: imageMarker,
               infoWindow: InfoWindow(
                 title: element.cui,
-                snippet: element.nombres
+                snippet: element.nombres,
+                onTap: (){
+                  ninioService.selectedninio = element;
+                  ninioService.exists = true;
+                  Navigator.pushNamed(context, 'ninio');
+                }
               )     
             ));
           }

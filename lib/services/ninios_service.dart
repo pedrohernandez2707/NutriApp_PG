@@ -59,6 +59,8 @@ class NiniosService extends ChangeNotifier{
       ninios.add(tempNinio);
     });
 
+    await Future.delayed(const Duration(milliseconds: 2000));
+
     isLoading = false;
     notifyListeners();
     return ninios;

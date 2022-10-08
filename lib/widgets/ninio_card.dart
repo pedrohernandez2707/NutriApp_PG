@@ -31,14 +31,14 @@ class NinioCard extends StatelessWidget {
               top: 20,
               child: _BackgroundIcon(
                 icon: ninio.genero == 'Femenino' ? FontAwesomeIcons.childDress : FontAwesomeIcons.child,
-                color: ninio.genero == 'Femenino' ? Colors.pink : Colors.blue,
+                color: ninio.genero == 'Femenino' ? Colors.pink.shade300 : Colors.blue,
               ),
             ),
 
             _NinioDetails(
               nombre: ninio.nombres,
               id: ninio.cui,
-              color: ninio.genero == 'Femenino' ? Colors.pink : Colors.blue,
+              color: ninio.genero == 'Femenino' ? Colors.pink.shade300 : Colors.blue,
               fechaNac: ninio.fechaNacimiento,
             ),
 
@@ -47,7 +47,7 @@ class NinioCard extends StatelessWidget {
               right: 0,
               child: GenderTag(
                 icon: ninio.genero == 'Femenino' ? FontAwesomeIcons.venus : FontAwesomeIcons.mars, 
-                color: ninio.genero == 'Femenino' ? Colors.pink : Colors.blue
+                color: ninio.genero == 'Femenino' ? Colors.pink.shade300 : Colors.blue
               ),
             ),
 
