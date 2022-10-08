@@ -315,9 +315,9 @@ class IconHeader extends StatelessWidget {
         ),
 
         Positioned(
-          top: -20,
-          left: -50,
-          child: FaIcon( icon, size: 250, color: Colors.white.withOpacity(0.15) )
+          top: -10,
+          left: -30,
+          child: FaIcon( icon, size: 200, color: Colors.white.withOpacity(0.15) )
         ),
 
         Column(
