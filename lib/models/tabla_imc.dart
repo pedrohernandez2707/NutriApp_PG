@@ -7,7 +7,7 @@ class TablaImc{
   double imcFin;
   String resultado;
 
-  final List<TablaImc> tallas = [];
+  //final List<TablaImc> tallas = [];
 
   TablaImc({
     required this.imcInicio,

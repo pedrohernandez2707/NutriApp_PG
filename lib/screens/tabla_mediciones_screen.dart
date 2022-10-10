@@ -37,6 +37,18 @@ class TablaMedicionesScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        actions: [
+          IconButton(
+          icon: const Icon(FontAwesomeIcons.chartLine),
+          onPressed: (){
+            Navigator.pushNamed(context, 'grafica');
+          },
+          ),
+        ],
+        //leading: IconButton(
+        //icon: const Icon(FontAwesomeIcons.chartGantt),
+        //onPressed: (){},
+        //),
         backgroundColor: color,
         title: Text(ninioService.selectedninio.nombres),
       ),

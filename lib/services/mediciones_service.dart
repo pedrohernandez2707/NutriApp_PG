@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:nutri_app/models/models.dart';
 
+import 'services.dart';
+
 class MedicionesService extends ChangeNotifier{
 
   final String _baseUrl ='desnutriapp-default-rtdb.firebaseio.com';
-  final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
+  //final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
 
   final List<Medicion> medicionesLita = [];
   final List<TablaTallaEdad> tallas = [];
@@ -33,9 +35,10 @@ class MedicionesService extends ChangeNotifier{
   Future<List<Medicion>> loadMediciones(String cui) async{
     //isLoading = true;
     //notifyListeners();
+    final authService = AuthService().idUserToken;
 
     final url = Uri.https(_baseUrl,'Mediciones.json',{
-      'auth': _firebaseToken,
+      'auth': authService,
       'orderBy': '"cuiNinio"',
       'equalTo': '"$cui"'
     });
@@ -81,8 +84,10 @@ class MedicionesService extends ChangeNotifier{
 
   Future<String> updateMedicion(Medicion medicion) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Mediciones/${medicion.id}.json',{
-      'auth': _firebaseToken
+      'auth': authService
     });
     
     // ignore: unused_local_variable
@@ -98,8 +103,10 @@ class MedicionesService extends ChangeNotifier{
 
   Future<String> createMedicion(Medicion medicion) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Mediciones.json',{
-      'auth': _firebaseToken
+      'auth': authService
     });
     
     final resp = await http.post(url, body: medicion.toJson());

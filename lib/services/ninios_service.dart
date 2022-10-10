@@ -8,6 +8,8 @@ import 'package:nutri_app/helpers/debouncer.dart';
 import 'package:nutri_app/models/ninios.dart';
 import 'package:http/http.dart' as http;
 
+import 'services.dart';
+
 class NiniosService extends ChangeNotifier{
 
   NiniosService(){
@@ -15,7 +17,7 @@ class NiniosService extends ChangeNotifier{
   }
 
   final String _baseUrl ='desnutriapp-default-rtdb.firebaseio.com';
-  final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
+  //final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
 
   List<Ninio> ninios =[];
 
@@ -41,12 +43,13 @@ class NiniosService extends ChangeNotifier{
   }
   
   Future<List<Ninio>> loadninios() async{
+    final authService = AuthService().idUserToken;
     
     isLoading = true;
     notifyListeners();
 
     final url = Uri.https(_baseUrl, 'Niños.json',{
-      'auth': _firebaseToken
+      'auth': authService
     });
 
     final resp = await http.get(url);
@@ -89,8 +92,10 @@ class NiniosService extends ChangeNotifier{
 
   Future<String> updateNinio(Ninio ninio) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Niños/${ninio.id}.json',{
-      'auth': _firebaseToken
+      'auth': authService
     });
     
     // ignore: unused_local_variable
@@ -106,8 +111,10 @@ class NiniosService extends ChangeNotifier{
 
   Future<String> createNinio(Ninio ninio) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Niños.json',{
-      'auth': _firebaseToken,
+      'auth': authService,
       'name': ninio.id
     });
     final resp = await http.post(url, body: ninio.toJson());
@@ -123,12 +130,14 @@ class NiniosService extends ChangeNotifier{
 
 
   Future<List<Ninio>> searchninios(String query) async{
+
+    final authService = AuthService().idUserToken;
     
     //isLoading = true;
     //notifyListeners();
 
     final url = Uri.https(_baseUrl, 'Niños.json',{
-      'auth'   : _firebaseToken,
+      'auth'   : authService,
       'orderBy': '"nombres"',
       'startAt': '"$query"',
       // ignore: unnecessary_brace_in_string_interps

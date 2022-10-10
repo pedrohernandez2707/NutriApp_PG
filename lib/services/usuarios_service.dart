@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:nutri_app/models/models.dart';
 import 'package:http/http.dart' as http;
+import 'package:nutri_app/services/auth_service.dart';
 
 
 //curl 'https://identitytoolkit.googleapis.com/v1/accounts:delete?key=[API_KEY]' \
@@ -14,7 +15,7 @@ class UsuarioService extends ChangeNotifier{
    GlobalKey<FormState> formKey = GlobalKey<FormState>();
 
   final String _baseUrl ='desnutriapp-default-rtdb.firebaseio.com';
-  final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
+  //final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
 
   final List<Usuario> usuarios =[];
 
@@ -30,12 +31,15 @@ class UsuarioService extends ChangeNotifier{
 
 
   Future<List<Usuario>> loadUsuarios() async{
+
+    final authService = AuthService().idUserToken;
     
     isLoading = true;
     notifyListeners();
 
     final url = Uri.https(_baseUrl, 'Usuarios.json',{
-      'auth': _firebaseToken
+      //'auth': _firebaseToken
+      'auth': authService
     });
 
     final resp = await http.get(url);
@@ -56,8 +60,10 @@ class UsuarioService extends ChangeNotifier{
 
   Future<String> createUsuario(Usuario usuario) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Usuarios.json',{
-      'auth': _firebaseToken,
+      'auth': authService,
       'name': usuario.id
     });
     
@@ -76,8 +82,10 @@ class UsuarioService extends ChangeNotifier{
 
   Future<String> deleteUsuario(Usuario usuario) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Usuarios.json',{
-      'auth': _firebaseToken,
+      'auth': authService,
       'name': usuario.id
     });
     final resp = await http.post(url, body: usuario.toJson());
@@ -123,8 +131,10 @@ class UsuarioService extends ChangeNotifier{
 
   Future<String> updateUser(Usuario usuario) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Usuarios/${usuario.id}.json',{
-      'auth': _firebaseToken
+      'auth': authService
     });
     
     // ignore: unused_local_variable
@@ -140,8 +150,10 @@ class UsuarioService extends ChangeNotifier{
 
   Future<String> createUser(Usuario usuario) async{
 
+    final authService = AuthService().idUserToken;
+
     final url = Uri.https(_baseUrl, 'Usuarios.json',{
-      'auth': _firebaseToken
+      'auth': authService
     });
     final resp = await http.post(url, body: usuario.toJson());
 

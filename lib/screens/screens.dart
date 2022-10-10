@@ -1,3 +1,4 @@
+export 'package:nutri_app/screens/grafica_screen.dart';
 export 'package:nutri_app/screens/ninio_geo_search_delegate.dart';
 export 'package:nutri_app/screens/medicion_screen.dart';
 export 'package:nutri_app/screens/tabla_mediciones_screen.dart';
@@ -12,6 +13,7 @@ export 'package:nutri_app/screens/loading_screen.dart';
 export 'package:nutri_app/screens/main_screen.dart';
 export 'package:nutri_app/screens/registro_screen.dart';
 export 'package:nutri_app/screens/registro_datos_screen.dart';
+
 
 
 

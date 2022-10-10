@@ -15,5 +15,6 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'registro_datos':  ( _ ) => const RegistroDatosScreen(),
   'ninio':           ( _ ) => const NinioScreen(),
   'tabla':           ( _ ) => const TablaMedicionesScreen(),
-  'medicion':        ( _ ) => const MedicionScreen()
+  'medicion':        ( _ ) => const MedicionScreen(),
+  'grafica':         ( _ ) => const GraficaScreen(),
 };

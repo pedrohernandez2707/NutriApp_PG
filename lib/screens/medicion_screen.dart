@@ -123,7 +123,7 @@ class MedicionScreenBody extends StatelessWidget {
           showDialog(
               context: context, 
               builder: (BuildContext context) => AlertDialog(
-                title: Text('Error al Grabar el Registro',style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
+                title: const Text('Error al Grabar el Registro',style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),),
                 content: Text(e.toString()),
                 actions: [
                   TextButton(onPressed: (){
