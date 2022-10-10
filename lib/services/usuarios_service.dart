@@ -11,6 +11,8 @@ import 'package:http/http.dart' as http;
 
 class UsuarioService extends ChangeNotifier{
 
+   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
   final String _baseUrl ='desnutriapp-default-rtdb.firebaseio.com';
   final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
 

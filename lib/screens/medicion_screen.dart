@@ -76,6 +76,18 @@ class MedicionScreenBody extends StatelessWidget {
           medicionesService.llenarPesos();
 
           medicionesService.selectedMedicion.edadMeses = calcularEdadMeses(niniosService.selectedninio.fechaNacimiento, medicionesService.selectedMedicion.fechaMedicion);
+          final int edadMeses = medicionesService.selectedMedicion.edadMeses;
+          
+          if(edadMeses > 60){
+            medicionesService.llenarImc();
+            double calculoImc = calcularImc(medicionesService.selectedMedicion.pesoKg, medicionesService.selectedMedicion.tallaCm);
+
+            final msgImc = medicionesService.buscarImc(calculoImc);
+          
+            medicionesService.medicionNotasTalla = msgImc;
+            medicionesService.medicionNotasPeso = msgImc;
+
+          } else{
 
           final msgTalla = medicionesService.buscarTalla(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.tallaCm);
           
@@ -83,6 +95,7 @@ class MedicionScreenBody extends StatelessWidget {
 
           final msgPeso = medicionesService.buscarPeso(medicionesService.selectedMedicion.edadMeses , niniosService.selectedninio.genero, medicionesService.selectedMedicion.pesoKg);
           medicionesService.medicionNotasPeso = msgPeso;
+          }
           
           await medicionesService.saveOrCreateMedicion(medicionesService.selectedMedicion);
 
@@ -90,7 +103,9 @@ class MedicionScreenBody extends StatelessWidget {
               context: context, 
               builder: (BuildContext context) => AlertDialog(
                 title: const Text('Registro Guardado Correctamente!',style: TextStyle(color: Colors.green, fontWeight: FontWeight.bold),),
-                content: Text('Peso: ${medicionesService.selectedMedicion.notasPeso} \n\nTalla: ${medicionesService.selectedMedicion.notasTalla}'),
+                content: edadMeses<=60
+                ? Text('Peso: ${medicionesService.selectedMedicion.notasPeso} \n\nTalla: ${medicionesService.selectedMedicion.notasTalla}')
+                : Text(medicionesService.selectedMedicion.notasTalla),
                 actions: [
                   TextButton(onPressed: (){
                     Navigator.pop(context);
@@ -136,6 +151,16 @@ class MedicionScreenBody extends StatelessWidget {
     final meses = difference/30;
 
     return meses.toInt();
+  }
+
+  double calcularImc(double pesoKg, double tallaCm) {
+
+    double tallaMts = tallaCm/100;
+    double tallaMts2 = tallaMts * tallaMts;
+
+    final double icm = pesoKg/tallaMts2;
+
+    return double.parse(icm.toStringAsFixed(2));
   }
 
 }

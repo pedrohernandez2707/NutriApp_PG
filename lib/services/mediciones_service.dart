@@ -11,6 +11,7 @@ class MedicionesService extends ChangeNotifier{
 
   final List<Medicion> medicionesLita = [];
   final List<TablaTallaEdad> tallas = [];
+  final List<TablaImc> imcLista = [];
   final List<TablaPesoEdad> pesos = [];
 
   late Medicion selectedMedicion;
@@ -51,6 +52,8 @@ class MedicionesService extends ChangeNotifier{
       
       medicionesLita.add(tempMedicion);
     });
+
+    medicionesLita.sort((item1, item2) => item1.edadMeses.compareTo(item2.edadMeses));
 
     isLoading = false;
     notifyListeners();
@@ -187,7 +190,37 @@ class MedicionesService extends ChangeNotifier{
 
     }
 
+    String buscarImc(double imc){
 
+      String resultadoFinal = '';
+
+      imcLista.forEach((element) { 
+        
+        if(imc >= element.imcInicio && imc <= element.imcFin){
+          resultadoFinal = element.resultado;
+        }
+        
+      });
+
+      if(resultadoFinal != ''){
+
+        return 'IMC: $imc, $resultadoFinal';
+      } else {
+        return 'No es Posible determinar el IMC - Fuera del Intervalo';
+      }
+
+    }
+
+
+    void llenarImc(){
+      imcLista.add(TablaImc(imcInicio: 0, imcFin: 18.49, resultado: 'Bajo Peso'));
+      imcLista.add(TablaImc(imcInicio: 18.50, imcFin: 24.99, resultado: 'Peso Normal'));
+      imcLista.add(TablaImc(imcInicio: 25, imcFin: 29.99, resultado: 'Pre-obesidad o Sobrepeso'));
+      imcLista.add(TablaImc(imcInicio: 30, imcFin: 34.99, resultado: 'Obesidad Clase I'));
+      imcLista.add(TablaImc(imcInicio: 35, imcFin: 39.99, resultado: 'Obesidad Clase II'));
+      imcLista.add(TablaImc(imcInicio: 40, imcFin: 100, resultado: 'Obesidad Clase III'));
+
+    }
 
 
     void llenarTallas(){

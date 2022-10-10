@@ -17,7 +17,7 @@ class NiniosService extends ChangeNotifier{
   final String _baseUrl ='desnutriapp-default-rtdb.firebaseio.com';
   final String _firebaseToken='AIzaSyDr0sAYzHkwMm0Q0lCTBLf6pbfarXevxWo';
 
-  final List<Ninio> ninios =[];
+  List<Ninio> ninios =[];
 
   final List<Ninio> niniosSearch =[];
 
@@ -58,7 +58,9 @@ class NiniosService extends ChangeNotifier{
       tempNinio.id = key;
       ninios.add(tempNinio);
     });
-
+      
+    ninios.sort((item1, item2) => item1.nombres.compareTo(item2.nombres));
+   
     await Future.delayed(const Duration(milliseconds: 2000));
 
     isLoading = false;
@@ -140,11 +142,11 @@ class NiniosService extends ChangeNotifier{
 
     final Map<String, dynamic> niniosMap = json.decode(resp.body);
 
+    niniosSearch.clear();
+
     niniosMap.forEach((key, value) {
       final tempNinio = Ninio.fromMap(value);
       tempNinio.id = key;
-
-      niniosSearch.clear();
       niniosSearch.add(tempNinio);
     });
 

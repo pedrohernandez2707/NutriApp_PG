@@ -44,10 +44,10 @@ class MainScreen extends StatelessWidget {
     
 
     final items = <ItemBoton>[
-      ItemBoton( FontAwesomeIcons.userLarge, 'Gestion de Usuarios', Color(0xff6989F5), Color(0xff906EF5) ),
+      ItemBoton( FontAwesomeIcons.userLarge, 'Gestión de Usuarios', Color(0xff6989F5), Color(0xff906EF5) ),
       ItemBoton( FontAwesomeIcons.pencil, 'Registro de Datos', Color(0xff66A9F2), Color(0xff536CF6) ),
-      ItemBoton( FontAwesomeIcons.eye, 'Visualizacion de Datos', Color(0xffF2D572), Color(0xffE06AA3) ),
-      ItemBoton( FontAwesomeIcons.locationDot, 'Geolocalizacion', Color(0xff317183), Color(0xff46997D) ),
+      ItemBoton( FontAwesomeIcons.eye, 'Visualización de Datos', Color(0xffF2D572), Color(0xffE06AA3) ),
+      ItemBoton( FontAwesomeIcons.locationDot, 'Geolocalización', Color(0xff317183), Color(0xff46997D) ),
     ];
       
   
@@ -62,7 +62,7 @@ class MainScreen extends StatelessWidget {
           onPress: () async{ 
             
             switch (item.texto) {
-              case 'Gestion de Usuarios':
+              case 'Gestión de Usuarios':
               !usuarioProvider.usuarioLogin.permisos.usuarios
               ?
                 showDialog(
@@ -107,7 +107,7 @@ class MainScreen extends StatelessWidget {
 
               break;
 
-              case 'Visualizacion de Datos':
+              case 'Visualización de Datos':
                 !usuarioProvider.usuarioLogin.permisos.visualizacion
               ?
                 showDialog(
@@ -129,7 +129,7 @@ class MainScreen extends StatelessWidget {
 
               break;
 
-              case 'Geolocalizacion':
+              case 'Geolocalización':
 
               if(!usuarioProvider.usuarioLogin.permisos.geolocalizacion){   
                 showDialog(
@@ -213,7 +213,7 @@ class _Encabezado extends StatelessWidget {
       children: <Widget>[
         IconHeader(
           icon: FontAwesomeIcons.children, 
-          titulo: 'Aplicacion Movil Para Registro y Control de niños con Desnutricion', 
+          titulo: 'Aplicación Móvil Para Registro y Control de Niños con Desnutricion Infantil', 
           subtitulo: 'APRODIGUA',
           color1: Color(0xff536CF6),
           color2: Color(0xff66A9F2),

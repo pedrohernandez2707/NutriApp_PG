@@ -34,6 +34,7 @@ class RegistroDatosScreen extends StatelessWidget {
           
           itemCount: ninioService.ninios.length,
           itemBuilder: (BuildContext context, int index) => GestureDetector(
+            
             onTap: () {
               Navigator.pushNamed(context, 'ninio');
               ninioService.selectedninio = ninioService.ninios[index].copy();

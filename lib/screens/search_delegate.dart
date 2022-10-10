@@ -10,7 +10,6 @@ import '../models/ninios.dart';
 class NinioSearchDelegate extends SearchDelegate{
 
   @override
-  
   String? get searchFieldLabel => 'Buscar Niños';
 
   
@@ -24,7 +23,6 @@ class NinioSearchDelegate extends SearchDelegate{
         icon: const Icon(FontAwesomeIcons.xmark)
       )
     ];
-    
   }
 
   @override

@@ -201,6 +201,7 @@ class _NinioForm extends StatelessWidget {
 
                 //Form Nombre
                 TextFormField(
+                  textCapitalization: TextCapitalization.words,
                   initialValue: ninio.nombres,
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Nombre del niño',
@@ -220,6 +221,7 @@ class _NinioForm extends StatelessWidget {
 
                 //Form Apellios
                 TextFormField(
+                  textCapitalization: TextCapitalization.words,
                   initialValue: ninio.apellidos,
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Apellidos del niño',
@@ -392,6 +394,7 @@ class _TutorForm extends StatelessWidget {
 
                 //Form Nombre
                 TextFormField(
+                  textCapitalization: TextCapitalization.words,
                   initialValue: ninio.tutor.nombre,
                   decoration: InputDecorations.authInputdecoration(
                     hintText: 'Nombre del Tutor',

@@ -40,7 +40,11 @@ class RegistroScreen extends StatelessWidget {
                   const SizedBox(height: 30,),
         
                   usuarioService.selectedUsuario.email == ''
-                  ? const _Form()
+                  ? Form(
+                    key: usuarioService.formKey,
+                    autovalidateMode: AutovalidateMode.onUserInteraction,
+                    child: const _Form()
+                  )
                   : const SizedBox(height: 0),
 
                   const SizedBox(height: 10),
@@ -264,8 +268,6 @@ class __FormState extends State<_Form> {
             validator: (value){
               if (value == null || value == '') {
                 return 'El nombre es Obligatorio';
-              } else {
-                return null;
               }
             },
             onChanged: (value){
@@ -301,11 +303,11 @@ class __FormState extends State<_Form> {
           CustomInput(
             initialValue: usuarioService.selectedUsuario.password,
             validator: (value){
-              String pattern = r'/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/';
+              String pattern = r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$';
               RegExp regExp  = RegExp(pattern);
 
               return regExp.hasMatch(value ?? '')
-                ? null
+                ? ''
                 : 'La contraseña no cumple los requisitos minimos';
             },
             onChanged: (value){
@@ -313,7 +315,7 @@ class __FormState extends State<_Form> {
             },
             icon: Icons.lock_outline,
             placeholder: 'Contraseña',
-            isPassword: true,
+            isPassword: false,
             textController: passCtrl,
             keyboardType: TextInputType.text,
           ),

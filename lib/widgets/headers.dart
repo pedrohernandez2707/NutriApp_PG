@@ -325,7 +325,7 @@ class IconHeader extends StatelessWidget {
             const SizedBox(height: 80, width: double.infinity ),
             Text(subtitulo, style: TextStyle( fontSize: 20, color: colorBlanco ) ),
             const SizedBox(height: 20),
-            Text(titulo, style: TextStyle( fontSize: 25, color: colorBlanco, fontWeight: FontWeight.bold ) ),
+            Center(child: Text(titulo, textAlign: TextAlign.center, style: TextStyle( fontSize: 25, color: colorBlanco, fontWeight: FontWeight.bold ) )),
             const SizedBox(height: 20),
             FaIcon(icon, size: 80, color: Colors.white ),
             const SizedBox(width: 50),
