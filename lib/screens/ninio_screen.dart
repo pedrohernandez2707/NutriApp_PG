@@ -97,6 +97,9 @@ class _NiniosScreenBody extends StatelessWidget {
 
           if(!ninioForm.isValidForm()) return;
           
+          if(!ninioForm.isValidTutorForm()) return;
+          
+          
           try {
             await ninioService.saveOrCreateNinio(ninioForm.ninio);
 

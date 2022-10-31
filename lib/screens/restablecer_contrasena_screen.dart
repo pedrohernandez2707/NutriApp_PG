@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/services/auth_service.dart';
 import 'package:nutri_app/widgets/widgets.dart';
 import 'package:provider/provider.dart';
 
 import '../providers/providers.dart';
 
-class LoginScreen extends StatelessWidget {
+class RestablecerContrasenaScreen extends StatelessWidget {
 
-  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +14,7 @@ class LoginScreen extends StatelessWidget {
      final loginForm = Provider.of<LoginFormProvider>(context);
        
       return Scaffold(
+        appBar: AppBar(),
       backgroundColor: const Color(0xffF2F2F2),
       body: SafeArea(
         child: SingleChildScrollView(
@@ -25,20 +24,17 @@ class LoginScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                const Logo(title: 'Inicio de Sesión',),
-                const Icon(FontAwesomeIcons.children, color: Colors.blue, size: 60,),
+                const Logo(title: 'Restablecer Contraseña',),
                 Form(
-                  key: loginForm.formKey,
+                  key: loginForm.resetFormKey,
                   autovalidateMode: AutovalidateMode.onUserInteraction,
-                  child: const _Form(),
+                  child: _Form(),
                 ),
                 //SizedBox(height: -10,),
                 const SizedBox(
                   height: 70,
                   child: Image(image: AssetImage('assets/logoUMG.png'))
                 ),
-            
-                const Labels()
               ],
             ),
           ),
@@ -52,7 +48,7 @@ class LoginScreen extends StatelessWidget {
 
 class _Form extends StatefulWidget {
 
-  const _Form({ Key? key }) : super(key: key);
+  //const _Form({ Key? key }) : super(key: key);
 
   @override
   __FormState createState() => __FormState();
@@ -61,7 +57,6 @@ class _Form extends StatefulWidget {
 class __FormState extends State<_Form> {
 
   final emailCtrl = TextEditingController();
-  final passCtrl = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -88,44 +83,22 @@ class __FormState extends State<_Form> {
             },
             onChanged: (value) {
 
-               loginForm.email = value;
-               //print(loginForm.email);
+               loginForm.emailReset = value;
+               
             },
             icon: Icons.email_outlined,
             placeholder: 'Correo Electronico',
             isPassword: false,
             textController: emailCtrl,
             keyboardType: TextInputType.emailAddress,
-          ),
-
-          const SizedBox(height: 10,),
-
-          CustomInput(
-            validator: (value){
-
-              if (value != null && value.length >= 8) {
-                return null;
-              } else {
-                return 'La contraseña debe ser mas larga';
-              }
-            },
-            onChanged: (value) {  
-              loginForm.password = value;
-              //print(loginForm.password);
-            },
-            icon: Icons.lock_outline,
-            placeholder: 'Contraseña',
-            isPassword: true,
-            textController: passCtrl,
-            keyboardType: TextInputType.text,
-          ),
+          ),     
 
           const SizedBox(height: 20,),
             
           CustomButton(
             buttonHeight: 55 ,
             buttonWith: 200,
-            texto: 'Ingresar',
+            texto: 'Restablecer',
             color: Colors.blue,
             textColor: Colors.white,
             fontSize: 18,
@@ -133,33 +106,39 @@ class __FormState extends State<_Form> {
 
               FocusScope.of(context).unfocus();
 
-              if(!loginForm.isValidForm()) return;
+              if(!loginForm.isValidResetForm()) return;
 
               loginForm.isLoading = true;
               final authProvider = Provider.of<AuthService>(context,listen: false);
 
-              String? respLogin = await authProvider.loginUser(loginForm.email, loginForm.password);
+              String respLogin = await authProvider.resetUser(loginForm.emailReset);
               
-              if (respLogin == null) {
-                // ignore: use_build_context_synchronously
-                Navigator.pushReplacementNamed(context, 'main');
+              if (respLogin == '') {
+                
                 loginForm.isLoading = false;
+
+                showDialog(
+                  context: context, 
+                  builder: (BuildContext context) => AlertDialog(
+                    title: const Text('Confirmacion',style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),),
+                    content: const Text('Se envio un correo electronico para restablecer su contraseña'),
+                    actions: [
+                      TextButton(onPressed: (){
+                        Navigator.pop(context);
+                        Navigator.pop(context);
+                      }, 
+                        child: const Text('OK')
+                      )
+                    ],
+                  )
+                );
                 
               } else{
                 String msg;
                 switch (respLogin) {
                   case 'EMAIL_NOT_FOUND':
-                    msg = 'La cuenta no existe, verifique su direccion de correo';
+                    msg = 'La cuenta no existe, verifique su direccion de correo electronico';
                     break;
-
-                  case 'INVALID_PASSWORD':
-                    msg = 'Contraseña incorrecta';
-                    break;
-
-                    case 'TOO_MANY_ATTEMPTS_TRY_LATER : Access to this account has been temporarily disabled due to many failed login attempts. You can immediately restore it by resetting your password or you can try again later.':
-                    msg = 'Demasiados Intentos, la cuenta ha sido deshabilitada temporalmente, verifique sus credenciales';
-                    break;
-
                   default:
                     msg = respLogin;
                     break;
@@ -179,20 +158,10 @@ class __FormState extends State<_Form> {
                       ],
                     )
                   );
-                  loginForm.isLoading =false;
+                  loginForm.isLoading = false;
               }
-
-              
             },
             ),
-            SizedBox(height: 20,),
-            GestureDetector(
-              child: Text('Restablecer Contraseña',style: TextStyle(color: Colors.blue, fontSize: 14),),
-              onTap: () {
-                Navigator.pushNamed(context, 'restablecer');
-              }
-            )
-          
         ],
       ),
     );

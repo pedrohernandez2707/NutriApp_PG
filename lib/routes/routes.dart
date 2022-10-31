@@ -17,4 +17,5 @@ final Map<String, Widget Function(BuildContext)> appRoutes = {
   'tabla':           ( _ ) => const TablaMedicionesScreen(),
   'medicion':        ( _ ) => const MedicionScreen(),
   'grafica':         ( _ ) => const GraficaScreen(),
+  'restablecer':     ( _ ) => RestablecerContrasenaScreen(),
 };

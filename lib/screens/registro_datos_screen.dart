@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nutri_app/screens/screens.dart';
 import 'package:nutri_app/services/services.dart';
 import 'package:nutri_app/widgets/ninio_card.dart';
@@ -23,6 +24,12 @@ class RegistroDatosScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Niños Registrados'),
+        actions: [
+          IconButton(onPressed: (){
+            showSearch(context: context, delegate: NinioRegistroSearchDelegate());
+
+          }, icon: const Icon(FontAwesomeIcons.magnifyingGlass, color: Colors.white,))
+        ],
       ),
       body: RefreshIndicator(
         onRefresh: ()async{
@@ -45,6 +52,7 @@ class RegistroDatosScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.indigo,
         onPressed: (){
 
           ninioService.selectedninio = Ninio(
@@ -61,7 +69,7 @@ class RegistroDatosScreen extends StatelessWidget {
           ninioService.exists =false;
 
         },
-        child: const Icon(Icons.add),
+        child: const Icon(FontAwesomeIcons.userPlus),
       ),
    );
    

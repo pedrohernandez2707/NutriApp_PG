@@ -88,4 +88,31 @@ class AuthService extends ChangeNotifier{
   }
 
 
+
+  Future<String> resetUser(String email) async{
+
+    final Map<String,dynamic> authData ={
+      'requestType': "PASSWORD_RESET",
+      'email': email
+    };
+
+    final url = Uri.https(_baseUrl, '/v1/accounts:sendOobCode',{
+      'key': _firebaseToken
+    });
+
+    final resp = await http.post(url, body: json.encode(authData));
+
+    final Map<String,dynamic> decodedResp = json.decode(resp.body);
+
+    if(decodedResp.containsKey('email')){
+      return '';
+    } else {
+      return decodedResp['error']['message'];
+    }
+
+
+  }
+
+
+
 }
